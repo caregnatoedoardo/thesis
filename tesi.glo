@@ -1,0 +1,30 @@
+\glossaryentry{container?\glossentry{Container}|setentrycounter[]{page}\glsnumberformat}{vii}
+\glossaryentry{virtual machine?\glossentry{Virtual Machine}|setentrycounter[]{page}\glsnumberformat}{vii}
+\glossaryentry{docker?\glossentry{Docker}|setentrycounter[]{page}\glsnumberformat}{vii}
+\glossaryentry{docker compose?\glossentry{Docker Compose}|setentrycounter[]{page}\glsnumberformat}{vii}
+\glossaryentry{api?\glossentry{API}|setentrycounter[]{page}\glsnumberformat}{vii}
+\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{vii}
+\glossaryentry{cx studio?\glossentry{CX Studio}|setentrycounter[]{page}\glsnumberformat}{vii}
+\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{vii}
+\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{vii}
+\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{vii}
+\glossaryentry{hardware?\glossentry{hardware}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{sistemi operativi?\glossentry{sistemi operativi}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{client?\glossentry{client}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{host?\glossentry{host}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{guest?\glossentry{guest}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{datacenter?\glossentry{datacenter}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{disaster recovery?\glossentry{disaster recovery}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{recovery?\glossentry{recovery}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{hyper-v?\glossentry{Hyper-V}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{xen?\glossentry{Xen}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{hypervisor?\glossentry{hypervisor}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{ram?\glossentry{RAM}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{storage?\glossentry{storage}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{cpu?\glossentry{CPU}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{dma?\glossentry{DMA}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{nat?\glossentry{NAT}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{vlan?\glossentry{VLAN}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{sandbox?\glossentry{sandbox}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{filesystem?\glossentry{filesystem}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{boot?\glossentry{boot}|setentrycounter[]{page}\glsnumberformat}{5}
