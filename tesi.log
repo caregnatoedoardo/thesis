@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.8)  23 SEP 2021 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.8)  30 SEP 2021 11:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1392,76 +1392,83 @@ ion.html' on page 3 undefined on input line 15.
 
 
 LaTeX Warning: Citation 'questa funzionalita' e' presente solamente nelle versi
-oni Pro e Server di Windows 10' on page 3 undefined on input line 19.
+oni Pro e Server di Windows 10' on page 3 undefined on input line 20.
 
 
-Overfull \hbox (8.23215pt too wide) in paragraph at lines 19--19
-[][][][]\T1/cmr/m/n/8 (-20) .| 
- []
-
-
-LaTeX Warning: Citation 'installabile solamente se il processore supporta la vi
-rtualizzazione e se quest'ultima e' abilitata da BIOS' on page 3 undefined on i
-nput line 25.
-
-
-Overfull \hbox (92.91924pt too wide) in paragraph at lines 25--25
-[][][][]\T1/cmr/m/n/8 (-20) .| 
- []
-
-
-LaTeX Warning: Citation 'il tipo di RAM "ECC" risulta preferibile ma non obblig
-atorio' on page 3 undefined on input line 28.
-
-
-LaTeX Warning: Citation 'e' necessario abilitare le estensioni di virtualizzazi
-one da BIOS della scheda madre.' on page 3 undefined on input line 29.
-
-
-Overfull \hbox (2.53632pt too wide) in paragraph at lines 29--29
-[][][][]\T1/cmr/m/n/8 (-20) .| 
- []
-
-
-LaTeX Warning: Citation 'nel caso di architettura avente processori Intel' on p
-age 3 undefined on input line 29.
-
-
-LaTeX Warning: Citation 'IOMMU per architetture basate su processori AMD.' on p
-age 3 undefined on input line 29.
-
-
-Overfull \hbox (77.85274pt too wide) in paragraph at lines 29--29
-[][][][]\T1/cmr/m/n/8 (-20) ; [].| 
- []
-
-
-LaTeX Warning: Citation 'per creare o impostare una VLAN' on page 3 undefined o
-n input line 30.
-
-
-LaTeX Warning: Citation 'fare riferimento al router/firewall o allo switch di r
-ete' on page 3 undefined on input line 30.
-
-
-Overfull \hbox (30.2727pt too wide) in paragraph at lines 30--30
-[][][][]\T1/cmr/m/n/8 (-20) ; [].| 
- []
-
-
-LaTeX Warning: Citation 'inteso come dimensione in Gb del virtual disk image (*
-.vdi) dell'immagine virtualizzata' on page 3 undefined on input line 32.
-
-
-Overfull \hbox (22.42258pt too wide) in paragraph at lines 32--32
+Overfull \hbox (8.23215pt too wide) in paragraph at lines 20--20
 [][][][]\T1/cmr/m/n/8 (-20) .| 
  []
 
 [3
 
-] [4]) (./capitoli/capitolo-3.tex [5] [6
-
 ]
+
+LaTeX Warning: Citation 'installabile solamente se il processore supporta la vi
+rtualizzazione e se quest'ultima e' abilitata da BIOS' on page 4 undefined on i
+nput line 37.
+
+
+Overfull \hbox (92.91924pt too wide) in paragraph at lines 37--37
+[][][][]\T1/cmr/m/n/8 (-20) .| 
+ []
+
+
+LaTeX Warning: Citation 'il tipo di RAM "ECC" risulta preferibile ma non obblig
+atorio' on page 4 undefined on input line 40.
+
+
+LaTeX Warning: Citation 'e' necessario abilitare le estensioni di virtualizzazi
+one da BIOS della scheda madre.' on page 4 undefined on input line 41.
+
+
+Overfull \hbox (2.53632pt too wide) in paragraph at lines 41--41
+[][][][]\T1/cmr/m/n/8 (-20) .| 
+ []
+
+
+LaTeX Warning: Citation 'nel caso di architettura avente processori Intel' on p
+age 4 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'IOMMU per architetture basate su processori AMD.' on p
+age 4 undefined on input line 41.
+
+
+Overfull \hbox (77.85274pt too wide) in paragraph at lines 41--41
+[][][][]\T1/cmr/m/n/8 (-20) ; [].| 
+ []
+
+
+LaTeX Warning: Citation 'per creare o impostare una VLAN' on page 4 undefined o
+n input line 42.
+
+
+LaTeX Warning: Citation 'fare riferimento al router/firewall o allo switch di r
+ete' on page 4 undefined on input line 42.
+
+
+Overfull \hbox (30.2727pt too wide) in paragraph at lines 42--42
+[][][][]\T1/cmr/m/n/8 (-20) ; [].| 
+ []
+
+
+LaTeX Warning: Citation 'inteso come dimensione in Gb del virtual disk image (*
+.vdi) dell'immagine virtualizzata' on page 4 undefined on input line 44.
+
+
+Overfull \hbox (22.42258pt too wide) in paragraph at lines 44--44
+[][][][]\T1/cmr/m/n/8 (-20) .| 
+ []
+
+[4]
+Underfull \vbox (badness 1701) has occurred while \output is active []
+
+ [5]
+
+LaTeX Warning: Citation 'inteso come quantitativo di risorse fisiche da allocar
+e' on page 6 undefined on input line 64.
+
+) (./capitoli/capitolo-3.tex [6]
 Capitolo 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
@@ -1473,7 +1480,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
-) (./capitoli/capitolo-4.tex [7] [8
+) (./capitoli/capitolo-4.tex [7
+
+] [8
 
 ]
 Capitolo 4.
@@ -1482,7 +1491,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-<immagini/usecase/scenario-principale.png, id=283, 463.13025pt x 236.082pt>
+<immagini/usecase/scenario-principale.png, id=300, 463.13025pt x 236.082pt>
 File: immagini/usecase/scenario-principale.png Graphic file (type png)
 <use immagini/usecase/scenario-principale.png>
 Package pdftex.def Info: immagini/usecase/scenario-principale.png  used on inpu
@@ -1553,15 +1562,33 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 36470 strings out of 480608
- 612158 string characters out of 5903630
- 1380927 words of memory out of 5000000
- 51436 multiletter control sequences out of 15000+600000
- 563126 words of font info for 144 fonts, out of 8000000 for 9000
+ 36663 strings out of 480608
+ 615712 string characters out of 5903630
+ 1385042 words of memory out of 5000000
+ 51617 multiletter control sequences out of 15000+600000
+ 563364 words of font info for 146 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 62i,10n,124p,1367b,2508s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,10n,124p,1154b,2508s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:uml} has been referenced but does not exist, 
 replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:layer} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:caching} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:dockerfile} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:guest\040additions} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:driver} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:ISO} has been referenced but does not exist, re
+placed by a fixed one
 
 pdfTeX warning (dest): name{glo:boot} has been referenced but does not exist, r
 eplaced by a fixed one
@@ -1673,10 +1700,10 @@ type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/cm-super/sfti1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 public/cm-super/sfti1200.pfb>
-Output written on tesi.pdf (35 pages, 591324 bytes).
+Output written on tesi.pdf (35 pages, 599033 bytes).
 PDF statistics:
- 601 PDF objects out of 1000 (max. 8388607)
- 503 compressed objects within 6 object streams
- 130 named destinations out of 1000 (max. 500000)
- 39215 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 622 PDF objects out of 1000 (max. 8388607)
+ 524 compressed objects within 6 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 39223 words of extra memory for PDF output out of 42996 (max. 10000000)
 

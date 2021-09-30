@@ -14,7 +14,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Differenze architetturali tra Container e VM}{3}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Creazione di container vs creazione di VM}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Analisi di Docker: architettura e funzionalità}{6}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Creazione di container vs creazione di VM}{6}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Descrizione dello stage}{7}{chapter.3}%
 \defcounter {refsection}{0}\relax 
