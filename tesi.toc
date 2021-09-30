@@ -18,48 +18,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Creazione di container vs creazione di VM}{6}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Descrizione dello stage}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Descrizione dello stage}{9}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduzione al progetto}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Introduzione al progetto}{9}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{9}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Requisiti e obiettivi}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Requisiti e obiettivi}{9}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Pianificazione}{7}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Pianificazione}{9}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{9}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{11}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Casi d'uso}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Casi d'uso}{11}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Tracciamento dei requisiti}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Tracciamento dei requisiti}{12}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Progettazione e codifica}{13}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Progettazione e codifica}{15}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Tecnologie e strumenti}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Tecnologie e strumenti}{15}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{13}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{15}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Progettazione}{13}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Progettazione}{15}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Namespace 1}{13}{section*.19}%
+\contentsline {subsubsection}{Namespace 1}{15}{section*.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Design Pattern utilizzati}{13}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Design Pattern utilizzati}{15}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Codifica}{13}{section.5.5}%
+\contentsline {section}{\numberline {5.5}Codifica}{15}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Verifica e validazione}{15}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Verifica e validazione}{17}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{17}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{19}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{17}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{19}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{17}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{19}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{17}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{19}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Valutazione personale}{17}{section.7.4}%
+\contentsline {section}{\numberline {7.4}Valutazione personale}{19}{section.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{19}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {A}Appendice A}{21}{appendix.Alph1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{23}{appendix*.20}%
+\contentsline {chapter}{Bibliografia}{25}{appendix*.20}%

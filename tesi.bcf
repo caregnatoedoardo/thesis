@@ -2194,7 +2194,8 @@
     <bcf:citekey order="9">per creare o impostare una VLAN</bcf:citekey>
     <bcf:citekey order="9">fare riferimento al router/firewall o allo switch di rete</bcf:citekey>
     <bcf:citekey order="10">inteso come dimensione in Gb del virtual disk image (*.vdi) dell&apos;immagine virtualizzata</bcf:citekey>
-    <bcf:citekey order="11">inteso come quantitativo di risorse fisiche da allocare</bcf:citekey>
+    <bcf:citekey order="11">presente solamente per le versioni Windows</bcf:citekey>
+    <bcf:citekey order="12">inteso come quantitativo di risorse fisiche da allocare</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
