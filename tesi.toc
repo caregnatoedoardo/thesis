@@ -10,23 +10,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Organizzazione del testo}{1}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Container VS Virtual Machine}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Descrizione dello stage}{3}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Differenze architetturali tra Container e VM}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Introduzione al progetto}{3}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Analisi di Docker: architettura e funzionalità}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Requisiti e obiettivi}{3}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Creazione di container vs creazione di VM}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Pianificazione}{3}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Descrizione dello stage}{9}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Container VS Virtual Machine}{5}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduzione al progetto}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Differenze architetturali tra Container e VM}{5}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Analisi di Docker: architettura e funzionalità}{8}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Requisiti e obiettivi}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Creazione di container vs creazione di VM}{8}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Pianificazione}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Installazione di Docker in ambiente Windows}{9}{section.3.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Analisi dei requisiti}{11}{chapter.4}%
 \defcounter {refsection}{0}\relax 
