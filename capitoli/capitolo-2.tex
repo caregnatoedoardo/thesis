@@ -20,6 +20,47 @@ Per raggiungere questo obiettivo, lo stagista ha dovuto apprendere in maniera ap
 %**************************************************************
 \section{Requisiti e obiettivi}
 Come già spiegato nell'introduzione di questo documento, causa mancanza di tempo e sotto totale suggerimento dell'Azienda, lo stagista si è dedicato alla creazione dell'immagine containerizzata del solo prodotto "HDA", escludendo quindi il software "CX Studio", creando, in aggiunta, quattro diversi container aggiuntivi per permettere una soluzione di reverse-proxy e di monitoraggio in real time dello stack applicativo containerizzato.
+Causa questa modifica, i requisiti ed obiettivi dello stage curricolare sono così cambiati:
+\begin{itemize}
+	\item Studio dell'architettura dello stack applicativo delle soluzioni software aziendali;
+	\item Studio delle soluzioni software di containerizzazione, con focus maggiore sull'applicazione "Docker";
+	\item Creazione del primo container contenente un'immagine di HDA funzionante ed usabile;
+	\item Creazione di un container atto all'aggiornamento del database dell'applicativo HDA in caso di aggiornamento da una versione legacy di HDA ad una versione 11.x.x;
+	\item Creazione, configurazione ed orchestrazione di un container dedicato all'applicativo "LokI";
+	\item Creazione, configurazione ed orchestrazione di un container dedicato all'applicativo "Promtail"
+	\item Aggiornamento del container contenente l'immagine di HDA con aggiunta e configurazione dell'applicativo "Telegraf";
+	\item Studio delle Docker API per riuscire ad avere la lista dei container attivi in un dato host;
+	\item Creazione di uno script automatizzato che, tramite Docker API, ottiene le sandbox applicative di container attivi per la costruzione automatizzata del file di configurazione di NGINX (nginx.conf).
+\end{itemize}
+
+Tutti i requisiti sopra-citati sono stati completamente raggiunti e collaudati, come verrà spiegato successivamente nel corso di questo documento.
 
 %**************************************************************
 \section{Pianificazione}
+La pianificazione atta al soddisfacimento dei requisiti scritti è stata strettamente dettata dall'Azienda, ed è stata seguita in maniera pedissequa durante tutto il corso dell'esperienza di stage.
+Tutte le attività pianificate, con il rispettivo corrispettivo orario, possono essere riassunte nella seguente tabella:
+\begin{center}
+\begin{tabular}{|m{30em} | m{3,5cm}|} 
+ \hline
+ Descrizione & Quantitativo orario (h)\\ [0.5ex] 
+ \hline\hline
+ Introduzione al tema Container vs Virtual machine: differenze tra le due tecnologie e
+illustrazione dei vantaggi derivanti dall'adozione dei Container & 40 \\ 
+ \hline
+ Docker ed estensioni (Docker, Compose e Swarm, Kubernetes) e relative API di
+automation: analisi delle componenti dell'ecosistema e delle opportunità di utilizzarle
+ai fini progettuali & 40 \\
+ \hline
+ Approfondimento sull'architettura su due casi studi da containerizzare: declinazione
+della soluzione tecnologica identificata ai punti precedenti su due applicazioni PAT & 120 \\
+ \hline
+ Creazione dei container ed automatizzazione del processo di building: realizzazione
+del processo di creazione delle immagini ed automazione dello stesso & 80 \\
+ \hline
+ Utilizzo di un container per verifica dell'esecuzione degli unit test: avvio delle
+immagini per effettuazione degli unit test in automatico & 40 \\ [1ex] 
+ \hline
+ \textbf{TOTALE ORARIO} & \textbf{320}\\
+ \hline
+\end{tabular}
+\end{center}

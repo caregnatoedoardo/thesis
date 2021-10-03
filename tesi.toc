@@ -12,11 +12,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Descrizione dello stage}{3}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Introduzione al progetto}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Scopo dello stage curricolare}{3}{section.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Requisiti e obiettivi}{3}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Pianificazione}{3}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Pianificazione}{4}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Container VS Virtual Machine}{5}{chapter.3}%
 \defcounter {refsection}{0}\relax 
