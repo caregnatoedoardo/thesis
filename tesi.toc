@@ -28,38 +28,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Installazione di Docker in ambiente Windows}{9}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{11}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Analisi composizione e costruzione container}{11}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Casi d'uso}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Composizione container}{11}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Tracciamento dei requisiti}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Dockerfile container: analisi struttura e spiegazione}{11}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Progettazione e codifica}{15}{chapter.5}%
+\contentsline {section}{\numberline {4.3}Costruzione container tramite automazione: HDA Sandbox Builder}{11}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Tecnologie e strumenti}{15}{section.5.1}%
+\contentsline {chapter}{\numberline {5}Orchestrazione container}{13}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{15}{section.5.2}%
+\contentsline {section}{\numberline {5.1}Breve panoramica su Docker Compose}{13}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Progettazione}{15}{section.5.3}%
+\contentsline {section}{\numberline {5.2}Docker compose per la costruzione di una sandbox applicativa}{13}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Namespace 1}{15}{section*.19}%
+\contentsline {section}{\numberline {5.3}Progettazione}{13}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Design Pattern utilizzati}{15}{section.5.4}%
+\contentsline {subsubsection}{Namespace 1}{13}{section*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Codifica}{15}{section.5.5}%
+\contentsline {section}{\numberline {5.4}Integrazione di HDA Sandbox Builder con Docker Compose}{14}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Verifica e validazione}{17}{chapter.6}%
+\contentsline {section}{\numberline {5.5}Codifica}{14}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{19}{chapter.7}%
+\contentsline {chapter}{\numberline {6}Reverse Proxy tramite NGINX sulle sandbox di HDA}{15}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{19}{section.7.1}%
+\contentsline {section}{\numberline {6.1}Introduzione ad NGINX}{15}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{19}{section.7.2}%
+\contentsline {section}{\numberline {6.2}Analisi e struttura file di configurazionr "nginx.conf"}{15}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{19}{section.7.3}%
+\contentsline {section}{\numberline {6.3}Analisi NginxREScript.ps1}{15}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Valutazione personale}{19}{section.7.4}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{17}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{21}{appendix.Alph1}%
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{17}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{25}{appendix*.20}%
+\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{17}{section.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{17}{section.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Valutazione personale}{17}{section.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendice A}{19}{appendix.Alph1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{23}{appendix*.16}%

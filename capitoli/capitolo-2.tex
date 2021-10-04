@@ -8,22 +8,22 @@
 %**************************************************************
 
 \intro{Breve introduzione al capitolo}\\
-In questo capitolo si esporrà una panoramica relativa al progetto assegnato dall'Azienda, con un approfondimento relativo ai requisiti obbligatori da soddisfare ed obiettivi raggiunti. 
+In questo capitolo si esporrà una panoramica relativa al progetto assegnato dall'Azienda, con un approfondimento relativo ai requisiti obbligatori da soddisfare ed obiettivi raggiunti al termine dell'esperienza di stage. 
 
 %**************************************************************
 \section{Scopo dello stage curricolare}
-Lo scopo principale dello stage è la containerizzazione delle due soluzioni applicative maggiormente utilizzate dall'Azienda, ovvero \gls{HDA} e \gls{CX Studio} in ambito Windows, con la possibilità di monitoraggio in real-time delle stesse tramite containerizzazione di ulteriori applicativi quali "Telegraf", "Loki" e "Promtail" precedentemente configurati da un altro stagista.
-Tramite containerizzazione dei due applicativi sopracitati è stato richiesto, in aggiunta, la creazione di uno script di reverse-proxy automatizzato che, tramite Docker API, identificava le istanze containerizzate di HDA attualmente in esecuzione ed aggiornava il file di configurazione di NGINX per permettere l'accesso a delle utenze esterne ai container in esecuzione sull'host.\\
-Per raggiungere questo obiettivo, lo stagista ha dovuto apprendere in maniera approfondita le tecnologie di containerizzazione e di orchestrazione, quali \gls{Docker} e \gls{Docker Compose}, unite ad elementi di networking generale e scripting in Powershell e cmd. Verso la conclusione dello stage, lo stagista ha dovuto studiare la soluzione di reverse proxy "NGINX", editandone, dapprima manualmente, tutti i file di configurazione.
+Lo scopo principale dello stage è la containerizzazione delle due soluzioni applicative maggiormente utilizzate dall'Azienda, ovvero \gls{HDA} e \gls{CX Studio} in ambito Windows, con la possibilità di monitoraggio in real-time degli stessi tramite containerizzazione di ulteriori applicativi quali "Telegraf", "Loki" e "Promtail" precedentemente configurati da un altro stagista.
+Tramite containerizzazione dei due applicativi sopracitati è stato richiesto, in aggiunta, la creazione di uno script di reverse-proxy automatizzato che, tramite Docker API, identificava le \textit{sandbox} applicative, ovvero le istanze applicative di HDA, Loki e Promtail containerizzate attualmente in esecuzione ed aggiornava il file di configurazione di NGINX per permettere l'accesso alle utenze esterne ai container in esecuzione sull'host.\\
+Per raggiungere questo obiettivo, lo stagista ha dovuto apprendere in maniera approfondita le tecnologie di containerizzazione e di orchestrazione di container, quali \gls{Docker} e \gls{Docker Compose}, unite ad elementi di networking generale e scripting in Powershell e cmd. Verso la conclusione dello stage, lo stagista ha dovuto studiare la soluzione di reverse proxy "NGINX", editandone, dapprima manualmente, tutti i file di configurazione.
 
 
 %**************************************************************
 \section{Requisiti e obiettivi}
-Come già spiegato nell'introduzione di questo documento, causa mancanza di tempo e sotto totale suggerimento dell'Azienda, lo stagista si è dedicato alla creazione dell'immagine containerizzata del solo prodotto "HDA", escludendo quindi il software "CX Studio", creando, in aggiunta, quattro diversi container aggiuntivi per permettere una soluzione di reverse-proxy e di monitoraggio in real time dello stack applicativo containerizzato.
+Come già spiegato nell'introduzione di questo documento, causa mancanza di tempo e sotto totale suggerimento dell'Azienda, lo stagista si è dedicato alla creazione dell'immagine containerizzata del solo prodotto "HDA", escludendo quindi il software "CX Studio", creando, in aggiunta, tre diversi container aggiuntivi per permettere una soluzione di reverse-proxy e di monitoraggio in real time dello stack applicativo containerizzato.
 Causa questa modifica, i requisiti ed obiettivi dello stage curricolare sono così cambiati:
 \begin{itemize}
 	\item Studio dell'architettura dello stack applicativo delle soluzioni software aziendali;
-	\item Studio delle soluzioni software di containerizzazione, con focus maggiore sull'applicazione "Docker";
+	\item Studio delle soluzioni software di containerizzazione ed orchestrazione, con focus sugli applicativi "Docker" e "Docker Compose";
 	\item Creazione del primo container contenente un'immagine di HDA funzionante ed usabile;
 	\item Creazione di un container atto all'aggiornamento del database dell'applicativo HDA in caso di aggiornamento da una versione legacy di HDA ad una versione 11.x.x;
 	\item Creazione, configurazione ed orchestrazione di un container dedicato all'applicativo "LokI";
