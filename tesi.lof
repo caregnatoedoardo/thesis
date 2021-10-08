@@ -12,9 +12,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Architettura generale del progetto\relax }}{11}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Voce da selezionare per cambiare la tipologia di container\relax }}{16}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flow chart del batch-file "hda\_sandbox\_builder.bat"\relax }}{16}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces File di configurazione di Docker Desktop con le API esposte in porta "2390"\relax }}{16}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Voce da selezionare per cambiare la tipologia di container\relax }}{17}{figure.caption.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces File di configurazione di Docker Desktop con le API esposte in porta "2390"\relax }}{17}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
