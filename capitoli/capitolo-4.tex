@@ -121,12 +121,10 @@ L'esposizione delle Docker API sono di vitale importanza per l'esecuzione dello 
 Il risultato finale sarà simile alla seguente immagine, dove si illustra graficamente, tramite Docker Desktop, il file di configurazione di Docker esponendo le Docker API nella porta "2390":
 \begin{figure}[!h]     
 \centering 
-    \includegraphics[width=1.2\columnwidth]{immagini/img/docker_desktop_conf} 
+    \includegraphics[width=0.7 \columnwidth]{immagini/img/docker_desktop_conf} 
     \caption{File di configurazione di Docker Desktop con le API esposte in porta "2390"}
-\end{figure} 
-
-
-
+\end{figure}\\
+Ad ogni riavvio della macchina fisica è possibile che Docker Engine vada in errore, in quanto non riuscirà ad esporre le proprie API nella porta precedentemente configurata. Per risolvere questo problema, l'installatore dovrà configurare una nuova porta, non precedentemente utilizzata, esattamente come visto sopra.\\
 
 
 
