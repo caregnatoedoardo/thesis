@@ -3,7 +3,7 @@
 % !TEX root = ../tesi.tex
 
 %**************************************************************
-\chapter{Architettura generale, analisi container}
+\chapter{Architettura generale ed analisi container}
 \label{cap:architettura-progetto-container}
 %**************************************************************
 
@@ -35,7 +35,7 @@ Il corretto instradamento della richiesta dell'utente esterno ad una determinata
 	\item \textbf{/promtail} instraderà la chiamata al container "promtailcontainer" contenente un' istanza dell'applicativo "promtail" e si visualizzerà a video una serie di metriche relative all'applicativo HDA.
 \end{itemize}
 Un eventuale suffisso vuoto "\textbf{/}" instraderà, di default, la chiamata al container "hdabasecontainer".
-Il \textit{discovery} di eventuali nuove \textit{sandbox} applicative, o la rimozione di quelle non più attive dal file "host" del sistema operativo è interamente gestita dallo script Powershell "nginxREscript.ps1". Una panoramica dettagliata relativa alla costruzione e funzionamento di questo script è disponibile al capitolo 6.3 di questo documento.
+Il \textit{discovery} di eventuali nuove \textit{sandbox} applicative, o la rimozione di quelle non più attive dal file "host" del sistema operativo, è interamente gestita dallo script Powershell "nginxREscript.ps1". Una panoramica dettagliata relativa alla costruzione e funzionamento di questo script è disponibile al capitolo 6.3 di questo documento.
 
 \section{Composizione container}
 Come già precedentemente spiegato in questo documento, un container è un'unità atomica contenente un applicativo con le relative dipendenze atte al suo corretto funzionamento. Ogni container, ad esclusione del container "nginxcontainer" si basa su un'immagine del sistema operativo "Windows ServerCore IIS".
@@ -106,3 +106,34 @@ La versione di HDA presente nel container "hdaprepcontainer", e di conseguenza n
 
 \section{Costruzione container tramite automazione: HDA Sandbox Builder}
 %FLOW CHART ESECUZIONE batch file.
+\newpage
+\section{Installazione nel computer client}
+L'infrastruttura sopracitata, al fine di funzionare correttamente, necessita di una installazione di Docker all'interno del sistema operativo \textit{host} dove verrà creata ed eseguita l'intera infrastruttura.
+I passi atti ad una corretta installazione di Docker sono reperibili nella pagina di "Download and Install" nella relativa documentazione di Docker. Un importante accorgimento che l'utente installatore dovrà obbligatoriamente eseguire è lo switching dai container Linux ai container Windows, effettuabile dall'icona di Docker posizionata nella barra Start di Windows, selezionando l'apposita voce "Switch to Windows Containers" come da immagine:
+\begin{figure}[!h]     
+\centering 
+    \includegraphics[width=0.2\columnwidth]{immagini/img/switch_windows_container} 
+    \caption{Voce da selezionare per cambiare la tipologia di container}
+\end{figure}\\
+Una volta selezionata la funzionalità sopra riportata, il Docker Engine si riavvierà, permettendo ora la creazione ed esecuzione dei container basati sul sistema operativo Microsoft Windows.\\
+Installato con successo l'applicativo Docker, è necessario accedere al file di configurazione dello stesso ("docker.conf") o, tramite Docker Desktop, accedere alle impostazioni dello stesso, per abilitare la funzionalità "experimental features" che permette appunto l'esecuzione su Windows di container basati su Linux (necessario per il container "nginxcontainer"), ed esporre le relative Docker API su una determinata porta.
+L'esposizione delle Docker API sono di vitale importanza per l'esecuzione dello script Powershell "nginxREscript.ps1", e la porta precedentemente esposta andrà modificata manualmente anche all'interno dello stesso script.
+Il risultato finale sarà simile alla seguente immagine, dove si illustra graficamente, tramite Docker Desktop, il file di configurazione di Docker esponendo le Docker API nella porta "2390":
+\begin{figure}[!h]     
+\centering 
+    \includegraphics[width=1.2\columnwidth]{immagini/img/docker_desktop_conf} 
+    \caption{File di configurazione di Docker Desktop con le API esposte in porta "2390"}
+\end{figure} 
+
+
+
+
+
+
+
+
+
+
+
+
+
