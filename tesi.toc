@@ -28,58 +28,58 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Installazione di Docker in ambiente Windows}{9}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Architettura generale ed analisi composizione container}{11}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Architettura generale, analisi container}{11}{chapter.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Architettura generale}{11}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Composizione container}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Composizione container}{13}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Container "hdaprepcontainer":}{11}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}Container "hdaprepcontainer":}{13}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Container "hdabasecontainer"}{12}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Container "hdabasecontainer"}{13}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Container "hdadbupdatercontainer"}{12}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Container "hdadbupdatercontainer"}{14}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Container "lokicontainer"}{13}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.4}Container "lokicontainer"}{14}{subsection.4.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.5}Container "promtailcontainer"}{13}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.5}Container "promtailcontainer"}{14}{subsection.4.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.6}Container "nginxcontainer"}{13}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.6}Container "nginxcontainer"}{15}{subsection.4.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Dockerfile container: analisi struttura e spiegazione}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Dockerfile container: analisi struttura e spiegazione}{15}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Costruzione container tramite automazione: HDA Sandbox Builder}{14}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Costruzione container tramite automazione: HDA Sandbox Builder}{15}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Orchestrazione container}{15}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Orchestrazione container}{17}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Breve panoramica su Docker Compose}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Breve panoramica su Docker Compose}{17}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Docker compose per la costruzione di una sandbox applicativa}{15}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Docker compose per la costruzione di una sandbox applicativa}{17}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Progettazione}{15}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Progettazione}{17}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Namespace 1}{15}{section*.15}%
+\contentsline {subsubsection}{Namespace 1}{17}{section*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Integrazione di HDA Sandbox Builder con Docker Compose}{16}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Integrazione di HDA Sandbox Builder con Docker Compose}{18}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Codifica}{16}{section.5.5}%
+\contentsline {section}{\numberline {5.5}Codifica}{18}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Reverse Proxy tramite NGINX sulle sandbox di HDA}{17}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Reverse Proxy tramite NGINX sulle sandbox di HDA}{19}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Introduzione ad NGINX}{17}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Introduzione ad NGINX}{19}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Analisi e struttura file di configurazionr "nginx.conf"}{17}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Analisi e struttura file di configurazionr "nginx.conf"}{19}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Analisi NginxREScript.ps1}{17}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Analisi NginxREScript.ps1}{19}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{19}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{21}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Raggiungimento degli obiettivi}{19}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Raggiungimento degli obiettivi}{21}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Conoscenze acquisite}{19}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Conoscenze acquisite}{21}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Valutazione personale}{19}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Valutazione personale}{21}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{21}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {A}Appendice A}{23}{appendix.Alph1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{25}{appendix*.16}%
+\contentsline {chapter}{Bibliografia}{27}{appendix*.17}%

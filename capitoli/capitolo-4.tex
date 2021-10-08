@@ -3,15 +3,39 @@
 % !TEX root = ../tesi.tex
 
 %**************************************************************
-\chapter{Architettura generale ed analisi composizione container}
-\label{cap:analisi-progetto-container}
+\chapter{Architettura generale, analisi container}
+\label{cap:architettura-progetto-container}
 %**************************************************************
 
 \intro{Breve introduzione al capitolo}\\
-In questo capitolo si esporrà l'architettura generale del progetto implementata in Azienda, fornendo un'analisi dettagliata sulla composizione di ogni Dockerfile relativo ad ogni container. Infine, verrà esposto il meccanismo di costruzione automatizzato di una sandbox applicativa.
+In questo capitolo si esporrà l'architettura generale del progetto implementata in Azienda, fornendo un'analisi dettagliata sulla composizione di ogni Dockerfile relativo ad ogni container. Infine, verrà esposto il meccanismo di costruzione automatizzato di una \textit{sandbox} applicativa.
 
 \section{Architettura generale}
 %TODO: immagine architettura generale e relativa spiegazione anche del concetto di sandbox applicativa di HDA, con relativa possibilità di aggiornamento ed avanzamento di versione.
+\begin{figure}[!h]     
+\centering 
+    \includegraphics[width=1.0\columnwidth]{immagini/img/hda_containerized_architecture} 
+    \caption{Architettura generale del progetto}
+\end{figure} 
+
+La figura soprastante rappresenta l'architettura finale del prodotto interamente sviluppata ed installata con successo su un \textit{host}. 
+Una sandbox applicativa è un insieme di container in esecuzione, simultaneamente, per un singolo cliente. All'interno di un singolo host possono coesistere multiple \textit{sandbox} applicative, lanciate manualmente dal tecnico installatore.\\
+Una \textit{sandbox} applicativa composta dal seguente insieme di container:
+\begin{itemize}
+	\item \textbf{nginxcontainer};
+	\item \textbf{hdabasecontainer};
+	\item \textbf{promtailcontainer};
+	\item \textbf{lokicontainer};
+\end{itemize}
+ed è rappresentata in figura tramite il quadrato contenente appunto i container sopraelencati. Ad ogni \textit{sandbox} è associato un \textbf{nome}, tipicamente proprio del cliente (nell'immagine di esempio ,"cliente1" o "clienten"), ed i container in essa contenuti acquisiscono, nel \textbf{prefisso}, anch'essi il nome della \textit{sandbox}. Ogni cliente sarà associato univocamente ad \textbf{una sola \textit{sandbox} applicativa}, quindi ogni cliente si collegherà solamente alla relativa \textit{sandbox} contenente la versione di HDA (sita nel container "hdabasecontainer") appositamente \textit{customizzata} per lo stesso.
+Il corretto instradamento della richiesta dell'utente esterno ad una determinata \textit{sandbox} è gestita dall'istanza di NGINX esterna ad ogni singola sandbox, ma installata nel medesimo \textit{host} (nell'immagine PAT.IT) d'esecuzione delle stesse. All'arrivo di una richiesta esterna HTTP/HTTPS di connessione all'istanza di NGINX esterna attraverso la porta "80" o "443" nel caso di HTTPS, questo controllerà il relativo file di configurazione (nginx.conf) cercando una entry corrispondente al sotto-dominio di primo livello contenuto nel \gls{CNAME} (ex: \textbf{cliente1}.pat.it) della propria istanza di HDA alla quale l'utente vuole collegarsi. Se questa entry (cliente1) è presente all'interno del file "nginx.conf", si instraderà la richiesta all'indirizzo IP, letto nel file "host" del computer "PAT.IT", della relativa \textit{sandbox} appartenente al cliente (la \textit{sandbox} appunto "\textbf{cliente1}.pat.it"). Sarà poi compito dell'istanza di NGINX interna alla \textit{sandbox} (ex: \textbf{cliente1}\_nginxcontainer\_1) instradare la richiesta, precedentemente arrivata dall'istanza NGINX esterna, al relativo container a seconda dei seguenti suffissi:
+\begin{itemize}
+	\item \textbf{/HDAPortal} instraderà la chiamata al container "hdabasecontainer" e, quindi, all'istanza dell'applicativo HDA contenuto in esso;
+	\item \textbf{/loki} instraderà la chiamata al container loki, per la visualizzazione via browser delle metriche di HDA;
+	\item \textbf{/promtail} instraderà la chiamata al container "promtailcontainer" contenente un' istanza dell'applicativo "promtail" e si visualizzerà a video una serie di metriche relative all'applicativo HDA.
+\end{itemize}
+Un eventuale suffisso vuoto "\textbf{/}" instraderà, di default, la chiamata al container "hdabasecontainer".
+Il \textit{discovery} di eventuali nuove \textit{sandbox} applicative, o la rimozione di quelle non più attive dal file "host" del sistema operativo è interamente gestita dallo script Powershell "nginxREscript.ps1". Una panoramica dettagliata relativa alla costruzione e funzionamento di questo script è disponibile al capitolo 6.3 di questo documento.
 
 \section{Composizione container}
 Come già precedentemente spiegato in questo documento, un container è un'unità atomica contenente un applicativo con le relative dipendenze atte al suo corretto funzionamento. Ogni container, ad esclusione del container "nginxcontainer" si basa su un'immagine del sistema operativo "Windows ServerCore IIS".
