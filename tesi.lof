@@ -12,11 +12,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Architettura generale del progetto\relax }}{11}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Flow chart del batch-file "hda\_sandbox\_builder.bat"\relax }}{16}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdaprepcontainer"\relax }}{16}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Voce da selezionare per cambiare la tipologia di container\relax }}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdadbupdatercontainer"\relax }}{17}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces File di configurazione di Docker Desktop con le API esposte in porta "2390"\relax }}{17}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdabasecontainer"\relax }}{18}{figure.caption.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "lokicontainer"\relax }}{19}{figure.caption.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "promtailcontainer"\relax }}{20}{figure.caption.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "nginxcontainer"\relax }}{21}{figure.caption.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Flow chart del batch-file "hda\_sandbox\_builder.bat"\relax }}{22}{figure.caption.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Voce da selezionare per cambiare la tipologia di container\relax }}{23}{figure.caption.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces File di configurazione di Docker Desktop con le API esposte in porta "2390"\relax }}{23}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

@@ -20,7 +20,7 @@ In questo capitolo si esporrà l'architettura generale del progetto implementata
 
 La figura soprastante rappresenta l'architettura finale del prodotto interamente sviluppata ed installata con successo su un \textit{host}. 
 Una sandbox applicativa è un insieme di container in esecuzione, simultaneamente, per un singolo cliente. All'interno di un singolo host possono coesistere multiple \textit{sandbox} applicative, lanciate manualmente dal tecnico installatore.\\
-Una \textit{sandbox} applicativa composta dal seguente insieme di container:
+Una \textit{sandbox} applicativa è composta dal seguente insieme di container:
 \begin{itemize}
 	\item \textbf{nginxcontainer};
 	\item \textbf{hdabasecontainer};
@@ -28,7 +28,7 @@ Una \textit{sandbox} applicativa composta dal seguente insieme di container:
 	\item \textbf{lokicontainer};
 \end{itemize}
 ed è rappresentata in figura tramite il quadrato contenente appunto i container sopraelencati. Ad ogni \textit{sandbox} è associato un \textbf{nome}, tipicamente proprio del cliente (nell'immagine di esempio ,"cliente1" o "clienten"), ed i container in essa contenuti acquisiscono, nel \textbf{prefisso}, anch'essi il nome della \textit{sandbox}. Ogni cliente sarà associato univocamente ad \textbf{una sola \textit{sandbox} applicativa}, quindi ogni cliente si collegherà solamente alla relativa \textit{sandbox} contenente la versione di HDA (sita nel container "hdabasecontainer") appositamente \textit{customizzata} per lo stesso.
-Il corretto instradamento della richiesta dell'utente esterno ad una determinata \textit{sandbox} è gestita dall'istanza di NGINX esterna ad ogni singola sandbox, ma installata nel medesimo \textit{host} (nell'immagine PAT.IT) d'esecuzione delle stesse. All'arrivo di una richiesta esterna HTTP/HTTPS di connessione all'istanza di NGINX esterna attraverso la porta "80" o "443" nel caso di HTTPS, questo controllerà il relativo file di configurazione (nginx.conf) cercando una entry corrispondente al sotto-dominio di primo livello contenuto nel \gls{CNAME} (ex: \textbf{cliente1}.pat.it) della propria istanza di HDA alla quale l'utente vuole collegarsi. Se questa entry (cliente1) è presente all'interno del file "nginx.conf", si instraderà la richiesta all'indirizzo IP, letto nel file "host" del computer "PAT.IT", della relativa \textit{sandbox} appartenente al cliente (la \textit{sandbox} appunto "\textbf{cliente1}.pat.it"). Sarà poi compito dell'istanza di NGINX interna alla \textit{sandbox} (ex: \textbf{cliente1}\_nginxcontainer\_1) instradare la richiesta, precedentemente arrivata dall'istanza NGINX esterna, al relativo container a seconda dei seguenti suffissi:
+Il corretto instradamento della richiesta dell'utente esterno ad una determinata \textit{sandbox} è gestita dall'istanza di NGINX esterna ad ogni singola sandbox, ma installata nel medesimo \textit{host} (nell'immagine PAT.IT) d'esecuzione delle stesse. All'arrivo di una richiesta esterna HTTP/HTTPS di connessione all'istanza di NGINX esterna attraverso la porta "80" o "443" nel caso di HTTPS, questo controllerà il relativo file di configurazione (nginx.conf) cercando una entry corrispondente al sotto-dominio di primo livello contenuto nel \gls{CNAME} della propria istanza di HDA (ex: \textbf{cliente1}.pat.it) alla quale l'utente vuole collegarsi. Se questa entry (cliente1) è presente all'interno del file "nginx.conf", si instraderà la richiesta all'indirizzo IP, letto nel file "host" del computer "PAT.IT", della relativa \textit{sandbox} appartenente al cliente (la \textit{sandbox} appunto "\textbf{cliente1}.pat.it"). Sarà poi compito dell'istanza di NGINX interna alla \textit{sandbox} (ex: \textbf{cliente1}\_nginxcontainer\_1) instradare la richiesta, precedentemente arrivata dall'istanza NGINX esterna, al relativo container a seconda dei seguenti suffissi:
 \begin{itemize}
 	\item \textbf{/HDAPortal} instraderà la chiamata al container "hdabasecontainer" e, quindi, all'istanza dell'applicativo HDA contenuto in esso;
 	\item \textbf{/loki} instraderà la chiamata al container loki, per la visualizzazione via browser delle metriche di HDA;
@@ -94,15 +94,69 @@ La versione di HDA presente nel container "hdaprepcontainer", e di conseguenza n
 	\classdesc{S.O./immagine di base} {NGINX official image}
 	\classdesc{Immagine in output}{nginximg}
 	\classdesc{Descrizione} {Lo scopo del seguente container è quello di eseguire una istanza del programma "NGINX" con il relativo file di configurazione "\textit{nginx.conf} automaticamente importato. Tramite il resolver DNS interno di Docker, è possibile per un utente esterno, tramite NGINX, accedere ad un qualsiasi container facente parte della \textit{sandbox} applicativa di HDA, quali "hdabasecontainer", "lokicontainer" e "promtailcontainer". Sempre tramite questo container, è possibile la gestione precedentemente accennata di load-balancing tra molteplici container di HDA.}
-\end{namespacedesc}	
+\end{namespacedesc}
+
+\newpage	
 
 \section{Dockerfile container: analisi struttura e spiegazione}
+Come già visto precedentemente, ogni container è generato da un proprio dockerfile, il quale contiene tutte le istruzioni e comandi atti alla corretta costruzione di una immagine di un applicativo containerizzato.
+Di seguito, tramite l'ausilio di \gls{flow-chart} riassuntivi, viene fornita al lettore una panoramica sul contenuto di ogni dockerfile del progetto:
+\subsection{Dockerfile container: "hdaprepcontainer"}
+Il presente dockerfile costruisce con successo l'immagine relativa al container "hdaprepcontainer". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
+\begin{figure}[!h]     
+\centering 
+    \includegraphics[width=0.3\columnwidth]{immagini/flowchart/flowchart_hdaprepcontainer} 
+    \caption{Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdaprepcontainer"}
+\end{figure} \\
+Questo container non rimane in esecuzione dopo la fine dell'ultima istruzione, e non fa parte della \textit{sandbox} applicativa.\\
+\newpage
+\subsection{Dockerfile container: "hdadbupdatercontainer"}
+Il presente dockerfile costruisce con successo l'immagine relativa al container "hdadbupdatercontainer". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
+\begin{figure}[!h]     
+\centering 
+    \includegraphics[width=0.3\columnwidth]{immagini/flowchart/flowchart_hdadbinstall} 
+    \caption{Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdadbupdatercontainer"}
+\end{figure} \\
+Questo container non rimane in esecuzione dopo la fine dell'ultima istruzione, e non fa parte della \textit{sandbox} applicativa.\\
+\newpage
+\subsection{Dockerfile container: "hdabasecontainer"}
+Il presente dockerfile costruisce con successo l'immagine relativa al container "hdabasecontainer". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
+\begin{figure}[!h]     
+\centering 
+    \includegraphics[width=0.7\columnwidth]{immagini/flowchart/flowchart_hdabasecontainer} 
+    \caption{Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdabasecontainer"}
+\end{figure} \\
+Questo container rimane in esecuzione dopo la fine dell'ultima istruzione agganciandosi al processo interno "ServiceMonitor.exe", e fa parte della \textit{sandbox} applicativa.
+\newpage
+\subsection{Dockerfile container: "lokicontainer"}
+Il presente dockerfile costruisce con successo l'immagine relativa al container "lokicontainer". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
+\begin{figure}[!h]     
+\centering 
+    \includegraphics[width=0.3\columnwidth]{immagini/flowchart/flowchart_lokicontainer} 
+    \caption{Flow-chart rappresentante la costruzione dell'immagine relativa al container "lokicontainer"}
+\end{figure} \\
+Questo container rimane in esecuzione dopo la fine dell'ultima istruzione agganciandosi al processo interno "loki-windows.exe", e fa parte della \textit{sandbox} applicativa.
+\newpage
+\subsection{Dockerfile container: "promtailcontainer"}
+Il presente dockerfile costruisce con successo l'immagine relativa al container "promtailcontainer". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
+\begin{figure}[!h]     
+\centering 
+    \includegraphics[width=0.3\columnwidth]{immagini/flowchart/flowchart_promtailcontainer} 
+    \caption{Flow-chart rappresentante la costruzione dell'immagine relativa al container "promtailcontainer"}
+\end{figure} \\
+Questo container rimane in esecuzione dopo la fine dell'ultima istruzione agganciandosi al processo interno "promtail-windows.exe", e fa parte della \textit{sandbox} applicativa.
+\newpage
+\subsection{Dockerfile container: "nginxcontainer"}
+Il presente dockerfile costruisce con successo l'immagine relativa al container "nginxcontainer". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
+\begin{figure}[!h]     
+\centering 
+    \includegraphics[width=0.3\columnwidth]{immagini/flowchart/flowchart_nginxcontainer} 
+    \caption{Flow-chart rappresentante la costruzione dell'immagine relativa al container "nginxcontainer"}
+\end{figure} \\
+Questo container rimane in esecuzione dopo la fine dell'ultima istruzione, e fa parte della \textit{sandbox} applicativa.
+%-------------------------------------
 
-%\begin{figure}[!h] 
-%    \centering 
-%    \includegraphics[width=0.9\columnwidth]{usecase/scenario-principale} 
-%    \caption{Use Case - UC0: Scenario principale}
-%\end{figure}
+
 
 \newpage
 \section{Costruzione container tramite automazione: HDA Sandbox Builder}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.8)  8 OCT 2021 19:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.8)  9 OCT 2021 17:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1503,7 +1503,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--103
 
 [9]) (./capitoli/capitolo-4.tex [10]
 Capitolo 4.
-<immagini/img/hda_containerized_architecture.png, id=344, 995.72pt x 683.55376p
+<immagini/img/hda_containerized_architecture.png, id=368, 995.72pt x 683.55376p
 t>
 File: immagini/img/hda_containerized_architecture.png Graphic file (type png)
 <use immagini/img/hda_containerized_architecture.png>
@@ -1518,36 +1518,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--45
  []
 
 [12] [13] [14] [15]
-Overfull \hbox (5.89159pt too wide) in paragraph at lines 108--108
+<immagini/flowchart/flowchart_hdaprepcontainer.png, id=398, 201.75375pt x 613.2
+9124pt>
+File: immagini/flowchart/flowchart_hdaprepcontainer.png Graphic file (type png)
+
+<use immagini/flowchart/flowchart_hdaprepcontainer.png>
+Package pdftex.def Info: immagini/flowchart/flowchart_hdaprepcontainer.png  use
+d on input line 108.
+(pdftex.def)             Requested size: 111.60114pt x 339.24834pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--112
+
+ []
+
+[16 <./immagini/flowchart/flowchart_hdaprepcontainer.png>]
+<immagini/flowchart/flowchart_hdadbinstall.png, id=405, 201.75375pt x 362.35374
+pt>
+File: immagini/flowchart/flowchart_hdadbinstall.png Graphic file (type png)
+<use immagini/flowchart/flowchart_hdadbinstall.png>
+Package pdftex.def Info: immagini/flowchart/flowchart_hdadbinstall.png  used on
+ input line 117.
+(pdftex.def)             Requested size: 111.60114pt x 200.43968pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--121
+
+ []
+
+[17 <./immagini/flowchart/flowchart_hdadbinstall.png>]
+<immagini/flowchart/flowchart_hdabasecontainer.png, id=412, 563.10374pt x 567.1
+1874pt>
+File: immagini/flowchart/flowchart_hdabasecontainer.png Graphic file (type png)
+
+<use immagini/flowchart/flowchart_hdabasecontainer.png>
+Package pdftex.def Info: immagini/flowchart/flowchart_hdabasecontainer.png  use
+d on input line 126.
+(pdftex.def)             Requested size: 260.39886pt x 262.2537pt.
+ [18 <./immagini/flowchart/flowchart_hdabasecontainer.png>]
+<immagini/flowchart/flowchart_lokicontainer.png, id=418, 201.75375pt x 507.8975
+pt>
+File: immagini/flowchart/flowchart_lokicontainer.png Graphic file (type png)
+<use immagini/flowchart/flowchart_lokicontainer.png>
+Package pdftex.def Info: immagini/flowchart/flowchart_lokicontainer.png  used o
+n input line 135.
+(pdftex.def)             Requested size: 111.60114pt x 280.94872pt.
+ [19 <./immagini/flowchart/flowchart_lokicontainer.png>]
+<immagini/flowchart/flowchart_promtailcontainer.png, id=424, 201.75375pt x 507.
+8975pt>
+File: immagini/flowchart/flowchart_promtailcontainer.png Graphic file (type png
+)
+<use immagini/flowchart/flowchart_promtailcontainer.png>
+Package pdftex.def Info: immagini/flowchart/flowchart_promtailcontainer.png  us
+ed on input line 144.
+(pdftex.def)             Requested size: 111.60114pt x 280.94872pt.
+ [20 <./immagini/flowchart/flowchart_promtailcontainer.png>]
+<immagini/flowchart/flowchart_nginxcontainer.png, id=430, 201.75375pt x 216.81p
+t>
+File: immagini/flowchart/flowchart_nginxcontainer.png Graphic file (type png)
+<use immagini/flowchart/flowchart_nginxcontainer.png>
+Package pdftex.def Info: immagini/flowchart/flowchart_nginxcontainer.png  used 
+on input line 153.
+(pdftex.def)             Requested size: 111.60114pt x 119.93066pt.
+
+[21 <./immagini/flowchart/flowchart_nginxcontainer.png>]
+Overfull \hbox (5.89159pt too wide) in paragraph at lines 162--162
 []\T1/cmr/bx/n/14.4 Costruzione con-tai-ner tra-mi-te au-to-ma-zio-ne: HDA
  []
 
-<immagini/img/hda_sandbox_builder_fc.png, id=373, 632.3625pt x 722.7pt>
+<immagini/img/hda_sandbox_builder_fc.png, id=436, 632.3625pt x 722.7pt>
 File: immagini/img/hda_sandbox_builder_fc.png Graphic file (type png)
 <use immagini/img/hda_sandbox_builder_fc.png>
 Package pdftex.def Info: immagini/img/hda_sandbox_builder_fc.png  used on input
- line 112.
+ line 166.
 (pdftex.def)             Requested size: 297.60114pt x 340.12117pt.
-[16 <./immagini/img/hda_sandbox_builder_fc.png>]
-<immagini/img/switch_windows_container.png, id=379, 159.59625pt x 200.24812pt>
+[22 <./immagini/img/hda_sandbox_builder_fc.png>]
+<immagini/img/switch_windows_container.png, id=442, 159.59625pt x 200.24812pt>
 File: immagini/img/switch_windows_container.png Graphic file (type png)
 <use immagini/img/switch_windows_container.png>
 Package pdftex.def Info: immagini/img/switch_windows_container.png  used on inp
-ut line 123.
+ut line 177.
 (pdftex.def)             Requested size: 74.39886pt x 93.34969pt.
-<immagini/img/docker_desktop_conf.png, id=380, 975.645pt x 554.07pt>
+<immagini/img/docker_desktop_conf.png, id=443, 975.645pt x 554.07pt>
 File: immagini/img/docker_desktop_conf.png Graphic file (type png)
 <use immagini/img/docker_desktop_conf.png>
 Package pdftex.def Info: immagini/img/docker_desktop_conf.png  used on input li
-ne 132.
+ne 186.
 (pdftex.def)             Requested size: 260.39886pt x 147.87619pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--136
+Underfull \hbox (badness 10000) in paragraph at lines 173--190
 
  []
 
-[17 <./immagini/img/switch_windows_container.png> <./immagini/img/docker_deskto
-p_conf.png>]) (./capitoli/capitolo-5.tex [18]
+[23 <./immagini/img/switch_windows_container.png> <./immagini/img/docker_deskto
+p_conf.png>]) (./capitoli/capitolo-5.tex [24]
 Capitolo 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
@@ -1557,10 +1619,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 ) (./capitoli/capitolo-6.tex
 Underfull \vbox (badness 1082) has occurred while \output is active []
 
- [19
+ [25
 
 ]
-[20]
+[26]
 Capitolo 6.
 
 Overfull \hbox (20.10434pt too wide) in paragraph at lines 11--11
@@ -1568,22 +1630,22 @@ Overfull \hbox (20.10434pt too wide) in paragraph at lines 11--11
 onf" 
  []
 
-) (./capitoli/capitolo-7.tex [21
+) (./capitoli/capitolo-7.tex [27
 
-] [22
+] [28
 
 ]
 Capitolo 7.
-) (./capitoli/capitolo-A.tex [23] [24
+) (./capitoli/capitolo-A.tex [29] [30
 
 ]
 Appendice A.
-) [25] [26
+) [31] [32
 
 ]
 No file tesi.gls.
 No file tesi.acr.
-(./inizio-fine/bibliografia.tex [27] [28
+(./inizio-fine/bibliografia.tex [33] [34
 
 ]
 
@@ -1598,7 +1660,7 @@ Package biblatex Warning: Type 'online' not found on input line 17.
 
 LaTeX Warning: Empty bibliography on input line 17.
 
-) [29
+) [35
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
@@ -1611,6 +1673,9 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 146.
 LaTeX Warning: There were undefined references.
 
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                tesi
 (biblatex)                and rerun LaTeX afterwards.
@@ -1621,15 +1686,18 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 36841 strings out of 480608
- 618849 string characters out of 5903630
- 1389159 words of memory out of 5000000
- 51756 multiletter control sequences out of 15000+600000
- 564133 words of font info for 154 fonts, out of 8000000 for 9000
+ 36956 strings out of 480608
+ 622220 string characters out of 5903630
+ 1390385 words of memory out of 5000000
+ 51842 multiletter control sequences out of 15000+600000
+ 564191 words of font info for 155 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 62i,8n,124p,1275b,2992s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:CNAME} has been referenced but does not exist
-, replaced by a fixed one
+ 62i,8n,124p,1275b,3010s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:flow-chart} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:CNAME} has been referenced but does not exist, 
+replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:installer} has been referenced but does not exi
 st, replaced by a fixed one
@@ -1765,10 +1833,10 @@ type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/cm-super/sfti1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 public/cm-super/sfti1200.pfb>
-Output written on tesi.pdf (43 pages, 956238 bytes).
+Output written on tesi.pdf (49 pages, 1107654 bytes).
 PDF statistics:
- 726 PDF objects out of 1000 (max. 8388607)
- 613 compressed objects within 7 object streams
- 158 named destinations out of 1000 (max. 500000)
- 39326 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 810 PDF objects out of 1000 (max. 8388607)
+ 679 compressed objects within 7 object streams
+ 177 named destinations out of 1000 (max. 500000)
+ 39404 words of extra memory for PDF output out of 42996 (max. 10000000)
 
