@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.8)  11 OCT 2021 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.8)  11 OCT 2021 21:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1595,28 +1595,36 @@ Overfull \hbox (5.89159pt too wide) in paragraph at lines 166--166
 File: immagini/img/hda_sandbox_builder_fc.png Graphic file (type png)
 <use immagini/img/hda_sandbox_builder_fc.png>
 Package pdftex.def Info: immagini/img/hda_sandbox_builder_fc.png  used on input
- line 173.
+ line 174.
 (pdftex.def)             Requested size: 297.60114pt x 340.12117pt.
 [22 <./immagini/img/hda_sandbox_builder_fc.png>]
-<immagini/img/switch_windows_container.png, id=446, 159.59625pt x 200.24812pt>
+Overfull \hbox (57.65811pt too wide) has occurred while \output is active
+\T1/cmr/m/sl/10 4.4.  COSTRUZIONE CONTAINER TRAMITE AUTOMAZIONE: HDA SANDBOX BU
+ILDER \T1/cmr/m/n/10 23
+ []
+
+[23]
+<immagini/img/switch_windows_container.png, id=451, 159.59625pt x 200.24812pt>
 File: immagini/img/switch_windows_container.png Graphic file (type png)
 <use immagini/img/switch_windows_container.png>
 Package pdftex.def Info: immagini/img/switch_windows_container.png  used on inp
-ut line 184.
+ut line 187.
 (pdftex.def)             Requested size: 74.39886pt x 93.34969pt.
-<immagini/img/docker_desktop_conf.png, id=447, 975.645pt x 554.07pt>
+<immagini/img/docker_desktop_conf.png, id=452, 975.645pt x 554.07pt>
 File: immagini/img/docker_desktop_conf.png Graphic file (type png)
 <use immagini/img/docker_desktop_conf.png>
 Package pdftex.def Info: immagini/img/docker_desktop_conf.png  used on input li
-ne 193.
+ne 196.
 (pdftex.def)             Requested size: 260.39886pt x 147.87619pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--197
+Underfull \hbox (badness 10000) in paragraph at lines 183--200
 
  []
 
-[23 <./immagini/img/switch_windows_container.png> <./immagini/img/docker_deskto
-p_conf.png>]) (./capitoli/capitolo-5.tex [24]
+[24 <./immagini/img/switch_windows_container.png> <./immagini/img/docker_deskto
+p_conf.png>]) (./capitoli/capitolo-5.tex [25] [26
+
+]
 Capitolo 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
@@ -1626,10 +1634,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 ) (./capitoli/capitolo-6.tex
 Underfull \vbox (badness 1082) has occurred while \output is active []
 
- [25
-
-]
-[26]
+ [27]
+[28]
 Capitolo 6.
 
 Overfull \hbox (20.10434pt too wide) in paragraph at lines 11--11
@@ -1637,22 +1643,22 @@ Overfull \hbox (20.10434pt too wide) in paragraph at lines 11--11
 onf" 
  []
 
-) (./capitoli/capitolo-7.tex [27
+) (./capitoli/capitolo-7.tex [29
 
-] [28
+] [30
 
 ]
 Capitolo 7.
-) (./capitoli/capitolo-A.tex [29] [30
+) (./capitoli/capitolo-A.tex [31] [32
 
 ]
 Appendice A.
-) [31] [32
+) [33] [34
 
 ]
 No file tesi.gls.
 No file tesi.acr.
-(./inizio-fine/bibliografia.tex [33] [34
+(./inizio-fine/bibliografia.tex [35] [36
 
 ]
 
@@ -1667,7 +1673,7 @@ Package biblatex Warning: Type 'online' not found on input line 17.
 
 LaTeX Warning: Empty bibliography on input line 17.
 
-) [35
+) [37
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
@@ -1690,11 +1696,11 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 36961 strings out of 480608
- 622479 string characters out of 5903630
- 1390388 words of memory out of 5000000
- 51847 multiletter control sequences out of 15000+600000
- 564133 words of font info for 154 fonts, out of 8000000 for 9000
+ 36971 strings out of 480608
+ 622583 string characters out of 5903630
+ 1390394 words of memory out of 5000000
+ 51849 multiletter control sequences out of 15000+600000
+ 564429 words of font info for 157 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  62i,8n,124p,1275b,3010s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:flow-chart} has been referenced but does not 
@@ -1837,10 +1843,10 @@ type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/cm-super/sfti1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 public/cm-super/sfti1200.pfb>
-Output written on tesi.pdf (49 pages, 1133828 bytes).
+Output written on tesi.pdf (51 pages, 1136034 bytes).
 PDF statistics:
- 814 PDF objects out of 1000 (max. 8388607)
- 681 compressed objects within 7 object streams
- 178 named destinations out of 1000 (max. 500000)
+ 822 PDF objects out of 1000 (max. 8388607)
+ 687 compressed objects within 7 object streams
+ 180 named destinations out of 1000 (max. 500000)
  39409 words of extra memory for PDF output out of 42996 (max. 10000000)
 

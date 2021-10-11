@@ -164,16 +164,19 @@ Questo container rimane in esecuzione dopo la fine dell'ultima istruzione, e fa 
 
 \newpage
 \section{Costruzione container tramite automazione: HDA Sandbox Builder}
-La costruzione ed il lancio di una \textit{sandbox} applicativa è un'operazione molto onerosa in termini di tempo e di \textit{step} da eseguire per l'utente installatore.
-Per ovviare ad eventuali errori cronologici sul lancio e la costruzione dei container, è stato creato un \textit{batch}-file atto al setup ed alla creazione automatizzata dei container, al fine di poter facilmente costruire e lanciare una \textit{sandbox} applicativa.
-Il \textit{batch}-file "HDA\_sandbox\_builder.bat" è uno script file che consente la creazione ed il setup dei file di HDA nei volume-mapping in maniera totalmente automatizzata, consentendo all'utente installatore la scelta, effettuata tramite risposte \textit{Y/N}, della costruzione delle immagini e dei container stessi.
+La costruzione ed il lancio di una \textit{sandbox} applicativa è un'operazione molto onerosa in termini di tempo e di passaggi manuali da eseguire per l'utente installatore.
+Per ovviare ad eventuali errori cronologici sul lancio e la costruzione dei container è stato creato un \textit{batch}-file atto al setup ed alla creazione automatizzata dei container, al fine di poter facilmente costruire e lanciare una o più \textit{sandbox} applicative.
+Il \textit{batch}-file "\textbf{HDA\_sandbox\_builder.bat}" è uno script-file che consente la creazione ed il setup di HDA nei volume-mapping in maniera totalmente automatizzata, consentendo all'utente installatore la scelta, effettuata tramite risposte \textit{Y/N}, della costruzione delle immagini e dei container stessi.
+Il \textit{flow-chart} di esecuzione del batch-file è qui sotto rappresentato:
 \\
 \begin{figure}[!h]     
 \centering 
     \includegraphics[width=0.8 \columnwidth]{immagini/img/hda_sandbox_builder_fc} 
     \caption{Flow chart del batch-file "hda\_sandbox\_builder.bat"}
 \end{figure}\\
-testo finale.
+Come si evince dal diagramma di flusso, al termine dell'esecuzione del batch-file, non è in esecuzione alcuna \textit{sandbox} applicativa né container. Sono state invece create tutte le immagini applicative sulla quale si baseranno tutti i container propri della \textit{sandbox} applicativa di HDA.
+Il lancio dei container veri e propri, e quindi anche della \textit{sandbox} applicativa di HDA, dovrà essere eseguito necessariamente a mano dall'utente installatore o amministratore del server.
+Il lancio della \textit{sandbox} applicativa di HDA, grazie ai container appena creati, è ora un'operazione relativamente semplice e veloce, e sarà trattato approfonditamente nella sezione "5.4" di questo documento.
 %FLOW CHART ESECUZIONE batch file.
 \newpage
 \section{Installazione nel computer client}
