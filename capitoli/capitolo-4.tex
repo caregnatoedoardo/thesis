@@ -38,10 +38,14 @@ Un eventuale suffisso vuoto "\textbf{/}" instraderà, di default, la chiamata al
 Il \textit{discovery} di eventuali nuove \textit{sandbox} applicative, o la rimozione di quelle non più attive dal file "host" del sistema operativo, è interamente gestita dallo script Powershell "nginxREscript.ps1". Una panoramica dettagliata relativa alla costruzione e funzionamento di questo script è disponibile al capitolo 6.3 di questo documento.
 
 \section{Composizione container}
-Come già precedentemente spiegato in questo documento, un container è un'unità atomica contenente un applicativo con le relative dipendenze atte al suo corretto funzionamento. Ogni container, ad esclusione del container "nginxcontainer" si basa su un'immagine del sistema operativo "Windows ServerCore IIS".
+Come già precedentemente spiegato in questo documento, un container è un'unità atomica contenente un applicativo con le relative dipendenze atte al suo corretto funzionamento. Ogni container, ad esclusione del container "nginxcontainer" si basa su un'immagine del sistema operativo "Windows ServerCore IIS".\\
 La composizione di un container può essere più facilmente espressa tramite la seguente immagine:
-%TODO: immagine container + IIS + app
-Per necessità progettuali che saranno descritte nel corso di questa relazione è stata necessaria la costruzione di sei diversi container. Di seguito è fornita al lettore una panoramica dettagliata sulla composizione di ognuno dei singoli.\\
+\begin{figure}[!h]     
+\centering 
+    \includegraphics[width=0.5\columnwidth]{immagini/img/container_structure} 
+    \caption{Rappresentazione grafica relativa alla composizione generale di un container}
+\end{figure} \\
+Per necessità progettuali che saranno descritte nel corso di questa relazione è stata necessaria la costruzione di sei diversi container. Di seguito è fornita al lettore una panoramica dettagliata sulla composizione di ognuno dei singoli:\\
 
 \subsection{Container "hdaprepcontainer":}
 
@@ -160,7 +164,10 @@ Questo container rimane in esecuzione dopo la fine dell'ultima istruzione, e fa 
 
 \newpage
 \section{Costruzione container tramite automazione: HDA Sandbox Builder}
-Testo iniziale:\\
+La costruzione ed il lancio di una \textit{sandbox} applicativa è un'operazione molto onerosa in termini di tempo e di \textit{step} da eseguire per l'utente installatore.
+Per ovviare ad eventuali errori cronologici sul lancio e la costruzione dei container, è stato creato un \textit{batch}-file atto al setup ed alla creazione automatizzata dei container, al fine di poter facilmente costruire e lanciare una \textit{sandbox} applicativa.
+Il \textit{batch}-file "HDA\_sandbox\_builder.bat" è uno script file che consente la creazione ed il setup dei file di HDA nei volume-mapping in maniera totalmente automatizzata, consentendo all'utente installatore la scelta, effettuata tramite risposte \textit{Y/N}, della costruzione delle immagini e dei container stessi.
+\\
 \begin{figure}[!h]     
 \centering 
     \includegraphics[width=0.8 \columnwidth]{immagini/img/hda_sandbox_builder_fc} 

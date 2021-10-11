@@ -42,7 +42,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.4}Container "lokicontainer"}{14}{subsection.4.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.5}Container "promtailcontainer"}{14}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.5}Container "promtailcontainer"}{15}{subsection.4.2.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.6}Container "nginxcontainer"}{15}{subsection.4.2.6}%
 \defcounter {refsection}{0}\relax 
@@ -72,7 +72,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}Progettazione}{25}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Namespace 1}{25}{section*.25}%
+\contentsline {subsubsection}{Namespace 1}{25}{section*.26}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.4}Integrazione di HDA Sandbox Builder con Docker Compose}{26}{section.5.4}%
 \defcounter {refsection}{0}\relax 
@@ -96,4 +96,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Appendice A}{31}{appendix.Alph1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{35}{appendix*.26}%
+\contentsline {chapter}{Bibliografia}{35}{appendix*.27}%
