@@ -68,32 +68,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Breve panoramica su Docker Compose}{27}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Docker compose per la costruzione di una sandbox applicativa}{27}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Docker compose per la costruzione di una sandbox applicativa}{28}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Progettazione}{27}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Integrazione di HDA Sandbox Builder con Docker Compose}{28}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Namespace 1}{27}{section*.27}%
+\contentsline {chapter}{\numberline {6}Reverse Proxy tramite NGINX sulle sandbox di HDA}{31}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Integrazione di HDA Sandbox Builder con Docker Compose}{28}{section.5.4}%
+\contentsline {section}{\numberline {6.1}Introduzione ad NGINX}{31}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Codifica}{28}{section.5.5}%
+\contentsline {section}{\numberline {6.2}Analisi e struttura file di configurazionr "nginx.conf"}{31}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Reverse Proxy tramite NGINX sulle sandbox di HDA}{29}{chapter.6}%
+\contentsline {section}{\numberline {6.3}Analisi NginxREScript.ps1}{31}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Introduzione ad NGINX}{29}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{33}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Analisi e struttura file di configurazionr "nginx.conf"}{29}{section.6.2}%
+\contentsline {section}{\numberline {7.1}Raggiungimento degli obiettivi}{33}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Analisi NginxREScript.ps1}{29}{section.6.3}%
+\contentsline {section}{\numberline {7.2}Conoscenze acquisite}{33}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{31}{chapter.7}%
+\contentsline {section}{\numberline {7.3}Valutazione personale}{33}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Raggiungimento degli obiettivi}{31}{section.7.1}%
+\contentsline {chapter}{\numberline {A}Appendice A}{35}{appendix.Alph1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Conoscenze acquisite}{31}{section.7.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Valutazione personale}{31}{section.7.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{33}{appendix.Alph1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{37}{appendix*.28}%
+\contentsline {chapter}{Bibliografia}{39}{appendix*.26}%
