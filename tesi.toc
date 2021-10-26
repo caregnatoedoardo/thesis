@@ -76,7 +76,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Introduzione ad NGINX}{31}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Analisi e struttura file di configurazionr "nginx.conf"}{31}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Logica di reverse-proxy su sandbox di HDA}{31}{section.6.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.3}Analisi NginxREScript.ps1}{31}{section.6.3}%
 \defcounter {refsection}{0}\relax 

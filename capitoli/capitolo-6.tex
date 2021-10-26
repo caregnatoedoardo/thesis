@@ -5,10 +5,14 @@
 %**************************************************************
 \chapter{Reverse Proxy tramite NGINX sulle sandbox di HDA}
 \label{cap:nginx-reverse-proxy}
+\intro{Breve introduzione al capitolo}\\
+In questo capitolo verrà esplicata la metodologia di \textbf{reverse-proxy} tra \textit{sandbox} applicative di HDA per premettere a diverse utenze esterne un accesso privato ad una singola istanza di HDA in esecuzione su un determinato host.
 
 \section{Introduzione ad NGINX}
+NGINX è un applicativo web-server multipiattaforma ad alte prestazioni, comunemente usato come reverse-proxy o load-balancer. Nato nel 2004 e progettato per garantire un basso consumo di memoria, utilizza un approccio asincrono, basato su \textit{event}, dove le richieste vengono gestite su un singolo thread. Ogni \textit{thread} worker, ovvero un processo che esegue un'elaborazione effettiva, è gestito da un \textit{thread} master, il quale lo coordina e lo controlla.\\
+All'interno di Docker-Hub è presente un repository ufficiale, gestito dalla Nginx Foundations, contenente un'immagine ufficiale di NGINX basata sul sistema operativo Alpine Linux, ovvero una distribuzione Linux che ha fatto della leggerezza un requisito fondamentale. Come precedentemente spiegato in questo documento, il container atto al reverse-proxy automatizzato contenente un'immagine di NGINX è chiamato "nginxcontainer", e fa parte anch'esso della \textit{sandbox} applicativa di HDA.
 
-\section{Analisi e struttura file di configurazionr "nginx.conf"}
+\section{Logica di reverse-proxy su sandbox di HDA}
 
 \section{Analisi NginxREScript.ps1}
 %**************************************************************
