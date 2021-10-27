@@ -55,5 +55,17 @@ Facendo questo, in maniera del tutto automatica, gli utenti accederanno così al
 Grazie al risolutore DNS interno a Docker ed al suo load-balancing automatico, nel caso di necessità di aggiornamento di \textbf{molteplici container} all'interno della \textit{sandbox} applicativa di HDA, si potrà aggiornare relativamente la versione di HDA in ogni container \textbf{senza generare alcun downtime} al cliente, semplicemente aggiornando \textbf{un container alla volta}, per permettere quindi al load-balancer di Docker di poter inoltrare tutte le richieste HTTP ad almeno un container attivo e funzionante di HDA. Il meccanismo di aggiornamento di multipli container all'interno di una singola \textit{sandbox} applicativa non era nei requisiti di questo stage né è stato in alcun modo testato dallo stagista durante tutto il periodo di stage. Questa possibilità di aggiornamento e di load-balancing dei container di HDA è stata sviluppata a livello completamente teorico dal sottoscritto e dal proprio tutor Ruggero Maffei con il preziosissimo aiuto del Sig. Adriano Trevisan.
 
 \section{Analisi NginxREScript.ps1}
-Nel caso in cui il lancio o rimozione di \textit{sandbox} applicative 
+Nel caso in cui il lancio o rimozione di \textit{sandbox} applicative possa essere molto frequente, per evitare all'utente installatore la continua modifica dell'host file e del file di configurazione di NGINX, è stato predisposto uno script automatizzato che modifica, ad ogni sua esecuzione, il config file dell'\textbf{istanza di NGINX esterna} alle \textit{sandbox} applicative ed il \textbf{file host del server} dove è installata l'architettura (ex:PAT.IT).
+Questo script Powershell, tramite interrogazione delle Docker API, è in grado di rilevare ogni \textit{sandbox} applicativa di HDA in esecuzione nell'host, generando, in maniera dinamica il file di configurazione dell'istanza di NGINX (nginx.conf) esterna alle \textit{sandbox} per permettere il corretto puntamento alle nuove \textit{sandbox} appena create, o dismettere i vecchi puntamenti alle \textit{sandbox} obsolete od eliminate. 
+Il flow-chart relativo allo script powershell è il seguente:
+
+
+
+
+
+
+
+
+
+
 %**************************************************************
