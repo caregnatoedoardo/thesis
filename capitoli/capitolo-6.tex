@@ -57,8 +57,12 @@ Grazie al risolutore DNS interno a Docker ed al suo load-balancing automatico, n
 \section{Analisi NginxREScript.ps1}
 Nel caso in cui il lancio o rimozione di \textit{sandbox} applicative possa essere molto frequente, per evitare all'utente installatore la continua modifica dell'host file e del file di configurazione di NGINX, è stato predisposto uno script automatizzato che modifica, ad ogni sua esecuzione, il config file dell'\textbf{istanza di NGINX esterna} alle \textit{sandbox} applicative ed il \textbf{file host del server} dove è installata l'architettura (ex: PAT.IT).\\
 Questo script Powershell, tramite interrogazione delle Docker API, è in grado di rilevare ogni \textit{sandbox} applicativa di HDA in esecuzione nell'host generando, in maniera dinamica, il file di configurazione dell'istanza di NGINX (nginx.conf) esterna alle \textit{sandbox} per permettere il corretto puntamento, e quindi una corretta connessione da parte degli utenti, alle nuove \textit{sandbox} applicative appena create, o dismettere i vecchi puntamenti alle \textit{sandbox} obsolete od eliminate. 
-Un flow-chart riassuntivo, per motivi di spazio, relativo allo script powershell è il seguente:
-
+Un flow-chart riassuntivo, per motivi di spazio, relativo allo script Powershell "\textbf{nginxREscript.ps1}" è il seguente:
+\begin{figure}[!h]     
+\centering 
+    \includegraphics[width=0.5\columnwidth]{immagini/flowchart/flowchart_nginxREscript} 
+    \caption{Flowchart riassuntivo relativo allo script Powershell nginxREscript.ps1}
+\end{figure}\\
 
 
 

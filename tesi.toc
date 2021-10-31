@@ -82,14 +82,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.3}Analisi NginxREScript.ps1}{36}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{37}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{39}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Raggiungimento degli obiettivi}{37}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Raggiungimento degli obiettivi}{39}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Conoscenze acquisite}{38}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Conoscenze acquisite}{40}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Valutazione personale}{39}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Valutazione personale}{41}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{41}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {A}Appendice A}{43}{appendix.Alph1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{45}{appendix*.27}%
+\contentsline {chapter}{Bibliografia}{47}{appendix*.28}%
