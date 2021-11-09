@@ -7,47 +7,48 @@
 \label{cap:introduzione}
 %**************************************************************
 
-Introduzione al contesto applicativo.\\
+Il seguente capitolo intende introdurre il lettore al \textbf{contesto applicativo} dello stage effettuato presso PAT Group evidenziando, in ordine, le \textbf{metodologie di lavoro} dell'Azienda, l'idea generale alla base dello stage formativo e l'\textbf{organizzazione} del presente documento.
 
-\noindent Esempio di utilizzo di un termine nel glossario \\
-\gls{api}. \\
+%\noindent Esempio di utilizzo di un termine nel glossario \\
+%\gls{api}. \\
 
-\noindent Esempio di citazione in linea \\
-\cite{site:agile-manifesto}. \\
+%\noindent Esempio di citazione in linea \\
+%\cite{site:agile-manifesto}. \\
 
-\noindent Esempio di citazione nel pie' di pagina \\
-citazione\footcite{womak:lean-thinking} \\
+%\noindent Esempio di citazione nel pie' di pagina \\
+%citazione\footcite{womak:lean-thinking} \\
 
 %**************************************************************
 \section{L'azienda}
 
-Descrizione dell'azienda.
-
-%**************************************************************
-\section{L'idea}
-
-Introduzione all'idea dello stage.
-
-%**************************************************************
-\section{Organizzazione del testo}
-
-\begin{description}
-    \item[{\hyperref[cap:processi-metodologie]{Il secondo capitolo}}] descrive ...
-    
-    \item[{\hyperref[cap:descrizione-stage]{Il terzo capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:analisi-requisiti]{Il quarto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:progettazione-codifica]{Il quinto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:verifica-validazione]{Il sesto capitolo}}] approfondisce ...
-    
-    \item[{\hyperref[cap:conclusioni]{Nel settimo capitolo}}] descrive ...
-\end{description}
-
-Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
+\textbf{Pat Group} è un'azienda innovativa che da oltre 25 anni opera nello sviluppo di applicativi software per aziende ed istituzioni pubbliche e private. Il principale \textit{core business} dell'Azienda comprende lo sviluppo di applicativi di \textit{IT Service Management}, \textit{CRM}, \textit{lead management}, \textit{automazione dei processi di business} e \textit{social collaboration}.
+Le principali energie che l'Azienda mette a disposizione sono destinate all'evoluzione dei processi di business dei clienti, fornendo supporto per l'innovazione digitale e l'automazione dei processi interni, per far raggiungere ad ogni cliente la leadership nel relativo settore in cui opera.\\
+I principali valori che PAT desidera ottenere sono riassumibili nei seguenti punti:
 \begin{itemize}
-	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
-	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \emph{parola}\glsfirstoccur;
-	\item i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \emph{corsivo}.
+	\item \textbf{Successo:} l'Azienda lavora costantemente al fine del raggiungimento, da parte dei suoi clienti, degli obiettivi di successo;
+	\item \textbf{Innovazione:} PAT accompagna i propri clienti attraverso la difficile fase del cambiamento digitale, spingendo a innovare e costantemente aggiornare le tecnologie interne;
+	\item \textbf{Qualità:} l'impegno di PAT, verso qualsiasi dei suoi clienti, è quello del raggiungimento di questo valore attraverso procedure di innovazione riconosciute e certificate a loro volta da standard qualitativi;
+	\item \textbf{Talento:} PAT organizza per i suoi clienti dei percorsi formativi interni mirati alla ricerca ed espressione del talento di ogni collabotatore;
+	\item \textbf{Fiducia:} la realtà aziendale è fortemente concentrata sulla fiducia nella professionalità dei collaboratori dell'Azienda, per guidare al meglio nella crescita professionale ogni cliente;
+	\newpage
+	\item \textbf{Trasparenza:} al fine di raggiungere ogni obiettivo e valore l'Azienda adotta un metodo di comunicazione costante e continuo, atto a monitorare tutti i progressi effettuati ed interventire tempestivamente in casi di criticità.
 \end{itemize}
+PAT opera all'interno di un luogo innovativo chiamato InfiniteArea, ovvero uno spazio dedicato alla crescita di idee innovative nell'ottica di una futura implementazione nel core business dell'Azienda. \\
+Da giugno 2013, PAT entra a far parte dell'universo \textbf{Zucchetti}, primo gruppo italiano nel panorama ICT, con \textbf{Patrizio Bof} in qualità di fondatore ed unico amministratore della Società PAT Group.\\
+L'Azienda collabora e fornisce soluzioni software per una moltitudine di clienti, alcuni tra i più importanti sono \textbf{Pirelli}, \textbf{Aruba}, \textbf{BPER}, \textbf{AirDolomiti}, \textbf{ARVAL} e \textbf{WeBank}.
+%**************************************************************
+\section{Organizzazione dei capitoli}
+Il seguente elenco intende fornire al lettore, in maniera ordinata, una panoramica informativa riassuntiva circa il contenuto e la suddivisione in capitoli di questo documento:
+\begin{description}
+    \item[{\hyperref[cap:descrizione-stage]{capitolo 2:}}] in questo capitolo viene esposta una panoramica generale relativa al progetto assegnato;
+    
+    \item[{\hyperref[cap:container-vm]{capitolo 3:}}] questo capitolo tratta le principali differenze tra architettura a macchine virtuali ed a container, fornendo al lettore un approfondimento dettagliato su ognuna delle tecnologie trattate;
+    
+    \item[{\hyperref[cap:architettura-progetto-container]{capitolo 4:}}] questo capitolo espone l'architettura generale del progetto implementata durante tutto il percorso di stage;
+    
+    \item[{\hyperref[cap:orchestrazione-container]{capitolo 5:}}] questo capitolo approfondisce la metodologia di orchestrazione tra container tramite utilizzo di Docker Compose;
+    
+    \item[{\hyperref[cap:nginx-reverse-proxy]{capitolo 6:}}] in questo capitolo viene trattato il tema di Reverse Proxy, fornendo al lettore tutti i passi eseguiti al fine dell'implementazione sul progetto assegnato;
+    
+    \item[{\hyperref[cap:conclusioni]{capitolo 7:}}] questo capitolo conclusivo espone una panoramica sugli obiettivi raggiunti ed il grado di conoscenze acquisite e soddisfacimento dello stage curricolare da parte dello studente. 
+\end{description}

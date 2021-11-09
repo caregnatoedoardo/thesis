@@ -6,9 +6,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}L'azienda}{1}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}L'idea}{1}{section.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Organizzazione del testo}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.2}Organizzazione dei capitoli}{2}{section.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Descrizione dello stage}{3}{chapter.2}%
 \defcounter {refsection}{0}\relax 

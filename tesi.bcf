@@ -2182,20 +2182,18 @@
     <bcf:datasource type="file" datatype="bibtex">bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">site:agile-manifesto</bcf:citekey>
-    <bcf:citekey order="2">womak:lean-thinking</bcf:citekey>
-    <bcf:citekey order="3">fonte: https://www.vmware.com/it/solutions/virtualization.html</bcf:citekey>
-    <bcf:citekey order="4">questa funzionalita&apos; e&apos; presente solamente nelle versioni Pro e Server di Windows 10</bcf:citekey>
-    <bcf:citekey order="5">installabile solamente se il processore supporta la virtualizzazione e se quest&apos;ultima e&apos; abilitata da BIOS</bcf:citekey>
-    <bcf:citekey order="6">il tipo di RAM &quot;ECC&quot; risulta preferibile ma non obbligatorio</bcf:citekey>
-    <bcf:citekey order="7">e&apos; necessario abilitare le estensioni di virtualizzazione da BIOS della scheda madre.</bcf:citekey>
-    <bcf:citekey order="8">nel caso di architettura avente processori Intel</bcf:citekey>
-    <bcf:citekey order="8">IOMMU per architetture basate su processori AMD.</bcf:citekey>
-    <bcf:citekey order="9">per creare o impostare una VLAN</bcf:citekey>
-    <bcf:citekey order="9">fare riferimento al router/firewall o allo switch di rete</bcf:citekey>
-    <bcf:citekey order="10">inteso come dimensione in Gb del virtual disk image (*.vdi) dell&apos;immagine virtualizzata</bcf:citekey>
-    <bcf:citekey order="11">presente solamente per le versioni Windows</bcf:citekey>
-    <bcf:citekey order="12">inteso come quantitativo di risorse fisiche da allocare</bcf:citekey>
+    <bcf:citekey order="1">fonte: https://www.vmware.com/it/solutions/virtualization.html</bcf:citekey>
+    <bcf:citekey order="2">questa funzionalita&apos; e&apos; presente solamente nelle versioni Pro e Server di Windows 10</bcf:citekey>
+    <bcf:citekey order="3">installabile solamente se il processore supporta la virtualizzazione e se quest&apos;ultima e&apos; abilitata da BIOS</bcf:citekey>
+    <bcf:citekey order="4">il tipo di RAM &quot;ECC&quot; risulta preferibile ma non obbligatorio</bcf:citekey>
+    <bcf:citekey order="5">e&apos; necessario abilitare le estensioni di virtualizzazione da BIOS della scheda madre.</bcf:citekey>
+    <bcf:citekey order="6">nel caso di architettura avente processori Intel</bcf:citekey>
+    <bcf:citekey order="6">IOMMU per architetture basate su processori AMD.</bcf:citekey>
+    <bcf:citekey order="7">per creare o impostare una VLAN</bcf:citekey>
+    <bcf:citekey order="7">fare riferimento al router/firewall o allo switch di rete</bcf:citekey>
+    <bcf:citekey order="8">inteso come dimensione in Gb del virtual disk image (*.vdi) dell&apos;immagine virtualizzata</bcf:citekey>
+    <bcf:citekey order="9">presente solamente per le versioni Windows</bcf:citekey>
+    <bcf:citekey order="10">inteso come quantitativo di risorse fisiche da allocare</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
