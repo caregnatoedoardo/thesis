@@ -12,55 +12,110 @@ In questo capitolo si esporrà una panoramica relativa al progetto assegnato dal
 
 %**************************************************************
 \section{Scopo dello stage curricolare}
-Lo scopo principale dello stage è la containerizzazione delle due soluzioni applicative maggiormente utilizzate dall'Azienda, ovvero \gls{HDA} e \gls{CX Studio} in ambito Windows, con la possibilità di monitoraggio in real-time degli stessi tramite containerizzazione di ulteriori applicativi quali "Telegraf", "Loki" e "Promtail" precedentemente configurati da un altro stagista.
-Tramite containerizzazione dei due applicativi sopracitati è stato richiesto, in aggiunta, la creazione di uno script di reverse-proxy automatizzato che, tramite Docker API, identificava le \textit{sandbox} applicative, ovvero le istanze applicative di HDA, Loki e Promtail containerizzate attualmente in esecuzione ed aggiornava il file di configurazione di NGINX per permettere l'accesso alle utenze esterne ai container in esecuzione sull'host.\\
-Per raggiungere questo obiettivo, lo stagista ha dovuto apprendere in maniera approfondita le tecnologie di containerizzazione e di orchestrazione di container, quali \gls{Docker} e \gls{Docker Compose}, unite ad elementi di networking generale e scripting in Powershell e cmd. Verso la conclusione dello stage, lo stagista ha dovuto studiare la soluzione di reverse proxy "NGINX", editandone, dapprima manualmente, tutti i file di configurazione.
+Lo scopo principale dello stage è la \textit{containerizzazione} delle due soluzioni applicative maggiormente utilizzate dall'Azienda, ovvero \gls{HDA} e \gls{CX Studio} in ambito Windows, con la possibilità di monitoraggio in \textit{real-time} degli stessi tramite \textit{containerizzazione} di ulteriori applicativi quali "\textbf{Telegraf}", "\textbf{Loki}" e "\textbf{Promtail}" precedentemente configurati da un altro stagista.\\
+I tools appena citati non saranno oggetto di ulteriore approfondimento in questo documento, in quanto non raffiguravano nei requisiti concordati dello stage ed introdotti successivamente dall'Azienda al fine di collegarsi con il lavoro dell'ulteriore stagista \textbf{Francesco Pantaleoni}.\\
+Tramite \textit{containerizzazione} dei due applicativi sopracitati è stato richiesto, in aggiunta, la creazione di uno script di \textbf{reverse-proxy automatizzato} che, tramite \gls{Docker API}, identificava le \textit{sandbox} applicative, ovvero le \textbf{istanze applicative} di HDA, Loki e Promtail \textit{containerizzate} attualmente in esecuzione ed aggiornava il file di configurazione di \textbf{\gls{NGINX}} per permettere l'accesso alle utenze esterne ai container in esecuzione sull'host.\\
+Per raggiungere questo obiettivo, lo stagista ha dovuto apprendere in maniera approfondita le tecnologie di \textit{containerizzazione} e di \textit{orchestrazione} di container, quali \gls{Docker} e \gls{Docker Compose}, unite ad elementi di \textit{networking} generale e \textit{scripting} in \textbf{\gls{Powershell}} e \textbf{\gls{CMD}}. \\
+Verso la conclusione dello stage, lo stagista ha dovuto studiare la soluzione di \textbf{reverse proxy} "\textbf{NGINX}", editandone, dapprima manualmente, tutti i file di configurazione e studiando approfonditamente la struttura di ogni file di configurazione al fine di automatizzare il tutto tramite script Powershell "\textbf{nginxREscript.ps1}".
 
 
 %**************************************************************
 \section{Requisiti e obiettivi}
-Come già spiegato nell'introduzione di questo documento, causa mancanza di tempo e sotto totale suggerimento dell'Azienda, lo stagista si è dedicato alla creazione dell'immagine containerizzata del solo prodotto "HDA", escludendo quindi il software "CX Studio", creando, in aggiunta, tre diversi container aggiuntivi per permettere una soluzione di reverse-proxy e di monitoraggio in real time dello stack applicativo containerizzato.
+Come già spiegato nell'introduzione di questo documento, causa mancanza di tempo e \textbf{sotto totale suggerimento} dell'Azienda, lo stagista si è dedicato alla creazione dell'immagine \textit{containerizzata} del solo prodotto "\textbf{HDA}", \textbf{escludendo} quindi il software "\textbf{CX Studio}", creando, in aggiunta, \textbf{sei} diversi container aggiuntivi per permettere una soluzione di \textit{reverse-proxy} e di monitoraggio in real-time dello stack applicativo containerizzato.\\
 Causa questa modifica, i requisiti ed obiettivi dello stage curricolare sono così cambiati:
-\begin{itemize}
-	\item Studio dell'architettura dello stack applicativo delle soluzioni software aziendali;
-	\item Studio delle soluzioni software di containerizzazione ed orchestrazione, con focus sugli applicativi "Docker" e "Docker Compose";
-	\item Creazione del primo container contenente un'immagine di HDA funzionante ed usabile;
-	\item Creazione di un container atto all'aggiornamento del database dell'applicativo HDA in caso di aggiornamento da una versione legacy di HDA ad una versione 11.x.x;
-	\item Creazione, configurazione ed orchestrazione di un container dedicato all'applicativo "LokI";
-	\item Creazione, configurazione ed orchestrazione di un container dedicato all'applicativo "Promtail"
-	\item Aggiornamento del container contenente l'immagine di HDA con aggiunta e configurazione dell'applicativo "Telegraf";
-	\item Studio delle Docker API per riuscire ad avere la lista dei container attivi in un dato host;
-	\item Creazione di uno script automatizzato che, tramite Docker API, ottiene le sandbox applicative di container attivi per la costruzione automatizzata del file di configurazione di NGINX (nginx.conf).
-\end{itemize}
 
-Tutti i requisiti sopra-citati sono stati completamente raggiunti e collaudati, come verrà spiegato successivamente nel corso di questo documento.
+\begin{table}[h!]
+\centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|m{0.18\textwidth}|m{0.72\textwidth}|} 
+    \hline
+        \hfil \textbf{Requisito} & \hfil \textbf{Descrizione} \\
+    \hline\hline
+        \hfil Obbligatorio & \hfil Studio dell'architettura dello stack applicativo delle soluzioni software aziendali  \\
+    \hline
+        \hfil Obbligatorio & \hfil Studio delle soluzioni software di containerizzazione ed orchestrazione, con focus sugli applicativi "Docker" e "Docker Compose" \\ 
+    \hline
+        \hfil Obbligatorio & \hfil Creazione del primo container contenente un'immagine di HDA funzionante ed usabile \\ 
+    \hline
+        \hfil Obbligatorio & \hfil Creazione di un container atto all'aggiornamento del database dell'applicativo HDA in caso di aggiornamento da una versione legacy di HDA ad una versione 11.x.x \\
+    \hline
+        \hfil Obbligatorio & \hfil Creazione, configurazione ed orchestrazione di un container dedicato all'applicativo "Loki" \\
+    \hline
+        \hfil Obbligatorio & \hfil Creazione, configurazione ed orchestrazione di un container dedicato all'applicativo "Promtail" \\
+    \hline
+        \hfil Obbligatorio & \hfil Aggiornamento del container contenente l'immagine di HDA con aggiunta e configurazione dell'applicativo "Telegraf" \\
+    \hline
+        \hfil Obbligatorio & \hfil Studio delle Docker API per riuscire ad avere la lista dei container attivi in un dato host \\
+    \hline
+        \hfil Obbligatorio & \hfil Creazione di uno script automatizzato che, tramite Docker API, ottiene le sandbox applicative di container attivi per la costruzione automatizzata del file di configurazione di NGINX (nginx.conf) \\
+    \hline
+    \end{tabular}
+\medskip
+\caption{Tabella dei requisiti.}
+\label{table:tabella dei requisiti in relazione al tempo stabiliti dall'Azienda}
+\end{table}
+
+Tutti i requisiti sopra-citati sono stati \textbf{completamente raggiunti e collaudati}, come verrà spiegato successivamente nel corso di questo documento.
 
 %**************************************************************
+\newpage
 \section{Pianificazione}
 La pianificazione atta al soddisfacimento dei requisiti scritti è stata strettamente dettata dall'Azienda, ed è stata seguita in maniera pedissequa durante tutto il corso dell'esperienza di stage.
 Tutte le attività pianificate, con il rispettivo corrispettivo orario, possono essere riassunte nella seguente tabella:
-\begin{center}
-\begin{tabular}{|m{25em} | m{2,3cm}|} 
- \hline
- \textbf{Descrizione} & \textbf{Quantitativo orario (h)}\\ [0.5ex] 
- \hline\hline
- Introduzione al tema Container vs Virtual machine: differenze tra le due tecnologie e
-illustrazione dei vantaggi derivanti dall'adozione dei Container & 40 \\ 
- \hline
- Docker ed estensioni (Docker, Compose e Swarm, Kubernetes) e relative API di
-automation: analisi delle componenti dell'ecosistema e delle opportunità di utilizzarle
-ai fini progettuali & 40 \\
- \hline
- Approfondimento sull'architettura su due casi studi da containerizzare: declinazione
-della soluzione tecnologica identificata ai punti precedenti su due applicazioni PAT & 120 \\
- \hline
- Creazione dei container ed automatizzazione del processo di building: realizzazione
-del processo di creazione delle immagini ed automazione dello stesso & 80 \\
- \hline
- Utilizzo di un container per verifica dell'esecuzione degli unit test: avvio delle
-immagini per effettuazione degli unit test in automatico & 40 \\ [1ex] 
- \hline
- \textbf{TOTALE ORARIO (h)} & \textbf{320}\\
- \hline
-\end{tabular}
-\end{center}
+\begin{table}[h!]
+\centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|m{25em} | m{2,3cm}|} 
+    \hline
+        \hfil \textbf{Descrizione} & \hfil \textbf{Quantitativo orario (h)} \\
+    \hline\hline
+        \hfil  Introduzione al tema Container vs Virtual machine: differenze tra le due tecnologie e illustrazione dei vantaggi derivanti dall'adozione dei Container & 40 \\ 
+    \hline
+       \hfil Docker ed estensioni (Docker, Compose e Swarm, Kubernetes) e relative API di automation: analisi delle componenti dell'ecosistema e delle opportunità di utilizzarle ai fini progettuali & 40 \\
+    \hline
+        \hfil Approfondimento sull'architettura su due casi studi da containerizzare: declinazione della soluzione tecnologica identificata ai punti precedenti su due applicazioni PAT & 120 \\
+    \hline
+        \hfil  Creazione dei container ed automatizzazione del processo di building: realizzazione del processo di creazione delle immagini ed automazione dello stesso & 80 \\
+    \hline
+        \hfil  Utilizzo di un container per verifica dell'esecuzione degli unit test: avvio delle immagini per effettuazione degli unit test in automatico & 40 \\ [1ex] 
+   \hline
+    \textbf{TOTALE ORARIO (h)} & \textbf{320}\\
+    \hline
+    \end{tabular}
+\medskip
+\caption{Tabella dei requisiti.}
+\label{table:tabella dei requisiti in relazione al tempo stabiliti dall'Azienda}
+\end{table}
+
+
+
+
+
+%\begin{center}
+%\begin{tabular}{|m{25em} | m{2,3cm}|} 
+ %\hline
+ %\textbf{Descrizione} & \textbf{Quantitativo orario (h)}\\ [0.5ex] 
+ %\hline\hline
+ %Introduzione al tema Container vs Virtual machine: differenze tra le due tecnologie e
+%illustrazione dei vantaggi derivanti dall'adozione dei Container & 40 \\ 
+ %\hline
+% Docker ed estensioni (Docker, Compose e Swarm, Kubernetes) e relative API di
+%automation: analisi delle componenti dell'ecosistema e delle opportunità di utilizzarle
+%ai fini progettuali & 40 \\
+ %\hline
+% Approfondimento sull'architettura su due casi studi da containerizzare: declinazione
+%della soluzione tecnologica identificata ai punti precedenti su due applicazioni PAT & 120 \\
+% \hline
+% Creazione dei container ed automatizzazione del processo di building: realizzazione
+%del processo di creazione delle immagini ed automazione dello stesso & 80 \\
+% \hline
+ %Utilizzo di un container per verifica dell'esecuzione degli unit test: avvio delle
+%immagini per effettuazione degli unit test in automatico & 40 \\ [1ex] 
+ %\hline
+ %\textbf{TOTALE ORARIO (h)} & \textbf{320}\\
+ %\hline
+%\end{tabular}
+%\medskip
+%\caption{tabella relativa alla pianificazione degli obiettivi stabiliti dall'Azienda}
+%\label{table:tabella relativa alla pianificazione degli obiettivi stabiliti dall'Azienda}
+%\end{center}
