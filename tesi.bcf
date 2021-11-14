@@ -2194,6 +2194,7 @@
     <bcf:citekey order="8">inteso come dimensione in Gb del virtual disk image (*.vdi) dell&apos;immagine virtualizzata</bcf:citekey>
     <bcf:citekey order="9">presente solamente per le versioni Windows</bcf:citekey>
     <bcf:citekey order="10">inteso come quantitativo di risorse fisiche da allocare</bcf:citekey>
+    <bcf:citekey order="11">Per abilitare il supporto di virtualizzazione Hyper-V su Windows bastera&apos; entrare nell&apos;apposito menu &quot;Abilita o disabilita funzionalità di Windows&quot; e selezionare la voce &quot;Hyper-V&quot;</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.8)  11 NOV 2021 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.8)  14 NOV 2021 17:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1385,10 +1385,41 @@ Overfull \hbox (8.23215pt too wide) in paragraph at lines 20--20
 [][][][]\T1/cmr/m/n/8 (-20) .| 
  []
 
+<immagini/screenshot/firefox_virtualbox.png, id=312, 953.81343pt x 694.84593pt>
+
+File: immagini/screenshot/firefox_virtualbox.png Graphic file (type png)
+<use immagini/screenshot/firefox_virtualbox.png>
+Package pdftex.def Info: immagini/screenshot/firefox_virtualbox.png  used on in
+put line 26.
+(pdftex.def)             Requested size: 223.20227pt x 162.59966pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--29
+
+ []
+
 [7]
+<immagini/screenshot/firefox_vmware.png, id=333, 771.63281pt x 621.82312pt>
+File: immagini/screenshot/firefox_vmware.png Graphic file (type png)
+<use immagini/screenshot/firefox_vmware.png>
+Package pdftex.def Info: immagini/screenshot/firefox_vmware.png  used on input 
+line 32.
+(pdftex.def)             Requested size: 223.20227pt x 179.86864pt.
+
+
+./capitoli/capitolo-3.tex:35: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 
+     
+? 
+[8 <./immagini/screenshot/firefox_virtualbox.png> <./immagini/screenshot/firefo
+x_vmware.png>]
 
 LaTeX Warning: Citation 'installabile solamente se il processore supporta la vi
-rtualizzazione e se quest'ultima e' abilitata da BIOS' on page 8 undefined on i
+rtualizzazione e se quest'ultima e' abilitata da BIOS' on page 9 undefined on i
 nput line 37.
 
 
@@ -1398,11 +1429,11 @@ Overfull \hbox (92.91924pt too wide) in paragraph at lines 37--37
 
 
 LaTeX Warning: Citation 'il tipo di RAM "ECC" risulta preferibile ma non obblig
-atorio' on page 8 undefined on input line 40.
+atorio' on page 9 undefined on input line 40.
 
 
 LaTeX Warning: Citation 'e' necessario abilitare le estensioni di virtualizzazi
-one da BIOS della scheda madre.' on page 8 undefined on input line 41.
+one da BIOS della scheda madre.' on page 9 undefined on input line 41.
 
 
 Overfull \hbox (2.53632pt too wide) in paragraph at lines 41--41
@@ -1411,11 +1442,11 @@ Overfull \hbox (2.53632pt too wide) in paragraph at lines 41--41
 
 
 LaTeX Warning: Citation 'nel caso di architettura avente processori Intel' on p
-age 8 undefined on input line 41.
+age 9 undefined on input line 41.
 
 
 LaTeX Warning: Citation 'IOMMU per architetture basate su processori AMD.' on p
-age 8 undefined on input line 41.
+age 9 undefined on input line 41.
 
 
 Overfull \hbox (77.85274pt too wide) in paragraph at lines 41--41
@@ -1423,60 +1454,116 @@ Overfull \hbox (77.85274pt too wide) in paragraph at lines 41--41
  []
 
 
-LaTeX Warning: Citation 'per creare o impostare una VLAN' on page 8 undefined o
-n input line 42.
+LaTeX Warning: Citation 'per creare o impostare una VLAN' on page 9 undefined o
+n input line 43.
 
 
 LaTeX Warning: Citation 'fare riferimento al router/firewall o allo switch di r
-ete' on page 8 undefined on input line 42.
+ete' on page 9 undefined on input line 43.
 
 
-Overfull \hbox (30.2727pt too wide) in paragraph at lines 42--42
+Overfull \hbox (30.2727pt too wide) in paragraph at lines 43--43
 [][][][]\T1/cmr/m/n/8 (-20) ; [].| 
  []
 
 
 LaTeX Warning: Citation 'inteso come dimensione in Gb del virtual disk image (*
-.vdi) dell'immagine virtualizzata' on page 8 undefined on input line 44.
+.vdi) dell'immagine virtualizzata' on page 9 undefined on input line 45.
 
 
-Overfull \hbox (22.42258pt too wide) in paragraph at lines 44--44
+Overfull \hbox (22.42258pt too wide) in paragraph at lines 45--45
+[][][][]\T1/cmr/m/n/8 (-20) .| 
+ []
+
+<immagini/img/container_vs_vm.png, id=359, 1606.0pt x 682.55pt>
+File: immagini/img/container_vs_vm.png Graphic file (type png)
+<use immagini/img/container_vs_vm.png>
+Package pdftex.def Info: immagini/img/container_vs_vm.png  used on input line 5
+1.
+(pdftex.def)             Requested size: 223.20227pt x 94.85855pt.
+<immagini/screenshot/firefox_container.png, id=365, 712.91344pt x 627.09282pt>
+File: immagini/screenshot/firefox_container.png Graphic file (type png)
+<use immagini/screenshot/firefox_container.png>
+Package pdftex.def Info: immagini/screenshot/firefox_container.png  used on inp
+ut line 64.
+(pdftex.def)             Requested size: 223.20227pt x 196.32964pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--72
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+[10 <./immagini/img/container_vs_vm.png>] [11 <./immagini/screenshot/firefox_co
+ntainer.png>]
+
+LaTeX Warning: Citation 'presente solamente per le versioni Windows' on page 12
+ undefined on input line 75.
+
+
+LaTeX Warning: Citation 'inteso come quantitativo di risorse fisiche da allocar
+e' on page 12 undefined on input line 87.
+
+[12]
+
+LaTeX Warning: Citation 'Per abilitare il supporto di virtualizzazione Hyper-V 
+su Windows bastera' entrare nell'apposito menu "Abilita o disabilita funzionali
+tà di Windows" e selezionare la voce "Hyper-V"' on page 13 undefined on input 
+line 112.
+
+
+Overfull \hbox (430.91725pt too wide) in paragraph at lines 112--112
 [][][][]\T1/cmr/m/n/8 (-20) .| 
  []
 
 
-Underfull \vbox (badness 1895) has occurred while \output is active []
+./capitoli/capitolo-3.tex:116: LaTeX Error: There's no line here to end.
 
- [8]
-Underfull \vbox (badness 1701) has occurred while \output is active []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 U
+       na volta scaricato l'\gls{installer} di Docker Desktop, l'installazio...
 
- [9]
+? 
+<immagini/screenshot/docker_desktop_initialscreen.png, id=420, 894.34125pt x 50
+8.90125pt>
+File: immagini/screenshot/docker_desktop_initialscreen.png Graphic file (type p
+ng)
+<use immagini/screenshot/docker_desktop_initialscreen.png>
+Package pdftex.def Info: immagini/screenshot/docker_desktop_initialscreen.png  
+used on input line 121.
+(pdftex.def)             Requested size: 372.0pt x 211.67929pt.
 
-LaTeX Warning: Citation 'presente solamente per le versioni Windows' on page 10
- undefined on input line 62.
-
-
-LaTeX Warning: Citation 'inteso come quantitativo di risorse fisiche da allocar
-e' on page 10 undefined on input line 72.
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 98--103
+Underfull \hbox (badness 10000) in paragraph at lines 116--124
 
  []
 
-[11]) (./capitoli/capitolo-4.tex [12]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./capitoli/capitolo-4.tex [13] [14 <./immagini/screenshot/docker_desktop_ini
+tialscreen.png>]
 Capitolo 4.
-<immagini/img/hda_containerized_architecture.png, id=397, 995.72pt x 683.55376p
+<immagini/img/hda_containerized_architecture.png, id=438, 995.72pt x 683.55376p
 t>
 File: immagini/img/hda_containerized_architecture.png Graphic file (type png)
 <use immagini/img/hda_containerized_architecture.png>
 Package pdftex.def Info: immagini/img/hda_containerized_architecture.png  used 
 on input line 17.
 (pdftex.def)             Requested size: 372.0pt x 255.37245pt.
-[13
+[15
 
  <./immagini/img/hda_containerized_architecture.png>]
-<immagini/img/container_structure.png, id=405, 571.13374pt x 151.56625pt>
+<immagini/img/container_structure.png, id=445, 571.13374pt x 151.56625pt>
 File: immagini/img/container_structure.png Graphic file (type png)
 <use immagini/img/container_structure.png>
 Package pdftex.def Info: immagini/img/container_structure.png  used on input li
@@ -1487,8 +1574,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--49
 
  []
 
-[14] [15 <./immagini/img/container_structure.png>] [16] [17]
-<immagini/flowchart/flowchart_hdaprepcontainer.png, id=427, 201.75375pt x 613.2
+[16] [17 <./immagini/img/container_structure.png>] [18] [19]
+<immagini/flowchart/flowchart_hdaprepcontainer.png, id=467, 201.75375pt x 613.2
 9124pt>
 File: immagini/flowchart/flowchart_hdaprepcontainer.png Graphic file (type png)
 
@@ -1501,8 +1588,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--116
 
  []
 
-[18 <./immagini/flowchart/flowchart_hdaprepcontainer.png>]
-<immagini/flowchart/flowchart_hdadbinstall.png, id=434, 201.75375pt x 362.35374
+[20 <./immagini/flowchart/flowchart_hdaprepcontainer.png>]
+<immagini/flowchart/flowchart_hdadbinstall.png, id=475, 201.75375pt x 362.35374
 pt>
 File: immagini/flowchart/flowchart_hdadbinstall.png Graphic file (type png)
 <use immagini/flowchart/flowchart_hdadbinstall.png>
@@ -1514,8 +1601,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--125
 
  []
 
-[19 <./immagini/flowchart/flowchart_hdadbinstall.png>]
-<immagini/flowchart/flowchart_hdabasecontainer.png, id=440, 563.10374pt x 567.1
+[21 <./immagini/flowchart/flowchart_hdadbinstall.png>]
+<immagini/flowchart/flowchart_hdabasecontainer.png, id=481, 563.10374pt x 567.1
 1874pt>
 File: immagini/flowchart/flowchart_hdabasecontainer.png Graphic file (type png)
 
@@ -1523,16 +1610,16 @@ File: immagini/flowchart/flowchart_hdabasecontainer.png Graphic file (type png)
 Package pdftex.def Info: immagini/flowchart/flowchart_hdabasecontainer.png  use
 d on input line 130.
 (pdftex.def)             Requested size: 260.39886pt x 262.2537pt.
- [20 <./immagini/flowchart/flowchart_hdabasecontainer.png>]
-<immagini/flowchart/flowchart_lokicontainer.png, id=446, 201.75375pt x 507.8975
+ [22 <./immagini/flowchart/flowchart_hdabasecontainer.png>]
+<immagini/flowchart/flowchart_lokicontainer.png, id=487, 201.75375pt x 507.8975
 pt>
 File: immagini/flowchart/flowchart_lokicontainer.png Graphic file (type png)
 <use immagini/flowchart/flowchart_lokicontainer.png>
 Package pdftex.def Info: immagini/flowchart/flowchart_lokicontainer.png  used o
 n input line 139.
 (pdftex.def)             Requested size: 111.60114pt x 280.94872pt.
- [21 <./immagini/flowchart/flowchart_lokicontainer.png>]
-<immagini/flowchart/flowchart_promtailcontainer.png, id=452, 201.75375pt x 507.
+ [23 <./immagini/flowchart/flowchart_lokicontainer.png>]
+<immagini/flowchart/flowchart_promtailcontainer.png, id=494, 201.75375pt x 507.
 8975pt>
 File: immagini/flowchart/flowchart_promtailcontainer.png Graphic file (type png
 )
@@ -1540,8 +1627,8 @@ File: immagini/flowchart/flowchart_promtailcontainer.png Graphic file (type png
 Package pdftex.def Info: immagini/flowchart/flowchart_promtailcontainer.png  us
 ed on input line 148.
 (pdftex.def)             Requested size: 111.60114pt x 280.94872pt.
- [22 <./immagini/flowchart/flowchart_promtailcontainer.png>]
-<immagini/flowchart/flowchart_nginxcontainer.png, id=459, 201.75375pt x 216.81p
+ [24 <./immagini/flowchart/flowchart_promtailcontainer.png>]
+<immagini/flowchart/flowchart_nginxcontainer.png, id=500, 201.75375pt x 216.81p
 t>
 File: immagini/flowchart/flowchart_nginxcontainer.png Graphic file (type png)
 <use immagini/flowchart/flowchart_nginxcontainer.png>
@@ -1549,18 +1636,18 @@ Package pdftex.def Info: immagini/flowchart/flowchart_nginxcontainer.png  used
 on input line 157.
 (pdftex.def)             Requested size: 111.60114pt x 119.93066pt.
 
-[23 <./immagini/flowchart/flowchart_nginxcontainer.png>]
+[25 <./immagini/flowchart/flowchart_nginxcontainer.png>]
 Overfull \hbox (5.89159pt too wide) in paragraph at lines 166--166
 []\T1/cmr/bx/n/14.4 Costruzione con-tai-ner tra-mi-te au-to-ma-zio-ne: HDA
  []
 
-<immagini/img/hda_sandbox_builder_fc.png, id=466, 632.3625pt x 722.7pt>
+<immagini/img/hda_sandbox_builder_fc.png, id=506, 632.3625pt x 722.7pt>
 File: immagini/img/hda_sandbox_builder_fc.png Graphic file (type png)
 <use immagini/img/hda_sandbox_builder_fc.png>
 Package pdftex.def Info: immagini/img/hda_sandbox_builder_fc.png  used on input
  line 174.
 (pdftex.def)             Requested size: 297.60114pt x 340.12117pt.
-<immagini/flowchart/flow_chart_HDA_sandbox_builder.png, id=467, 578.16pt x 934.
+<immagini/flowchart/flow_chart_HDA_sandbox_builder.png, id=507, 578.16pt x 934.
 49126pt>
 File: immagini/flowchart/flow_chart_HDA_sandbox_builder.png Graphic file (type 
 png)
@@ -1573,20 +1660,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--187
 
  []
 
-[24 <./immagini/img/hda_sandbox_builder_fc.png>]
+[26 <./immagini/img/hda_sandbox_builder_fc.png>]
 Overfull \hbox (57.65811pt too wide) has occurred while \output is active
 \T1/cmr/m/sl/10 4.4.  COSTRUZIONE CONTAINER TRAMITE AUTOMAZIONE: HDA SANDBOX BU
-ILDER \T1/cmr/m/n/10 25
+ILDER \T1/cmr/m/n/10 27
  []
 
-[25 <./immagini/flowchart/flow_chart_HDA_sandbox_builder.png>]
-<immagini/img/switch_windows_container.png, id=479, 159.59625pt x 200.24812pt>
+[27 <./immagini/flowchart/flow_chart_HDA_sandbox_builder.png>]
+<immagini/img/switch_windows_container.png, id=519, 159.59625pt x 200.24812pt>
 File: immagini/img/switch_windows_container.png Graphic file (type png)
 <use immagini/img/switch_windows_container.png>
 Package pdftex.def Info: immagini/img/switch_windows_container.png  used on inp
 ut line 193.
 (pdftex.def)             Requested size: 74.39886pt x 93.34969pt.
-<immagini/img/docker_desktop_conf.png, id=480, 975.645pt x 554.07pt>
+<immagini/img/docker_desktop_conf.png, id=520, 975.645pt x 554.07pt>
 File: immagini/img/docker_desktop_conf.png Graphic file (type png)
 <use immagini/img/docker_desktop_conf.png>
 Package pdftex.def Info: immagini/img/docker_desktop_conf.png  used on input li
@@ -1597,8 +1684,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--206
 
  []
 
-[26 <./immagini/img/switch_windows_container.png> <./immagini/img/docker_deskto
-p_conf.png>]) (./capitoli/capitolo-5.tex [27] [28
+[28 <./immagini/img/switch_windows_container.png> <./immagini/img/docker_deskto
+p_conf.png>]) (./capitoli/capitolo-5.tex [29] [30
 
 ]
 Capitolo 5.
@@ -1615,7 +1702,7 @@ Overfull \hbox (15.81006pt too wide) in paragraph at lines 20--21
 n-tua-li pa-ra-me-tri de-fi-ni-ti nel docker-compose.yml,
  []
 
-<immagini/screenshot/docker_compose_sandbox.png, id=495, 1124.70187pt x 602.25p
+<immagini/screenshot/docker_compose_sandbox.png, id=536, 1124.70187pt x 602.25p
 t>
 File: immagini/screenshot/docker_compose_sandbox.png Graphic file (type png)
 <use immagini/screenshot/docker_compose_sandbox.png>
@@ -1627,19 +1714,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--41
 
  []
 
-[29] [30 <./immagini/screenshot/docker_compose_sandbox.png>])
+[31] [32 <./immagini/screenshot/docker_compose_sandbox.png>])
 (./capitoli/capitolo-6.tex
 Overfull \hbox (3.29419pt too wide) has occurred while \output is active
 \T1/cmr/m/sl/10 5.3.  INTEGRAZIONE DI HDA SANDBOX BUILDER CON DOCKER COMPOSE \T
-1/cmr/m/n/10 31
+1/cmr/m/n/10 33
  []
 
-[31] [32
+[33] [34
 
 ]
 Capitolo 6.
-[33]
-<immagini/img/sandbox_nginx.png, id=518, 1300.86pt x 804.00375pt>
+[35]
+<immagini/img/sandbox_nginx.png, id=559, 1300.86pt x 804.00375pt>
 File: immagini/img/sandbox_nginx.png Graphic file (type png)
 <use immagini/img/sandbox_nginx.png>
 Package pdftex.def Info: immagini/img/sandbox_nginx.png  used on input line 30.
@@ -1652,17 +1739,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--33
 
 
 Overfull \hbox (7.5987pt too wide) has occurred while \output is active
-\T1/cmr/m/n/10 34 \T1/cmr/m/sl/10 CAPITOLO 6.  REVERSE PROXY TRAMITE NGINX SULL
+\T1/cmr/m/n/10 36 \T1/cmr/m/sl/10 CAPITOLO 6.  REVERSE PROXY TRAMITE NGINX SULL
 E SANDBOX DI HDA
  []
 
-[34 <./immagini/img/sandbox_nginx.png>]
+[36 <./immagini/img/sandbox_nginx.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-[35]
-<immagini/flowchart/flowchart_nginxREscript.png, id=539, 582.175pt x 1747.52875
+[37]
+<immagini/flowchart/flowchart_nginxREscript.png, id=579, 582.175pt x 1747.52875
 pt>
 File: immagini/flowchart/flowchart_nginxREscript.png Graphic file (type png)
 <use immagini/flowchart/flowchart_nginxREscript.png>
@@ -1679,23 +1766,23 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./capitoli/capitolo-7.tex
 Overfull \hbox (7.5987pt too wide) has occurred while \output is active
-\T1/cmr/m/n/10 36 \T1/cmr/m/sl/10 CAPITOLO 6.  REVERSE PROXY TRAMITE NGINX SULL
+\T1/cmr/m/n/10 38 \T1/cmr/m/sl/10 CAPITOLO 6.  REVERSE PROXY TRAMITE NGINX SULL
 E SANDBOX DI HDA
  []
 
-[36]
+[38]
 
-LaTeX Warning: Text page 37 contains only floats.
+LaTeX Warning: Text page 39 contains only floats.
 
 
 Overfull \vbox (3.40808pt too high) has occurred while \output is active []
 
 
-[37 <./immagini/flowchart/flowchart_nginxREscript.png>] [38
+[39 <./immagini/flowchart/flowchart_nginxREscript.png>] [40
 
 ]
 Capitolo 7.
-[39]
+[41]
 Overfull \hbox (3.81686pt too wide) in paragraph at lines 17--17
 []|\T1/cmr/bx/n/10 Quantitativo
  []
@@ -1708,17 +1795,17 @@ Overfull \hbox (3.74263pt too wide) in paragraph at lines 15--38
 
 Underfull \vbox (badness 6268) has occurred while \output is active []
 
- [40])
-(./capitoli/capitolo-A.tex [41] [42
+ [42])
+(./capitoli/capitolo-A.tex [43] [44
 
 ]
 Appendice A.
-) [43] [44
+) [45] [46
 
 ]
 No file tesi.gls.
 No file tesi.acr.
-(./inizio-fine/bibliografia.tex [45] [46
+(./inizio-fine/bibliografia.tex [47] [48
 
 ]
 
@@ -1733,7 +1820,7 @@ Package biblatex Warning: Type 'online' not found on input line 17.
 
 LaTeX Warning: Empty bibliography on input line 17.
 
-) [47
+) [49
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
@@ -1759,11 +1846,11 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 37175 strings out of 480608
- 626754 string characters out of 5903630
- 1394939 words of memory out of 5000000
- 52003 multiletter control sequences out of 15000+600000
- 566259 words of font info for 168 fonts, out of 8000000 for 9000
+ 37359 strings out of 480608
+ 631422 string characters out of 5903630
+ 1396173 words of memory out of 5000000
+ 52160 multiletter control sequences out of 15000+600000
+ 566736 words of font info for 173 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  62i,11n,124p,1275b,3044s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:flow-chart} has been referenced but does not 
@@ -1796,14 +1883,23 @@ pdfTeX warning (dest): name{glo:driver} has been referenced but does not exist,
 pdfTeX warning (dest): name{glo:ISO} has been referenced but does not exist, re
 placed by a fixed one
 
+pdfTeX warning (dest): name{glo:open-source} has been referenced but does not e
+xist, replaced by a fixed one
+
 pdfTeX warning (dest): name{glo:boot} has been referenced but does not exist, r
 eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:rollback} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:filesystem} has been referenced but does not ex
 ist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:sandbox} has been referenced but does not exist
 , replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:Docker\040Engine} has been referenced but does 
+not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:VLAN} has been referenced but does not exist, r
 eplaced by a fixed one
@@ -1840,6 +1936,9 @@ oes not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:datacenter} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:load-balancing} has been referenced but does no
+t exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:guest} has been referenced but does not exist, 
 replaced by a fixed one
@@ -1916,10 +2015,10 @@ pe1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/cm-super/sfti0900.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 public/cm-super/sfti1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
 blic/cm-super/sfti1200.pfb>
-Output written on tesi.pdf (61 pages, 1718316 bytes).
+Output written on tesi.pdf (63 pages, 2430993 bytes).
 PDF statistics:
- 900 PDF objects out of 1000 (max. 8388607)
- 744 compressed objects within 8 object streams
- 203 named destinations out of 1000 (max. 500000)
- 41461 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 942 PDF objects out of 1000 (max. 8388607)
+ 775 compressed objects within 8 object streams
+ 215 named destinations out of 1000 (max. 500000)
+ 41486 words of extra memory for PDF output out of 42996 (max. 10000000)
 
