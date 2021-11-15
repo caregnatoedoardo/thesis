@@ -19,7 +19,7 @@ In questo capitolo si esporrà l'architettura generale del progetto implementata
 \end{figure} 
 
 La figura soprastante rappresenta l'architettura finale del prodotto interamente sviluppata ed installata con successo su un \textit{host}. 
-Una sandbox applicativa è un insieme di container in esecuzione, simultaneamente, per un singolo cliente. All'interno di un singolo host possono coesistere multiple \textit{sandbox} applicative, lanciate manualmente dal tecnico installatore.\\
+Una \textit{sandbox} applicativa è un \textbf{insieme di container} in esecuzione, simultaneamente, per un singolo cliente. All'interno di un singolo host possono coesistere \textbf{multiple \textit{sandbox}} applicative, lanciate manualmente dal tecnico installatore.\\
 Una \textit{sandbox} applicativa è composta dal seguente insieme di container:
 \begin{itemize}
 	\item \textbf{nginxcontainer};
@@ -27,78 +27,83 @@ Una \textit{sandbox} applicativa è composta dal seguente insieme di container:
 	\item \textbf{promtailcontainer};
 	\item \textbf{lokicontainer};
 \end{itemize}
-ed è rappresentata in figura tramite il quadrato contenente appunto i container sopraelencati. Ad ogni \textit{sandbox} è associato un \textbf{nome}, tipicamente proprio del cliente (nell'immagine di esempio ,"cliente1" o "clienten"), ed i container in essa contenuti acquisiscono, nel \textbf{prefisso}, anch'essi il nome della \textit{sandbox}. Ogni cliente sarà associato univocamente ad \textbf{una sola \textit{sandbox} applicativa}, quindi ogni cliente si collegherà solamente alla relativa \textit{sandbox} contenente la versione di HDA (sita nel container "hdabasecontainer") appositamente \textit{customizzata} per lo stesso.
-Il corretto instradamento della richiesta dell'utente esterno ad una determinata \textit{sandbox} è gestita dall'istanza di NGINX esterna ad ogni singola sandbox, ma installata nel medesimo \textit{host} (nell'immagine PAT.IT) d'esecuzione delle stesse. All'arrivo di una richiesta esterna HTTP/HTTPS di connessione all'istanza di NGINX esterna attraverso la porta "80" o "443" nel caso di HTTPS, questo controllerà il relativo file di configurazione (nginx.conf) cercando una entry corrispondente al sotto-dominio di primo livello contenuto nel \gls{CNAME} della propria istanza di HDA (ex: \textbf{cliente1}.pat.it) alla quale l'utente vuole collegarsi. Se questa entry (cliente1) è presente all'interno del file "nginx.conf", si instraderà la richiesta all'indirizzo IP, letto nel file "host" del computer "PAT.IT", della relativa \textit{sandbox} appartenente al cliente (la \textit{sandbox} appunto "\textbf{cliente1}.pat.it"). Sarà poi compito dell'istanza di NGINX interna alla \textit{sandbox} (ex: \textbf{cliente1}\_nginxcontainer\_1) instradare la richiesta, precedentemente arrivata dall'istanza NGINX esterna, al relativo container a seconda dei seguenti suffissi:
+ed è rappresentata nella figura 4.1 tramite il quadrato contenente appunto i container sopraelencati. Ad ogni \textit{sandbox} è associato un \textbf{nome}, tipicamente proprio del cliente (nell'immagine di esempio ,"cliente1" o "clienten"), ed i container in essa contenuti acquisiscono, nel \textbf{prefisso}, anch'essi il nome della \textit{sandbox}. Ogni cliente sarà associato univocamente ad \textbf{una sola \textit{sandbox} applicativa}, quindi ogni cliente si collegherà solamente alla relativa \textit{sandbox} contenente la versione di HDA (sita nel container "hdabasecontainer") appositamente \textit{customizzata} per lo stesso.
+Il corretto instradamento della richiesta dell'utente esterno ad una determinata \textit{sandbox} è gestita dall'istanza di \textbf{NGINX esterna} ad ogni singola \textit{sandbox}, ma installata nel medesimo \textit{host} (nell'immagine PAT.IT) d'esecuzione delle stesse. \\
+All'arrivo di una richiesta di connessione \textbf{http/https} all'istanza di NGINX esterna attraverso la porta "80" o "443" nel caso di https, questo controllerà il proprio \textbf{file di configurazione} (nginx.conf) cercando una entry corrispondente al \textbf{sotto-dominio di terzo livello} contenuto nel \textbf{\gls{CNAME}} della propria istanza di HDA (ex: \textbf{cliente1}.pat.it) alla quale l'utente vuole collegarsi. Se questa entry (cliente1) è presente all'interno del file di configurazione "nginx.conf", si \textbf{instraderà la richiesta} all'indirizzo IP della relativa \textit{sandbox} in esecuzione sull'\textit{host} "PAT.IT", nell'esempio, la \textit{sandbox} denominata "\textbf{cliente1}.pat.it". Sarà poi compito dell'istanza di NGINX interna alla \textit{sandbox} (ex: \textbf{cliente1}\_\textbf{nginxcontainer}\_1) instradare la richiesta, precedentemente arrivata dall'istanza NGINX esterna, al relativo container interno alla \textit{sandbox} a seconda dei seguenti suffissi:
 \begin{itemize}
 	\item \textbf{/HDAPortal} instraderà la chiamata al container "hdabasecontainer" e, quindi, all'istanza dell'applicativo HDA contenuto in esso;
 	\item \textbf{/loki} instraderà la chiamata al container loki, per la visualizzazione via browser delle metriche di HDA;
 	\item \textbf{/promtail} instraderà la chiamata al container "promtailcontainer" contenente un' istanza dell'applicativo "promtail" e si visualizzerà a video una serie di metriche relative all'applicativo HDA.
 \end{itemize}
-Un eventuale suffisso vuoto "\textbf{/}" instraderà, di default, la chiamata al container "hdabasecontainer".
-Il \textit{discovery} di eventuali nuove \textit{sandbox} applicative, o la rimozione di quelle non più attive dal file "host" del sistema operativo, è interamente gestita dallo script Powershell "nginxREscript.ps1". Una panoramica dettagliata relativa alla costruzione e funzionamento di questo script è disponibile al capitolo 6.3 di questo documento.
+Un eventuale suffisso vuoto "\textbf{/}" instraderà, di default, la chiamata al container "\textbf{hdabasecontainer}".
+Il \textit{discovery} di eventuali nuove \textit{sandbox} applicative, o la rimozione di quelle non più attive dal file "host" del sistema operativo, è interamente gestita dallo \textbf{script Powershell "nginxREscript.ps1"}. Una panoramica dettagliata relativa alla costruzione e funzionamento di questo script è disponibile al capitolo 6.3 di questo documento.
 
 \section{Composizione container}
-Come già precedentemente spiegato in questo documento, un container è un'unità atomica contenente un applicativo con le relative dipendenze atte al suo corretto funzionamento. Ogni container, ad esclusione del container "nginxcontainer" si basa su un'immagine del sistema operativo "Windows ServerCore IIS".\\
+Come già precedentemente spiegato in questo documento, un container è un'\textbf{unità atomica} contenente un \textbf{applicativo} con le relative \textbf{dipendenze} atte al suo corretto funzionamento. Ogni container, ad esclusione del container "nginxcontainer" si basa su un'immagine del sistema operativo "\textbf{Windows ServerCore IIS}".\\
 La composizione di un container può essere più facilmente espressa tramite la seguente immagine:
 \begin{figure}[!h]     
 \centering 
     \includegraphics[width=0.5\columnwidth]{immagini/img/container_structure} 
     \caption{Rappresentazione grafica relativa alla composizione generale di un container}
 \end{figure} \\
-Per necessità progettuali che saranno descritte nel corso di questa relazione è stata necessaria la costruzione di sei diversi container. Di seguito è fornita al lettore una panoramica dettagliata sulla composizione di ognuno dei singoli:\\
+Per necessità progettuali che saranno descritte nel corso di questa relazione è stata necessaria la costruzione di \textbf{sei} diversi container. Di seguito è fornita al lettore una panoramica dettagliata sulla composizione di ognuno dei singoli:
 
 \subsection{Container "hdaprepcontainer":}
 
 \begin{namespacedesc}
 	\classdesc{S.O./immagine di base} {Windows Servercore IIS}
 	\classdesc{Immagine in output} {hdaprepimg}
-	\classdesc{Descrizione} {Lo scopo del seguente container è quello di installare una istanza di HDA all'interno di esso, popolando quindi il volume-mapping condiviso con l'host con tutti i file di HDA con i relativi permessi dell'utenza di IIS impostati in automatico dal processo di installazione di HDA lanciato dall'eseguibile "update.exe".
+	\classdesc{Descrizione} {Lo scopo del seguente container è quello di \textbf{installare un'istanza di HDA} all'interno di esso, popolando quindi il \textit{volume-mapping} condiviso con l'\textit{host} con tutti i file di HDA con i \textbf{relativi permessi} dell'utenza di \textbf{IIS} impostati in automatico dal processo di installazione di HDA lanciato dall'eseguibile "\textbf{update.exe}".
 Una volta terminata l'installazione, il container terminerà automaticamente la sua esecuzione. Per lanciare una istanza di HDA containerizzata bisognerà quindi eseguire il successivo container "hdabasecontainer" spiegato immediatamente.}
 \end{namespacedesc}
 \subsection{Container "hdabasecontainer"}
 
 \begin{namespacedesc}
 	\classdesc{S.O./immagine di base} {hdaprepimg}
-	\classdesc{Immagine in output}{hdabaseimg}
-	\classdesc{Descrizione} {Lo scopo del seguente container è quello di avviare, ed eventualmente re-installare, una istanza di HDA con i relativi servizi. Una volta fatto quanto specificato, a differenza del container hdaprepcontainer, questo non interromperà la sua esecuzione, ma rimarrà attivo per permettere ad utenti esterni di usufruire del programma HDA collegandosi alla web-interface propria dell'istanza di HDA in esecuzione. In aggiunta a questa istanza, è presente una installazione dell'applicativo "Telegraf", atto al monitoraggio in real time dell'istanza di HDA in esecuzione. 
-Per favorire uno scambio di dati tra host questo container si interfaccia direttamente con due volume-mapping condivisi con l'host:
+	\classdesc{Immagine in output} {hdabaseimg}
+	\classdesc{Descrizione} {Lo scopo del seguente container è quello di \textbf{avviare}, ed eventualmente \textbf{re-installare}, una istanza di HDA con i \textbf{relativi servizi}. Una volta fatto quanto specificato, a differenza del container "hdaprepcontainer", questo non interromperà la sua esecuzione, ma \textbf{rimarrà attivo} per permettere ad utenti esterni di usufruire dell'applicativo HDA \textbf{collegandosi alla web-interface} propria dell'istanza di HDA in esecuzione. In aggiunta a questa istanza, è presente una installazione dell'applicativo "Telegraf", ovvero un \textit{agent} atto alla raccolta di tutte le metriche prestazionali del container quali CPU usage, RAM usage e network usage. \\
+Per favorire uno scambio di dati tra host e container, questo container si interfaccia direttamente con due \textit{volume-mapping} condivisi con l'\textit{host}:
 \begin{itemize}
-	\item \textbf{hdashared}: è il volume-mapping che espone la cartella "App\_Data" del programma HDA. Questo volume-mapping permette all'installatore di esportare od importare degli overrides applicativi per delle customizzazioni specifiche di ogni cliente create ad-hoc dal team di sviluppo sulla base delle esigenze del cliente stesso.
-	\item \textbf{lokishared}: è il volume-mapping che espone tutti i log applicativi dell'istanza di HDA, come ad esempio \textit{hda\_log.txt}, \textit{error\_log.txt}, \textit{wsc4\_log.txt}.. al container "lokicontainer" atto al monitoraggio dell'istanza di HDA presente in questo container.
+	\item \textbf{hdashared}: è il \textit{volume-mapping} che espone la cartella "\textbf{App\_Data}" del programma HDA. Questo \textit{volume-mapping} permette all'installatore di esportare od importare degli \textit{overrides} applicativi per delle \textit{customizzazioni} specifiche di ogni cliente \textbf{create ad-hoc} dal team di sviluppo di HDA sulla base delle esigenze del cliente stesso.
+	\item \textbf{lokishared}: è il \textit{volume-mapping} che espone tutti i log applicativi dell'istanza di HDA, come ad esempio \textit{hda\_log.txt}, \textit{error\_log.txt} e \textit{wsc4\_log.txt} al container "lokicontainer" atto al monitoraggio dell'istanza di HDA presente in questo container.
 \end{itemize}
-Questo container dipende (eredita) il filesystem  ed i relativi permessi precedentemente configurati dal container "hdaprepcontainer".}
+Questo container dipende (eredita) il \textit{filesystem} ed i relativi permessi \textbf{precedentemente configurati} dal container "hdaprepcontainer".}
 \end{namespacedesc}
 
 \subsection{Container "hdadbupdatercontainer"}
 \begin{namespacedesc}
 	\classdesc{S.O./immagine di base} {hdabaseimg}
-	\classdesc{Immagine in output}{hdabasedbimg}
-	\classdesc{Descrizione} {Lo scopo del seguente container è quello di eseguire un aggiornamento del database di HDA manualmente creato all'interno di uno specifico server \textbf{MS-SQL}. I parametri di connessione al database pre-esistente di HDA sono nel template-file "istance.json" presente nel pacchetto di installazione di HDA fornito.
-Il presente container non ha associato alcun indirizzo IP o scheda di rete virtuale, in quanto l'utente non ha la necessità di interfacciarcisi durante la sua esecuzione e può, inoltre, essere eseguito indipendentemente da qualsiasi altro container in esecuzione sullo stesso host.
-La versione di HDA presente nel container "hdaprepcontainer", e di conseguenza nel container "hdabasecontainer", deve essere compatibile con la versione del database installato tramite questo container. Il controllo di versione non è automatizzato, e lo dovrà quindi fare il tecnico installatore manualmente. La tabella informativa relativamente alla compatibilità tra versioni di HDA e database è presente all'interno del file Onenote aziendale.  
+	\classdesc{Immagine in output} {hdabasedbimg}
+	\classdesc{Descrizione} {Lo scopo del seguente container è quello di eseguire un aggiornamento del database di HDA \textbf{manualmente creato} dall'utente installatore all'interno di uno specifico server \textbf{MSSQL}. I parametri di connessione al database pre-esistente di HDA sono nel template-file "\textbf{istance.json}" presente nel pacchetto di installazione di HDA fornito.
+Il presente container non ha associato\textbf{alcun indirizzo IP} o scheda di rete virtuale, in quanto l'utente non ha la necessità di interfacciarcisi durante la sua esecuzione e può, inoltre, essere eseguito \textbf{indipendentemente} da qualsiasi altro container in esecuzione sullo stesso \textit{host}.
+La versione di HDA presente nel container "hdaprepcontainer", e di conseguenza nel container "hdabasecontainer", deve essere compatibile con la versione del database installato tramite questo container. Il controllo di versione \textbf{non è automatizzato}, e lo dovrà quindi fare il tecnico installatore manualmente. La tabella informativa relativamente alla compatibilità tra versioni di HDA e database è presente all'interno del file OneNote aziendale.  
 }
 \end{namespacedesc}
 
 \subsection{Container "lokicontainer"}
 \begin{namespacedesc}
 	\classdesc{S.O./immagine di base} {Windows Servercore IIS}
-	\classdesc{Immagine in output}{lokiimg}
-	\classdesc{Descrizione} {Lo scopo del seguente container è quello di eseguire una istanza del programma "Loki" atto al monitoraggio dei servizi di HDA. Il presente container preleva i dati popolati dall'istanza di HDA in esecuzione nel container "hdabasecontainer" nel volume mapping "lokishared"  ad esso collegato, per inviarli direttamente al container "promtailcontainer".}
+	\classdesc{Immagine in output} {lokiimg}
+	\classdesc{Descrizione} {Lo scopo del seguente container è quello di eseguire un'istanza del programma "\textbf{Loki}" atto al monitoraggio dei \textbf{log} di HDA. Il presente container preleva i dati popolati dall'istanza di HDA in esecuzione nel container "hdabasecontainer" dal \textit{volume-mapping} "lokishared" ad esso collegato, per permettere all'applicativo "Grafana", in esecuzione su un altro \textit{host}, di mostrare graficamente le statistiche ed eventuali errori legati all'istanza di HDA in esecuzione sul container "hdabasecontainer".}
 \end{namespacedesc}
 
 \subsection{Container "promtailcontainer"}
 \begin{namespacedesc}
 	\classdesc{S.O./immagine di base} {Windows Servercore IIS}
-	\classdesc{Immagine in output}{promtailimg}
-	\classdesc{Descrizione} {Lo scopo del seguente container è quello di eseguire una istanza del programma "Promtail" atto al monitoraggio dei servizi di HDA in esecuzione sul container "hdabasecontainer". Il seguente container espone i log collezionati dal container "lokicontainer" su una specifica porta precedentemente configurata da apposito file di configurazione "\textit{promtail-local-config.yml"} per permettere all'applicativo "Grafana", in esecuzione su un altro \textit{host} di mostrare graficamente le statistiche ed eventuali errori legati all'istanza di HDA in esecuzione sul container "hdabasecontainer".}
+	\classdesc{Immagine in output} {promtailimg}
+	\classdesc{Descrizione} {Lo scopo del seguente container è quello di eseguire un'istanza del programma "\textbf{Promtail}" atto al monitoraggio dell'istanza di HDA in esecuzione sul container "hdabasecontainer". Il seguente container \textbf{espone i log} collezionati dal container "lokicontainer" su una specifica porta precedentemente configurata da apposito file di configurazione "\textit{promtail-local-config.yml"}.
 \end{namespacedesc}	
 
 \subsection{Container "nginxcontainer"}
 \begin{namespacedesc}
 	\classdesc{S.O./immagine di base} {NGINX official image}
 	\classdesc{Immagine in output}{nginximg}
-	\classdesc{Descrizione} {Lo scopo del seguente container è quello di eseguire una istanza del programma "NGINX" con il relativo file di configurazione "\textit{nginx.conf} automaticamente importato. Tramite il resolver DNS interno di Docker, è possibile per un utente esterno, tramite NGINX, accedere ad un qualsiasi container facente parte della \textit{sandbox} applicativa di HDA, quali "hdabasecontainer", "lokicontainer" e "promtailcontainer". Sempre tramite questo container, è possibile la gestione precedentemente accennata di load-balancing tra molteplici container di HDA.}
+	\classdesc{Descrizione} {Lo scopo del seguente container è quello di eseguire un'istanza dell'applicativo "\textbf{NGINX}" con il relativo file di configurazione "\textit{nginx.conf} automaticamente importato. Tramite il resolver DNS interno di Docker, è possibile per un utente esterno, tramite NGINX, \textbf{accedere ad un qualsiasi container} facente parte della \textit{sandbox} applicativa di HDA, quali ad esempio "hdabasecontainer", "lokicontainer" e "promtailcontainer". Sempre tramite questo container, è possibile la gestione precedentemente accennata di \textbf{load-balancing} tra molteplici container di HDA.}
 \end{namespacedesc}
+
+Gli applicativi "\textbf{Telegraf}", "\textbf{Promtail}" e "\textbf{Loki}" appena descritti fanno parte del lavoro dello stagista \textbf{Francesco Pantaleoni}, e \textbf{non rientrano} quindi nei requisiti dello stage svolto dal sottoscritto né trovano una relativa spiegazione più approfondita all'interno di questo documento. Le modalità di costruzione dei relativi container degli applicativi elencati sono invece spiegate nel corso di questo documento.
+
+
 
 \newpage	
 

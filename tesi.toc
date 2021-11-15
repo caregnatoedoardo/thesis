@@ -42,52 +42,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.5}Container "promtailcontainer"}{19}{subsection.4.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.6}Container "nginxcontainer"}{19}{subsection.4.2.6}%
+\contentsline {chapter}{\numberline {5}Orchestrazione container}{21}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Dockerfile container: analisi struttura e spiegazione}{20}{section.4.3}%
+\contentsline {section}{\numberline {5.1}Breve panoramica su Docker Compose}{21}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Dockerfile container: "hdaprepcontainer"}{20}{subsection.4.3.1}%
+\contentsline {section}{\numberline {5.2}Docker compose per la costruzione di una sandbox applicativa}{22}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Dockerfile container: "hdadbupdatercontainer"}{21}{subsection.4.3.2}%
+\contentsline {section}{\numberline {5.3}Integrazione di HDA Sandbox Builder con Docker Compose}{22}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Dockerfile container: "hdabasecontainer"}{22}{subsection.4.3.3}%
+\contentsline {chapter}{\numberline {6}Reverse Proxy tramite NGINX sulle sandbox di HDA}{25}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Dockerfile container: "lokicontainer"}{23}{subsection.4.3.4}%
+\contentsline {section}{\numberline {6.1}Introduzione ad NGINX}{25}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}Dockerfile container: "promtailcontainer"}{24}{subsection.4.3.5}%
+\contentsline {section}{\numberline {6.2}Logica di reverse-proxy su sandbox di HDA}{25}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.6}Dockerfile container: "nginxcontainer"}{25}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {6.2.1}Aggiornamento di HDA nella sandbox applicativa}{27}{subsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Costruzione container tramite automazione: HDA Sandbox Builder}{26}{section.4.4}%
+\contentsline {section}{\numberline {6.3}Analisi NginxREScript.ps1}{28}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Installazione nel computer client}{28}{section.4.5}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{31}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Orchestrazione container}{31}{chapter.5}%
+\contentsline {section}{\numberline {7.1}Raggiungimento degli obiettivi}{31}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Breve panoramica su Docker Compose}{31}{section.5.1}%
+\contentsline {section}{\numberline {7.2}Conoscenze acquisite}{32}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Docker compose per la costruzione di una sandbox applicativa}{32}{section.5.2}%
+\contentsline {section}{\numberline {7.3}Valutazione personale}{33}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Integrazione di HDA Sandbox Builder con Docker Compose}{32}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Appendice A}{35}{appendix.Alph1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Reverse Proxy tramite NGINX sulle sandbox di HDA}{35}{chapter.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Introduzione ad NGINX}{35}{section.6.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Logica di reverse-proxy su sandbox di HDA}{35}{section.6.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Aggiornamento di HDA nella sandbox applicativa}{37}{subsection.6.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Analisi NginxREScript.ps1}{38}{section.6.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{41}{chapter.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Raggiungimento degli obiettivi}{41}{section.7.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Conoscenze acquisite}{42}{section.7.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Valutazione personale}{43}{section.7.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{45}{appendix.Alph1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{49}{appendix*.35}%
+\contentsline {chapter}{Bibliografia}{39}{appendix*.25}%

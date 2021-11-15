@@ -24,35 +24,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Rappresentazione grafica relativa alla composizione generale di un container\relax }}{17}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdaprepcontainer"\relax }}{20}{figure.caption.22}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdadbupdatercontainer"\relax }}{21}{figure.caption.23}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdabasecontainer"\relax }}{22}{figure.caption.24}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "lokicontainer"\relax }}{23}{figure.caption.25}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "promtailcontainer"\relax }}{24}{figure.caption.26}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "nginxcontainer"\relax }}{25}{figure.caption.27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Flow chart del batch-file "hda\_sandbox\_builder.bat"\relax }}{26}{figure.caption.28}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Flow chart del \textit {batch} file "HDA\_sandbox\_builder.bat" con particolare evidenza ai dockerfile e relativi container coinvolti\relax }}{27}{figure.caption.29}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Voce da selezionare per cambiare la tipologia di container\relax }}{28}{figure.caption.30}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces File di configurazione di Docker Desktop con le API esposte in porta "2390"\relax }}{28}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Interfaccia di Docker Compose con in esecuzione due \textit {sandbox} applicative\relax }}{22}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Interfaccia di Docker Compose con in esecuzione due \textit {sandbox} applicative\relax }}{32}{figure.caption.32}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Rappresentazione grafica circa la gestione runtime delle \textit {sandbox} applicative di HDA\relax }}{26}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Rappresentazione grafica circa la gestione runtime delle \textit {sandbox} applicative di HDA\relax }}{36}{figure.caption.33}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Flowchart riassuntivo relativo allo script Powershell nginxREscript.ps1\relax }}{39}{figure.caption.34}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Flowchart riassuntivo relativo allo script Powershell nginxREscript.ps1\relax }}{29}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
