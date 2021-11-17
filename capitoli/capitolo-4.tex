@@ -91,7 +91,7 @@ La versione di HDA presente nel container "hdaprepcontainer", e di conseguenza n
 \begin{namespacedesc}
 	\classdesc{S.O./immagine di base} {Windows Servercore IIS}
 	\classdesc{Immagine in output} {promtailimg}
-	\classdesc{Descrizione} {Lo scopo del seguente container è quello di eseguire un'istanza del programma "\textbf{Promtail}" atto al monitoraggio dell'istanza di HDA in esecuzione sul container "hdabasecontainer". Il seguente container \textbf{espone i log} collezionati dal container "lokicontainer" su una specifica porta precedentemente configurata da apposito file di configurazione "\textit{promtail-local-config.yml"}.
+	\classdesc{Descrizione} {Lo scopo del seguente container è quello di eseguire un'istanza del programma "\textbf{Promtail}" atto al monitoraggio dell'istanza di HDA in esecuzione sul container "hdabasecontainer". Il seguente container \textbf{espone i log} collezionati dal container "lokicontainer" su una specifica porta precedentemente configurata da apposito file di configurazione "\textit{promtail-local-config.yml"}}.
 \end{namespacedesc}	
 
 \subsection{Container "nginxcontainer"}
@@ -100,25 +100,24 @@ La versione di HDA presente nel container "hdaprepcontainer", e di conseguenza n
 	\classdesc{Immagine in output}{nginximg}
 	\classdesc{Descrizione} {Lo scopo del seguente container è quello di eseguire un'istanza dell'applicativo "\textbf{NGINX}" con il relativo file di configurazione "\textit{nginx.conf} automaticamente importato. Tramite il resolver DNS interno di Docker, è possibile per un utente esterno, tramite NGINX, \textbf{accedere ad un qualsiasi container} facente parte della \textit{sandbox} applicativa di HDA, quali ad esempio "hdabasecontainer", "lokicontainer" e "promtailcontainer". Sempre tramite questo container, è possibile la gestione precedentemente accennata di \textbf{load-balancing} tra molteplici container di HDA.}
 \end{namespacedesc}
-
+\\
 Gli applicativi "\textbf{Telegraf}", "\textbf{Promtail}" e "\textbf{Loki}" appena descritti fanno parte del lavoro dello stagista \textbf{Francesco Pantaleoni}, e \textbf{non rientrano} quindi nei requisiti dello stage svolto dal sottoscritto né trovano una relativa spiegazione più approfondita all'interno di questo documento. Le modalità di costruzione dei relativi container degli applicativi elencati sono invece spiegate nel corso di questo documento.
-
-
 
 \newpage	
 
 \section{Dockerfile container: analisi struttura e spiegazione}
-Come già visto precedentemente, ogni container è generato da un proprio dockerfile, il quale contiene tutte le istruzioni e comandi atti alla corretta costruzione di una immagine di un applicativo containerizzato.
-Di seguito, tramite l'ausilio di \gls{flow-chart} riassuntivi, viene fornita al lettore una panoramica sul contenuto di ogni dockerfile del progetto:
+Come già visto precedentemente, ogni container è generato da un proprio \textbf{dockerfile}, il quale contiene tutte le istruzioni e comandi atti alla corretta costruzione di una immagine di un applicativo \textit{containerizzato}.
+Di seguito, tramite l'ausilio di \textit{\gls{flow-chart}} riassuntivi, viene fornita al lettore una panoramica sul contenuto di ogni dockerfile del progetto:
 \subsection{Dockerfile container: "hdaprepcontainer"}
-Il presente dockerfile costruisce con successo l'immagine relativa al container "hdaprepcontainer". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
+Il presente dockerfile costruisce con successo l'immagine relativa al container "\textbf{hdaprepcontainer}". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
 \begin{figure}[!h]     
 \centering 
     \includegraphics[width=0.3\columnwidth]{immagini/flowchart/flowchart_hdaprepcontainer} 
     \caption{Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdaprepcontainer"}
 \end{figure} \\
-Questo container non rimane in esecuzione dopo la fine dell'ultima istruzione, e non fa parte della \textit{sandbox} applicativa.\\
+Questo container \textbf{terminerà la sua esecuzione} dopo aver eseguito l'ultima istruzione, e \textbf{non} fa parte della \textit{sandbox} applicativa.\\
 \newpage
+
 \subsection{Dockerfile container: "hdadbupdatercontainer"}
 Il presente dockerfile costruisce con successo l'immagine relativa al container "hdadbupdatercontainer". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
 \begin{figure}[!h]     
@@ -126,8 +125,9 @@ Il presente dockerfile costruisce con successo l'immagine relativa al container 
     \includegraphics[width=0.3\columnwidth]{immagini/flowchart/flowchart_hdadbinstall} 
     \caption{Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdadbupdatercontainer"}
 \end{figure} \\
-Questo container non rimane in esecuzione dopo la fine dell'ultima istruzione, e non fa parte della \textit{sandbox} applicativa.\\
+Questo container \textbf{non rimane in esecuzione} dopo la fine dell'ultima istruzione, e, anch'esso, \textbf{non} fa parte della \textit{sandbox} applicativa.\\
 \newpage
+
 \subsection{Dockerfile container: "hdabasecontainer"}
 Il presente dockerfile costruisce con successo l'immagine relativa al container "hdabasecontainer". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
 \begin{figure}[!h]     
@@ -135,8 +135,9 @@ Il presente dockerfile costruisce con successo l'immagine relativa al container 
     \includegraphics[width=0.7\columnwidth]{immagini/flowchart/flowchart_hdabasecontainer} 
     \caption{Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdabasecontainer"}
 \end{figure} \\
-Questo container rimane in esecuzione dopo la fine dell'ultima istruzione agganciandosi al processo interno "ServiceMonitor.exe", e fa parte della \textit{sandbox} applicativa.
+Questo container \textbf{rimane in esecuzione} dopo la fine dell'ultima istruzione, agganciandosi al processo interno "ServiceMonitor.exe". Questo container fa parte della \textit{sandbox} applicativa.
 \newpage
+
 \subsection{Dockerfile container: "lokicontainer"}
 Il presente dockerfile costruisce con successo l'immagine relativa al container "lokicontainer". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
 \begin{figure}[!h]     
@@ -144,8 +145,9 @@ Il presente dockerfile costruisce con successo l'immagine relativa al container 
     \includegraphics[width=0.3\columnwidth]{immagini/flowchart/flowchart_lokicontainer} 
     \caption{Flow-chart rappresentante la costruzione dell'immagine relativa al container "lokicontainer"}
 \end{figure} \\
-Questo container rimane in esecuzione dopo la fine dell'ultima istruzione agganciandosi al processo interno "loki-windows.exe", e fa parte della \textit{sandbox} applicativa.
+Questo container \textbf{ continuerà la sua esecuzione} al termine dell'ultima istruzione, agganciandosi al processo interno "loki-windows.exe". Questo container fa parte della \textit{sandbox} applicativa.
 \newpage
+
 \subsection{Dockerfile container: "promtailcontainer"}
 Il presente dockerfile costruisce con successo l'immagine relativa al container "promtailcontainer". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
 \begin{figure}[!h]     
@@ -153,7 +155,7 @@ Il presente dockerfile costruisce con successo l'immagine relativa al container 
     \includegraphics[width=0.3\columnwidth]{immagini/flowchart/flowchart_promtailcontainer} 
     \caption{Flow-chart rappresentante la costruzione dell'immagine relativa al container "promtailcontainer"}
 \end{figure} \\
-Questo container rimane in esecuzione dopo la fine dell'ultima istruzione agganciandosi al processo interno "promtail-windows.exe", e fa parte della \textit{sandbox} applicativa.
+Questo container \textbf{rimane in esecuzione} dopo la fine dell'ultima istruzione agganciandosi al processo interno "promtail-windows.exe", e fa parte della \textit{sandbox} applicativa.
 \newpage
 \subsection{Dockerfile container: "nginxcontainer"}
 Il presente dockerfile costruisce con successo l'immagine relativa al container "nginxcontainer". La sequenza di passi per l'ottenimento dell'immagine è di seguito rappresentata:
@@ -162,16 +164,16 @@ Il presente dockerfile costruisce con successo l'immagine relativa al container 
     \includegraphics[width=0.3\columnwidth]{immagini/flowchart/flowchart_nginxcontainer} 
     \caption{Flow-chart rappresentante la costruzione dell'immagine relativa al container "nginxcontainer"}
 \end{figure} \\
-Questo container rimane in esecuzione dopo la fine dell'ultima istruzione, e fa parte della \textit{sandbox} applicativa.
+Questo container \textbf{rimane in esecuzione} dopo la fine dell'ultima istruzione, e fa parte della \textit{sandbox} applicativa.
 %-------------------------------------
 
 
 
 \newpage
 \section{Costruzione container tramite automazione: HDA Sandbox Builder}
-La costruzione ed il lancio di una \textit{sandbox} applicativa è un'operazione molto onerosa in termini di tempo e di passaggi manuali da eseguire per l'utente installatore.
-Per ovviare ad eventuali errori cronologici sul lancio e la costruzione dei container è stato creato un \textit{batch}-file atto al setup ed alla creazione automatizzata dei container, al fine di poter facilmente costruire e lanciare una o più \textit{sandbox} applicative.
-Il \textit{batch}-file "\textbf{HDA\_sandbox\_builder.bat}" è uno script-file che consente la creazione ed il setup di HDA nei volume-mapping in maniera totalmente automatizzata, consentendo all'utente installatore la scelta, effettuata tramite risposte \textit{Y/N}, della costruzione delle immagini e dei container stessi.
+La costruzione ed il lancio di una \textit{sandbox} applicativa è un'operazione \textbf{molto onerosa} in termini di tempo e di passaggi manuali da eseguire per l'utente installatore.
+Per ovviare ad eventuali errori cronologici sul lancio e la costruzione dei container è stato creato un \textit{batch-file} atto al setup ed alla creazione \textbf{automatizzata} dei container, al fine di poter facilmente costruire e lanciare una o più \textit{sandbox} applicative.
+Il \textit{batch-file} "\textbf{HDA\_sandbox\_builder.bat}" è uno script-file che consente la creazione ed il setup di HDA nei \textit{volume-mapping} in maniera \textbf{totalmente automatizzata}, consentendo all'utente installatore la scelta, effettuata tramite risposte \textit{Y/N}, relativa alla costruzione delle immagini e dei container stessi.
 Il \textit{flow-chart} di esecuzione del batch-file è qui sotto rappresentato:
 \\
 \begin{figure}[!h]     
@@ -179,10 +181,10 @@ Il \textit{flow-chart} di esecuzione del batch-file è qui sotto rappresentato:
     \includegraphics[width=0.8 \columnwidth]{immagini/img/hda_sandbox_builder_fc} 
     \caption{Flow chart del batch-file "hda\_sandbox\_builder.bat"}
 \end{figure}\\
-Come si evince dal diagramma di flusso, al termine dell'esecuzione del batch-file, non è in esecuzione alcuna \textit{sandbox} applicativa né container. Sono state invece create tutte le immagini applicative sulla quale si baseranno tutti i container propri della \textit{sandbox} applicativa di HDA.
-Il lancio dei container veri e propri, e quindi anche della \textit{sandbox} applicativa di HDA, dovrà essere eseguito necessariamente a mano dall'utente installatore o amministratore del server.
-Il lancio della \textit{sandbox} applicativa di HDA, grazie ai container appena creati, è ora un'operazione relativamente semplice e veloce, e sarà trattato approfonditamente nella sezione "5.4" di questo documento.
-Per favorire al lettore una più corretta comprensione relativamente al batch file \textbf{HDA\_sandbox\_builder.bat} ed alla costruzione dei container, è stato predisposto un diagramma relativo al flusso di esecuzione del \textit{batch}-file con particolare attenzione ai dockerfile e container coinvolti nel flusso di esecuzione dello stesso:
+Come si evince dal diagramma di flusso, al termine dell'esecuzione del batch-file, non è in esecuzione alcuna \textit{sandbox} applicativa né container. Sono state invece create tutte le \textbf{immagini applicative} sulla quale si baseranno tutti i container che comporranno la futura \textit{sandbox} applicativa di HDA.\\
+Il lancio dei container veri e propri, e quindi anche della \textit{sandbox} applicativa di HDA, dovrà essere eseguito necessariamente \textbf{a mano dall'utente installatore} o amministratore del server.
+Il lancio della \textit{sandbox}, grazie ai container appena creati, è ora un'operazione relativamente \textbf{semplice e veloce}, e sarà trattata approfonditamente nella sezione "5.4" di questo documento.\\
+Per favorire al lettore una più corretta comprensione relativamente al batch file \textbf{HDA\_sandbox\_builder.bat} ed alla costruzione dei container, è stato predisposto un diagramma relativo al flusso di esecuzione del \textit{batch-file} con particolare attenzione ai dockerfile e container coinvolti nel flusso di esecuzione dello stesso:
 \begin{figure}[!h]     
 \centering 
     \includegraphics[width=0.7 \columnwidth]{immagini/flowchart/flow_chart_HDA_sandbox_builder} 
@@ -191,23 +193,24 @@ Per favorire al lettore una più corretta comprensione relativamente al batch fi
 %FLOW CHART ESECUZIONE batch file.
 \newpage
 \section{Installazione nel computer client}
-L'infrastruttura sopracitata, al fine di funzionare correttamente, necessita di una installazione di Docker all'interno del sistema operativo \textit{host} dove verrà creata ed eseguita l'intera infrastruttura.
-I passi atti ad una corretta installazione di Docker sono reperibili nella pagina di "Download and Install" nella relativa documentazione di Docker. Un importante accorgimento che l'utente installatore dovrà obbligatoriamente eseguire è lo switching dai container Linux ai container Windows, effettuabile dall'icona di Docker posizionata nella barra Start di Windows, selezionando l'apposita voce "Switch to Windows Containers" come da immagine:
+L'infrastruttura sopracitata, al fine di funzionare correttamente, necessita di una \textbf{installazione} di Docker all'interno del sistema operativo \textit{host} dove verrà creata ed eseguita l'intera infrastruttura.
+I passi atti ad una corretta installazione di Docker sono reperibili nella pagina di "Download and Install" nella relativa documentazione di Docker. Un importante accorgimento che l'utente installatore dovrà obbligatoriamente eseguire è lo \textbf{switching dai container Linux ai container Windows}, effettuabile dall'icona di Docker posizionata nella barra Start di Windows, selezionando l'apposita voce "Switch to Windows Containers" come da immagine:
 \begin{figure}[!h]     
 \centering 
     \includegraphics[width=0.2\columnwidth]{immagini/img/switch_windows_container} 
     \caption{Voce da selezionare per cambiare la tipologia di container}
 \end{figure}\\
-Una volta selezionata la funzionalità sopra riportata, il Docker Engine si riavvierà, permettendo ora la creazione ed esecuzione dei container basati sul sistema operativo Microsoft Windows.\\
-Installato con successo l'applicativo Docker, è necessario accedere al file di configurazione dello stesso ("docker.conf") o, tramite Docker Desktop, accedere alle impostazioni dello stesso, per abilitare la funzionalità "experimental features" che permette appunto l'esecuzione su Windows di container basati su Linux (necessario per il container "nginxcontainer"), ed esporre le relative Docker API su una determinata porta.
-L'esposizione delle Docker API sono di vitale importanza per l'esecuzione dello script Powershell "nginxREscript.ps1", e la porta precedentemente esposta andrà modificata manualmente anche all'interno dello stesso script.
-Il risultato finale sarà simile alla seguente immagine, dove si illustra graficamente, tramite Docker Desktop, il file di configurazione di Docker esponendo le Docker API nella porta "2390":
+Una volta selezionata la funzionalità sopra riportata, il Docker Engine si riavvierà, permettendo ora la creazione ed esecuzione dei container basati sul \textbf{sistema operativo Microsoft Windows}.\\
+Installato con successo l'applicativo Docker, è necessario accedere al file di configurazione dello stesso ("docker.conf") o, tramite Docker Desktop, accedere alle impostazioni dello stesso, per abilitare la funzionalità "\textbf{experimental features}" che permette appunto l'esecuzione su Windows di container basati su \textbf{Linux} (necessario per il container "nginxcontainer"), ed esporre le relative \textbf{\gls{Docker API}} su una determinata porta.\\
+L'esposizione delle Docker API sono di \textbf{vitale importanza} per l'esecuzione dello script Powershell "\textbf{nginxREscript.ps1}", e la porta precedentemente esposta andrà opportunamente manualmente manualmente anche all'interno dello stesso script.\\
+Il risultato finale sarà simile alla seguente immagine, dove si illustra graficamente, tramite Docker Desktop, il file di configurazione di Docker esponendo le Docker API nella porta "\textbf{2390}":
 \begin{figure}[!h]     
 \centering 
     \includegraphics[width=0.7 \columnwidth]{immagini/img/docker_desktop_conf} 
     \caption{File di configurazione di Docker Desktop con le API esposte in porta "2390"}
 \end{figure}\\
-Ad ogni riavvio della macchina fisica è possibile che Docker Engine vada in errore, in quanto non riuscirà ad esporre le proprie API nella porta precedentemente configurata. Per risolvere questo problema, l'installatore dovrà configurare una nuova porta, non precedentemente utilizzata, esattamente come visto sopra.\\
+\newpage
+Ad ogni riavvio della macchina fisica è possibile che Docker Engine vada in errore a causa di un \textit{bug} conosciuto e tuttora in fase di \textit{fixing}, in quanto non riuscirà ad esporre le proprie API nella porta precedentemente configurata. Per risolvere questo problema, l'installatore dovrà \textbf{configurare una nuova porta}, non già utilizzata precedentemente, esattamente come visto sopra.\\
 
 
 
