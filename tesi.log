@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.8)  17 NOV 2021 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.8)  21 NOV 2021 10:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1777,12 +1777,12 @@ ipt.png>] [40
 ]
 Capitolo 7.
 [41]
-Overfull \hbox (3.81686pt too wide) in paragraph at lines 17--17
+Overfull \hbox (3.81686pt too wide) in paragraph at lines 21--21
 []|\T1/cmr/bx/n/10 Quantitativo
  []
 
 
-Overfull \hbox (3.74263pt too wide) in paragraph at lines 15--38
+Overfull \hbox (3.74263pt too wide) in paragraph at lines 19--42
  [] 
  []
 
@@ -1838,8 +1838,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
  37391 strings out of 480608
- 632031 string characters out of 5903630
- 1397361 words of memory out of 5000000
+ 632029 string characters out of 5903630
+ 1398361 words of memory out of 5000000
  52192 multiletter control sequences out of 15000+600000
  566604 words of font info for 172 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -2009,7 +2009,7 @@ pe1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/cm-super/sfti0900.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 public/cm-super/sfti1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
 blic/cm-super/sfti1200.pfb>
-Output written on tesi.pdf (63 pages, 2441425 bytes).
+Output written on tesi.pdf (63 pages, 2441492 bytes).
 PDF statistics:
  954 PDF objects out of 1000 (max. 8388607)
  787 compressed objects within 8 object streams

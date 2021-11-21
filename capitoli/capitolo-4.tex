@@ -8,7 +8,7 @@
 %**************************************************************
 
 \intro{Breve introduzione al capitolo}\\
-In questo capitolo si esporrà l'architettura generale del progetto implementata in Azienda, fornendo un'analisi dettagliata sulla composizione di ogni Dockerfile relativo ad ogni container. Infine, verrà esposto il meccanismo di costruzione automatizzato di una \textit{sandbox} applicativa.
+In questo capitolo si esporrà l'architettura generale del progetto implementata in azienda, fornendo un'analisi dettagliata sulla composizione di ogni Dockerfile relativo ad ogni container. Infine, verrà esposto il meccanismo di costruzione automatizzato di una \textit{sandbox} applicativa.
 
 \section{Architettura generale}
 %TODO: immagine architettura generale e relativa spiegazione anche del concetto di sandbox applicativa di HDA, con relativa possibilità di aggiornamento ed avanzamento di versione.
@@ -20,14 +20,14 @@ In questo capitolo si esporrà l'architettura generale del progetto implementata
 
 La figura soprastante rappresenta l'architettura finale del prodotto interamente sviluppata ed installata con successo su un \textit{host}. 
 Una \textit{sandbox} applicativa è un \textbf{insieme di container} in esecuzione, simultaneamente, per un singolo cliente. All'interno di un singolo host possono coesistere \textbf{multiple \textit{sandbox}} applicative, lanciate manualmente dal tecnico installatore.\\
-Una \textit{sandbox} applicativa è composta dal seguente insieme di container:
+Una \textit{sandbox} applicativa è composta dal seguente insieme di container, ed è rappresentata nella figura 4.1 tramite il quadrato contenente appunto i container sopraelencati:
 \begin{itemize}
 	\item \textbf{nginxcontainer};
 	\item \textbf{hdabasecontainer};
 	\item \textbf{promtailcontainer};
-	\item \textbf{lokicontainer};
+	\item \textbf{lokicontainer}.
 \end{itemize}
-ed è rappresentata nella figura 4.1 tramite il quadrato contenente appunto i container sopraelencati. Ad ogni \textit{sandbox} è associato un \textbf{nome}, tipicamente proprio del cliente (nell'immagine di esempio ,"cliente1" o "clienten"), ed i container in essa contenuti acquisiscono, nel \textbf{prefisso}, anch'essi il nome della \textit{sandbox}. Ogni cliente sarà associato univocamente ad \textbf{una sola \textit{sandbox} applicativa}, quindi ogni cliente si collegherà solamente alla relativa \textit{sandbox} contenente la versione di HDA (sita nel container "hdabasecontainer") appositamente \textit{customizzata} per lo stesso.
+Ad ogni \textit{sandbox} è associato un \textbf{nome}, tipicamente proprio del cliente (nell'immagine di esempio ,"cliente1" o "clienten"), ed i container in essa contenuti acquisiscono, nel \textbf{prefisso}, anch'essi il nome della \textit{sandbox}. Ogni cliente sarà associato univocamente ad \textbf{una sola \textit{sandbox} applicativa}, quindi ogni cliente si collegherà solamente alla relativa \textit{sandbox} contenente la versione di HDA (sita nel container "hdabasecontainer") appositamente \textit{customizzata} per lo stesso.
 Il corretto instradamento della richiesta dell'utente esterno ad una determinata \textit{sandbox} è gestita dall'istanza di \textbf{NGINX esterna} ad ogni singola \textit{sandbox}, ma installata nel medesimo \textit{host} (nell'immagine PAT.IT) d'esecuzione delle stesse. \\
 All'arrivo di una richiesta di connessione \textbf{http/https} all'istanza di NGINX esterna attraverso la porta "80" o "443" nel caso di https, questo controllerà il proprio \textbf{file di configurazione} (nginx.conf) cercando una entry corrispondente al \textbf{sotto-dominio di terzo livello} contenuto nel \textbf{\gls{CNAME}} della propria istanza di HDA (ex: \textbf{cliente1}.pat.it) alla quale l'utente vuole collegarsi. Se questa entry (cliente1) è presente all'interno del file di configurazione "nginx.conf", si \textbf{instraderà la richiesta} all'indirizzo IP della relativa \textit{sandbox} in esecuzione sull'\textit{host} "PAT.IT", nell'esempio, la \textit{sandbox} denominata "\textbf{cliente1}.pat.it". Sarà poi compito dell'istanza di NGINX interna alla \textit{sandbox} (ex: \textbf{cliente1}\_\textbf{nginxcontainer}\_1) instradare la richiesta, precedentemente arrivata dall'istanza NGINX esterna, al relativo container interno alla \textit{sandbox} a seconda dei seguenti suffissi:
 \begin{itemize}
@@ -64,7 +64,7 @@ Una volta terminata l'installazione, il container terminerà automaticamente la 
 	\classdesc{Descrizione} {Lo scopo del seguente container è quello di \textbf{avviare}, ed eventualmente \textbf{re-installare}, una istanza di HDA con i \textbf{relativi servizi}. Una volta fatto quanto specificato, a differenza del container "hdaprepcontainer", questo non interromperà la sua esecuzione, ma \textbf{rimarrà attivo} per permettere ad utenti esterni di usufruire dell'applicativo HDA \textbf{collegandosi alla web-interface} propria dell'istanza di HDA in esecuzione. In aggiunta a questa istanza, è presente una installazione dell'applicativo "Telegraf", ovvero un \textit{agent} atto alla raccolta di tutte le metriche prestazionali del container quali CPU usage, RAM usage e network usage. \\
 Per favorire uno scambio di dati tra host e container, questo container si interfaccia direttamente con due \textit{volume-mapping} condivisi con l'\textit{host}:
 \begin{itemize}
-	\item \textbf{hdashared}: è il \textit{volume-mapping} che espone la cartella "\textbf{App\_Data}" del programma HDA. Questo \textit{volume-mapping} permette all'installatore di esportare od importare degli \textit{overrides} applicativi per delle \textit{customizzazioni} specifiche di ogni cliente \textbf{create ad-hoc} dal team di sviluppo di HDA sulla base delle esigenze del cliente stesso.
+	\item \textbf{hdashared}: è il \textit{volume-mapping} che espone la cartella "\textbf{App\_Data}" del programma HDA. Questo \textit{volume-mapping} permette all'installatore di esportare od importare degli \textit{overrides} applicativi per delle \textit{customizzazioni} specifiche di ogni cliente \textbf{create ad-hoc} dal team di sviluppo di HDA sulla base delle esigenze del cliente stesso;
 	\item \textbf{lokishared}: è il \textit{volume-mapping} che espone tutti i log applicativi dell'istanza di HDA, come ad esempio \textit{hda\_log.txt}, \textit{error\_log.txt} e \textit{wsc4\_log.txt} al container "lokicontainer" atto al monitoraggio dell'istanza di HDA presente in questo container.
 \end{itemize}
 Questo container dipende (eredita) il \textit{filesystem} ed i relativi permessi \textbf{precedentemente configurati} dal container "hdaprepcontainer".}
@@ -79,7 +79,7 @@ Il presente container non ha associato\textbf{alcun indirizzo IP} o scheda di re
 La versione di HDA presente nel container "hdaprepcontainer", e di conseguenza nel container "hdabasecontainer", deve essere compatibile con la versione del database installato tramite questo container. Il controllo di versione \textbf{non è automatizzato}, e lo dovrà quindi fare il tecnico installatore manualmente. La tabella informativa relativamente alla compatibilità tra versioni di HDA e database è presente all'interno del file OneNote aziendale.  
 }
 \end{namespacedesc}
-
+\newpage
 \subsection{Container "lokicontainer"}
 \begin{namespacedesc}
 	\classdesc{S.O./immagine di base} {Windows Servercore IIS}
@@ -202,7 +202,7 @@ I passi atti ad una corretta installazione di Docker sono reperibili nella pagin
 \end{figure}\\
 Una volta selezionata la funzionalità sopra riportata, il Docker Engine si riavvierà, permettendo ora la creazione ed esecuzione dei container basati sul \textbf{sistema operativo Microsoft Windows}.\\
 Installato con successo l'applicativo Docker, è necessario accedere al file di configurazione dello stesso ("docker.conf") o, tramite Docker Desktop, accedere alle impostazioni dello stesso, per abilitare la funzionalità "\textbf{experimental features}" che permette appunto l'esecuzione su Windows di container basati su \textbf{Linux} (necessario per il container "nginxcontainer"), ed esporre le relative \textbf{\gls{Docker API}} su una determinata porta.\\
-L'esposizione delle Docker API sono di \textbf{vitale importanza} per l'esecuzione dello script Powershell "\textbf{nginxREscript.ps1}", e la porta precedentemente esposta andrà opportunamente manualmente manualmente anche all'interno dello stesso script.\\
+L'esposizione delle Docker API sono di \textbf{vitale importanza} per l'esecuzione dello script Powershell "\textbf{nginxREscript.ps1}", e la porta precedentemente esposta andrà opportunamente manualmente configurata anche all'interno dello stesso script.\\
 Il risultato finale sarà simile alla seguente immagine, dove si illustra graficamente, tramite Docker Desktop, il file di configurazione di Docker esponendo le Docker API nella porta "\textbf{2390}":
 \begin{figure}[!h]     
 \centering 
