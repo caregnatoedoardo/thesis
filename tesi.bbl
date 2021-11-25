@@ -84,6 +84,19 @@
       \verb https://Kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
       \endverb
     \endentry
+    \entry{art:automated-nginx-reverse-proxy}{book}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{title}{Automated NGINX reverse proxy}
+      \true{nocite}
+      \verb{urlraw}
+      \verb http://jasonwilder.com/blog/2014/03/25/automated-nginx-reverse-proxy-for-docker/
+      \endverb
+      \verb{url}
+      \verb http://jasonwilder.com/blog/2014/03/25/automated-nginx-reverse-proxy-for-docker/
+      \endverb
+    \endentry
     \entry{art:cdk}{book}{}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
@@ -739,19 +752,6 @@
       \endverb
       \verb{url}
       \verb https://www.appdynamics.com/topics/distributed-tracing
-      \endverb
-    \endentry
-    \entry{art:what-is-kubernetes}{book}{}
-      \field{sortinit}{W}
-      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
-      \field{labeltitlesource}{title}
-      \field{title}{What is Kubernetes}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://Kubernetes.io/docs/concepts/overview/what-is-Kubernetes/
-      \endverb
-      \verb{url}
-      \verb https://Kubernetes.io/docs/concepts/overview/what-is-Kubernetes/
       \endverb
     \endentry
     \entry{art:mtls-cloudflare}{book}{}
