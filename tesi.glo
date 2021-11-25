@@ -1,57 +1,57 @@
-\glossaryentry{container?\glossentry{Container}|setentrycounter[]{page}\glsnumberformat}{vii}
-\glossaryentry{virtual machine?\glossentry{Virtual Machine}|setentrycounter[]{page}\glsnumberformat}{vii}
-\glossaryentry{docker?\glossentry{Docker}|setentrycounter[]{page}\glsnumberformat}{vii}
-\glossaryentry{docker compose?\glossentry{Docker Compose}|setentrycounter[]{page}\glsnumberformat}{vii}
-\glossaryentry{api?\glossentry{API}|setentrycounter[]{page}\glsnumberformat}{vii}
-\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{vii}
-\glossaryentry{cx studio?\glossentry{CX Studio}|setentrycounter[]{page}\glsnumberformat}{vii}
-\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{vii}
-\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{vii}
-\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{vii}
-\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{cx studio?\glossentry{CX Studio}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{docker api?\glossentry{Docker API}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{nginx?\glossentry{NGINX}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{docker?\glossentry{Docker}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{docker compose?\glossentry{Docker Compose}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{Powershell?\glossentry{Powershell}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{cmd?\glossentry{CMD}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{hardware?\glossentry{hardware}|setentrycounter[]{page}\glsnumberformat}{7}
-\glossaryentry{sistemi operativi?\glossentry{sistemi operativi}|setentrycounter[]{page}\glsnumberformat}{7}
-\glossaryentry{client?\glossentry{client}|setentrycounter[]{page}\glsnumberformat}{7}
-\glossaryentry{host?\glossentry{host}|setentrycounter[]{page}\glsnumberformat}{7}
-\glossaryentry{guest?\glossentry{guest}|setentrycounter[]{page}\glsnumberformat}{7}
-\glossaryentry{load-balancing?\glossentry{load-balancing}|setentrycounter[]{page}\glsnumberformat}{7}
-\glossaryentry{datacenter?\glossentry{datacenter}|setentrycounter[]{page}\glsnumberformat}{7}
-\glossaryentry{disaster recovery?\glossentry{disaster recovery}|setentrycounter[]{page}\glsnumberformat}{7}
-\glossaryentry{recovery?\glossentry{recovery}|setentrycounter[]{page}\glsnumberformat}{7}
-\glossaryentry{hyper-v?\glossentry{Hyper-V}|setentrycounter[]{page}\glsnumberformat}{8}
-\glossaryentry{xen?\glossentry{Xen}|setentrycounter[]{page}\glsnumberformat}{8}
-\glossaryentry{hypervisor?\glossentry{hypervisor}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{ram?\glossentry{RAM}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{storage?\glossentry{storage}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{cpu?\glossentry{CPU}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{dma?\glossentry{DMA}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{nat?\glossentry{NAT}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{vlan?\glossentry{VLAN}|setentrycounter[]{page}\glsnumberformat}{9}
-\glossaryentry{docker engine?\glossentry{Docker Engine}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{hypervisor?\glossentry{hypervisor}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{load-balancing?\glossentry{load-balancing}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{sandbox?\glossentry{sandbox}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{filesystem?\glossentry{filesystem}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{rollback?\glossentry{rollback}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{boot?\glossentry{boot}|setentrycounter[]{page}\glsnumberformat}{11}
-\glossaryentry{open-source?\glossentry{open-source}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{container?\glossentry{Container}|setentrycounter[]{page}\glsnumberformat}{v}
+\glossaryentry{virtual machine?\glossentry{Virtual Machine}|setentrycounter[]{page}\glsnumberformat}{v}
+\glossaryentry{docker?\glossentry{Docker}|setentrycounter[]{page}\glsnumberformat}{v}
+\glossaryentry{docker compose?\glossentry{Docker Compose}|setentrycounter[]{page}\glsnumberformat}{v}
+\glossaryentry{api?\glossentry{API}|setentrycounter[]{page}\glsnumberformat}{v}
+\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{v}
+\glossaryentry{cx studio?\glossentry{CX Studio}|setentrycounter[]{page}\glsnumberformat}{v}
+\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{v}
+\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{v}
+\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{v}
+\glossaryentry{hda?\glossentry{HDA}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{cx studio?\glossentry{CX Studio}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{docker api?\glossentry{Docker API}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{nginx?\glossentry{NGINX}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{docker?\glossentry{Docker}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{docker compose?\glossentry{Docker Compose}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{Powershell?\glossentry{Powershell}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{cmd?\glossentry{CMD}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{hardware?\glossentry{hardware}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{sistemi operativi?\glossentry{sistemi operativi}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{client?\glossentry{client}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{host?\glossentry{host}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{guest?\glossentry{guest}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{load-balancing?\glossentry{load-balancing}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{datacenter?\glossentry{datacenter}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{disaster recovery?\glossentry{disaster recovery}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{recovery?\glossentry{recovery}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{hyper-v?\glossentry{Hyper-V}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{xen?\glossentry{Xen}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{hypervisor?\glossentry{hypervisor}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{ram?\glossentry{RAM}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{storage?\glossentry{storage}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{cpu?\glossentry{CPU}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{dma?\glossentry{DMA}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{nat?\glossentry{NAT}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{vlan?\glossentry{VLAN}|setentrycounter[]{page}\glsnumberformat}{11}
 \glossaryentry{docker engine?\glossentry{Docker Engine}|setentrycounter[]{page}\glsnumberformat}{12}
-\glossaryentry{iso?\glossentry{ISO}|setentrycounter[]{page}\glsnumberformat}{12}
-\glossaryentry{driver?\glossentry{driver}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{guest additions?\glossentry{guest additions}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{dockerfile?\glossentry{dockerfile}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{caching?\glossentry{caching}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{layer?\glossentry{layer}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{bios?\glossentry{BIOS}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{installer?\glossentry{installer}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{cname?\glossentry{CNAME}|setentrycounter[]{page}\glsnumberformat}{16}
-\glossaryentry{flow-chart?\glossentry{flow-chart}|setentrycounter[]{page}\glsnumberformat}{20}
-\glossaryentry{docker api?\glossentry{Docker API}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{thread?\glossentry{thread}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{hypervisor?\glossentry{hypervisor}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{load-balancing?\glossentry{load-balancing}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{sandbox?\glossentry{sandbox}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{filesystem?\glossentry{filesystem}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{rollback?\glossentry{rollback}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{boot?\glossentry{boot}|setentrycounter[]{page}\glsnumberformat}{13}
+\glossaryentry{open-source?\glossentry{open-source}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{docker engine?\glossentry{Docker Engine}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{iso?\glossentry{ISO}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{driver?\glossentry{driver}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{guest additions?\glossentry{guest additions}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{dockerfile?\glossentry{dockerfile}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{caching?\glossentry{caching}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{layer?\glossentry{layer}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{bios?\glossentry{BIOS}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{installer?\glossentry{installer}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{cname?\glossentry{CNAME}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{flow-chart?\glossentry{flow-chart}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{docker api?\glossentry{Docker API}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{thread?\glossentry{thread}|setentrycounter[]{page}\glsnumberformat}{37}

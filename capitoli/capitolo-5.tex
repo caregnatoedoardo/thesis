@@ -16,11 +16,11 @@ Tramite definizione di un file \textbf{YAML} (ex: \textit{docker-compose.yml}), 
 I passi che Docker Compose esegue per creare quindi la \textit{sandbox} applicativa di HDA sono i seguenti:
 \begin{itemize}
 	\item \textbf{lettura} del file docker-compose.yml;
-	\item lettura, ricorsiva, dei \textbf{dockerfile} relativi ai \textbf{container} definiti nel docker-compose.yml;
+	\item \textbf{lettura}, ricorsiva, dei \textbf{dockerfile} relativi ai \textbf{container} definiti nel docker-compose.yml;
 	\item \textbf{costruzione}, secondo l'ordine ed eventuali parametri definiti nel docker-compose.yml, delle \textbf{immagini} dei container dichiarati nel Compose-file (docker-compose.yml).
 \end{itemize}
-Una volta costruite tutte le immagini dei container propri della \textit{sandbox} applicativa di HDA, è possibile lanciare la \textit{sandbox} applicativa tramite il semplice comando: \centerline{\textbf{docker-compose
--f docker-compose.yml -p nomecliente up}} sostituendo "nomecliente" con il nome effettivo del cliente \textbf{proprietario} della \textit{sandbox} di HDA. I parametri \textbf{-f} e \textbf{-p} definiscono, rispettivamente, la possibilità di dichiarare un Compose-file alternativo e la possibilità di assegnare un nome alternativo all'istanza, la quale, di \textit{default}, acquisirebbe il nome della directory contenente il Compose-file.
+Una volta costruite tutte le immagini dei container propri della \textit{sandbox} applicativa di HDA, è possibile lanciare la \textit{sandbox} applicativa tramite il semplice comando: \centerline{\textbf{[docker-compose
+-f docker-compose.yml -p nomecliente up]}} sostituendo "nomecliente" con il nome effettivo del cliente \textbf{proprietario} della \textit{sandbox} di HDA. I parametri \textbf{-f} e \textbf{-p} definiscono, rispettivamente, la possibilità di dichiarare un Compose-file alternativo e la possibilità di assegnare un nome alternativo all'istanza, la quale, di \textit{default}, acquisirebbe il nome della directory contenente il Compose-file.
 
 %\label{sec:tecnologie-strumenti}
 

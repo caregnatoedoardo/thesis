@@ -32,8 +32,8 @@ Nella seguente figura è rappresentato il sistema operativo Windows 10 Pro virtu
     \includegraphics[width=0.6\columnwidth]{immagini/screenshot/firefox_vmware} 
     \caption{Browser "Firefox" virtualizzato tramite software di virtualizzazione "VMWare"}
 \end{figure}
-
 \newpage
+
 Al fine di permettere al sistema operativo \textit{host} la virtualizzazione di uno o più sistemi operativi, è necessario installare un \textit{\gls{hypervisor}}\footcite{installabile solamente se il processore supporta la virtualizzazione e se quest'ultima e' abilitata da BIOS}, \textit{native} o \textit{hosted}, ovvero uno strato software che si interfacci e gestisca tutte le \textbf{istanze} di macchine virtuali in esecuzione sulla macchina locale. \\
 La virtualizzazione non è priva di svantaggi. Il primo tra tutti, è appunto la necessità di dover \textit{virtualizzare} un intero sistema operativo al fine di eseguire l'applicativo virtuale desiderato.
 Questo vincolo obbligatorio implica un consumo di memoria \gls{RAM} e di \gls{storage} non indifferente anche solo per eseguire il singolo sistema operativo virtualizzato \textbf{senza alcuna} applicazione virtuale in esecuzione.
@@ -109,7 +109,7 @@ Al fine di poter creare ed orchestrare dei container, è necessaria l'installazi
 	\item Processore a \textbf{64 bit};
 	\item 4Gb di memoria \textbf{RAM};
 	\item Virtualizzazione hardware abilitata da \textbf{\gls{BIOS}};
-	\item Funzionalità \textbf{Hyper-V} abilitata da Windows \footcite{Per abilitare il supporto di virtualizzazione Hyper-V su Windows bastera' entrare nell'apposito menu "Abilita o disabilita funzionalità di Windows" e selezionare la voce "Hyper-V"}.
+	\item Funzionalità \textbf{Hyper-V} abilitata da Windows \footcite{Per abilitare il supporto di virtualizzazione Hyper-V su Windows bastera' accedere all'apposito menu "Abilita o disabilita funzionalità di Windows" e selezionare la voce "Hyper-V"}.
 \end{itemize}
 
 %TODO: immagine mostrante l'abilitazione della funzionalità Hyper-V su Windows.

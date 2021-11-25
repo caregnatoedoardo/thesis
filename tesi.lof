@@ -4,57 +4,57 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Logo di Pat Group\relax }}{1}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Browser "Firefox" virtualizzato tramite software di virtualizzazione "VirtualBox"\relax }}{8}{figure.caption.15}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Browser "Firefox" virtualizzato tramite software di virtualizzazione "VMWare"\relax }}{8}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Browser "Firefox" virtualizzato tramite software di virtualizzazione "VirtualBox"\relax }}{10}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Rappresentazione grafica dell'architettura a container ed a macchine virtuali\relax }}{10}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Browser "Firefox" virtualizzato tramite software di virtualizzazione "VMWare"\relax }}{10}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Browser web "Firefox" in esecuzione su un container con porta 5800 esposta all'host\relax }}{11}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Rappresentazione grafica dell'architettura a container ed a macchine virtuali\relax }}{12}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Schermata principale di "Docker Desktop" con nessun container in esecuzione\relax }}{14}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Browser web "Firefox" in esecuzione su un container con porta 5800 esposta all'host\relax }}{13}{figure.caption.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Schermata principale di "Docker Desktop" con nessun container in esecuzione\relax }}{16}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Architettura generale del progetto\relax }}{15}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architettura generale del progetto\relax }}{17}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Rappresentazione grafica relativa alla composizione generale di un container\relax }}{17}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Rappresentazione grafica relativa alla composizione generale di un container\relax }}{19}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdaprepcontainer"\relax }}{20}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdaprepcontainer"\relax }}{23}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdadbupdatercontainer"\relax }}{21}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdadbupdatercontainer"\relax }}{24}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdabasecontainer"\relax }}{22}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "hdabasecontainer"\relax }}{25}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "lokicontainer"\relax }}{23}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "lokicontainer"\relax }}{26}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "promtailcontainer"\relax }}{24}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "promtailcontainer"\relax }}{27}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "nginxcontainer"\relax }}{25}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Flow-chart rappresentante la costruzione dell'immagine relativa al container "nginxcontainer"\relax }}{28}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Flow chart del batch-file "hda\_sandbox\_builder.bat"\relax }}{26}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Flow chart del batch-file "hda\_sandbox\_builder.bat"\relax }}{29}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Flow chart del \textit {batch} file "HDA\_sandbox\_builder.bat" con particolare evidenza ai dockerfile e relativi container coinvolti\relax }}{27}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Flow chart del \textit {batch} file "HDA\_sandbox\_builder.bat" con particolare evidenza ai dockerfile e relativi container coinvolti\relax }}{30}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Voce da selezionare per cambiare la tipologia di container\relax }}{28}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Voce da selezionare per cambiare la tipologia di container\relax }}{31}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces File di configurazione di Docker Desktop con le API esposte in porta "2390"\relax }}{29}{figure.caption.31}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Interfaccia di Docker Compose con in esecuzione due \textit {sandbox} applicative\relax }}{32}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces File di configurazione di Docker Desktop con le API esposte in porta "2390"\relax }}{31}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Rappresentazione grafica circa la gestione runtime delle \textit {sandbox} applicative di HDA\relax }}{36}{figure.caption.33}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Flowchart riassuntivo relativo allo script Powershell nginxREscript.ps1\relax }}{39}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Interfaccia di Docker Compose con in esecuzione due \textit {sandbox} applicative\relax }}{34}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Rappresentazione grafica circa la gestione runtime delle \textit {sandbox} applicative di HDA\relax }}{38}{figure.caption.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Flowchart riassuntivo relativo allo script Powershell nginxREscript.ps1\relax }}{41}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

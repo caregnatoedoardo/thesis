@@ -56,6 +56,7 @@ Per necessità progettuali che saranno descritte nel corso di questa relazione �
 	\classdesc{Descrizione} {Lo scopo del seguente container è quello di \textbf{installare un'istanza di HDA} all'interno di esso, popolando quindi il \textit{volume-mapping} condiviso con l'\textit{host} con tutti i file di HDA con i \textbf{relativi permessi} dell'utenza di \textbf{IIS} impostati in automatico dal processo di installazione di HDA lanciato dall'eseguibile "\textbf{update.exe}".
 Una volta terminata l'installazione, il container terminerà automaticamente la sua esecuzione. Per lanciare una istanza di HDA containerizzata bisognerà quindi eseguire il successivo container "hdabasecontainer" spiegato immediatamente.}
 \end{namespacedesc}
+\newpage
 \subsection{Container "hdabasecontainer"}
 
 \begin{namespacedesc}
@@ -69,6 +70,8 @@ Per favorire uno scambio di dati tra host e container, questo container si inter
 \end{itemize}
 Questo container dipende (eredita) il \textit{filesystem} ed i relativi permessi \textbf{precedentemente configurati} dal container "hdaprepcontainer".}
 \end{namespacedesc}
+
+\newpage
 
 \subsection{Container "hdadbupdatercontainer"}
 \begin{namespacedesc}
@@ -105,7 +108,7 @@ Gli applicativi "\textbf{Telegraf}", "\textbf{Promtail}" e "\textbf{Loki}" appen
 
 \newpage	
 
-\section{Dockerfile container: analisi struttura e spiegazione}
+\section{Dockerfile container: analisi struttura ed esposizione}
 Come già visto precedentemente, ogni container è generato da un proprio \textbf{dockerfile}, il quale contiene tutte le istruzioni e comandi atti alla corretta costruzione di una immagine di un applicativo \textit{containerizzato}.
 Di seguito, tramite l'ausilio di \textit{\gls{flow-chart}} riassuntivi, viene fornita al lettore una panoramica sul contenuto di ogni dockerfile del progetto:
 \subsection{Dockerfile container: "hdaprepcontainer"}
@@ -181,13 +184,14 @@ Il \textit{flow-chart} di esecuzione del batch-file è qui sotto rappresentato:
     \includegraphics[width=0.8 \columnwidth]{immagini/img/hda_sandbox_builder_fc} 
     \caption{Flow chart del batch-file "hda\_sandbox\_builder.bat"}
 \end{figure}\\
+\newpage
 Come si evince dal diagramma di flusso, al termine dell'esecuzione del batch-file, non è in esecuzione alcuna \textit{sandbox} applicativa né container. Sono state invece create tutte le \textbf{immagini applicative} sulla quale si baseranno tutti i container che comporranno la futura \textit{sandbox} applicativa di HDA.\\
 Il lancio dei container veri e propri, e quindi anche della \textit{sandbox} applicativa di HDA, dovrà essere eseguito necessariamente \textbf{a mano dall'utente installatore} o amministratore del server.
 Il lancio della \textit{sandbox}, grazie ai container appena creati, è ora un'operazione relativamente \textbf{semplice e veloce}, e sarà trattata approfonditamente nella sezione "5.4" di questo documento.\\
 Per favorire al lettore una più corretta comprensione relativamente al batch file \textbf{HDA\_sandbox\_builder.bat} ed alla costruzione dei container, è stato predisposto un diagramma relativo al flusso di esecuzione del \textit{batch-file} con particolare attenzione ai dockerfile e container coinvolti nel flusso di esecuzione dello stesso:
 \begin{figure}[!h]     
 \centering 
-    \includegraphics[width=0.7 \columnwidth]{immagini/flowchart/flow_chart_HDA_sandbox_builder} 
+    \includegraphics[width=0.6 \columnwidth]{immagini/flowchart/flow_chart_HDA_sandbox_builder} 
     \caption{Flow chart del \textit{batch} file "HDA\_sandbox\_builder.bat" con particolare evidenza ai dockerfile e relativi container coinvolti}
 \end{figure}\\
 %FLOW CHART ESECUZIONE batch file.
@@ -206,10 +210,9 @@ L'esposizione delle Docker API sono di \textbf{vitale importanza} per l'esecuzio
 Il risultato finale sarà simile alla seguente immagine, dove si illustra graficamente, tramite Docker Desktop, il file di configurazione di Docker esponendo le Docker API nella porta "\textbf{2390}":
 \begin{figure}[!h]     
 \centering 
-    \includegraphics[width=0.7 \columnwidth]{immagini/img/docker_desktop_conf} 
+    \includegraphics[width=0.65 \columnwidth]{immagini/img/docker_desktop_conf} 
     \caption{File di configurazione di Docker Desktop con le API esposte in porta "2390"}
 \end{figure}\\
-\newpage
 Ad ogni riavvio della macchina fisica è possibile che Docker Engine vada in errore a causa di un \textit{bug} conosciuto e tuttora in fase di \textit{fixing}, in quanto non riuscirà ad esporre le proprie API nella porta precedentemente configurata. Per risolvere questo problema, l'installatore dovrà \textbf{configurare una nuova porta}, non già utilizzata precedentemente, esattamente come visto sopra.\\
 
 

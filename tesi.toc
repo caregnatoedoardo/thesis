@@ -6,90 +6,88 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}L'azienda}{1}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Organizzazione dei capitoli}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Organizzazione dei capitoli}{3}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Descrizione dello stage}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Descrizione dello stage}{5}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Scopo dello stage curricolare}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Scopo dello stage curricolare}{5}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Requisiti e obiettivi}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Requisiti e obiettivi}{6}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Pianificazione}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Pianificazione}{7}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Container VS Virtual Machine}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Container VS Virtual Machine}{9}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Differenze architetturali tra Container e VM}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Differenze architetturali tra Container e VM}{9}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Analisi di Docker: architettura e funzionalità}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Analisi di Docker: architettura e funzionalità}{14}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Creazione di container vs creazione di VM}{12}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Creazione di container vs creazione di VM}{14}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Installazione di Docker in ambiente Windows}{13}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Installazione di Docker in ambiente Windows}{15}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Architettura generale ed analisi container}{15}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Architettura generale ed analisi container}{17}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Architettura generale}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Architettura generale}{17}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Composizione container}{17}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Composizione container}{19}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Container "hdaprepcontainer":}{17}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}Container "hdaprepcontainer":}{19}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Container "hdabasecontainer"}{17}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Container "hdabasecontainer"}{20}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Container "hdadbupdatercontainer"}{18}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Container "hdadbupdatercontainer"}{21}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Container "lokicontainer"}{19}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.4}Container "lokicontainer"}{22}{subsection.4.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.5}Container "promtailcontainer"}{19}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.5}Container "promtailcontainer"}{22}{subsection.4.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.6}Container "nginxcontainer"}{19}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.6}Container "nginxcontainer"}{22}{subsection.4.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Dockerfile container: analisi struttura e spiegazione}{20}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Dockerfile container: analisi struttura ed esposizione}{23}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Dockerfile container: "hdaprepcontainer"}{20}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.1}Dockerfile container: "hdaprepcontainer"}{23}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Dockerfile container: "hdadbupdatercontainer"}{21}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}Dockerfile container: "hdadbupdatercontainer"}{24}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Dockerfile container: "hdabasecontainer"}{22}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.3}Dockerfile container: "hdabasecontainer"}{25}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Dockerfile container: "lokicontainer"}{23}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.4}Dockerfile container: "lokicontainer"}{26}{subsection.4.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}Dockerfile container: "promtailcontainer"}{24}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.5}Dockerfile container: "promtailcontainer"}{27}{subsection.4.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.6}Dockerfile container: "nginxcontainer"}{25}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.6}Dockerfile container: "nginxcontainer"}{28}{subsection.4.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Costruzione container tramite automazione: HDA Sandbox Builder}{26}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Costruzione container tramite automazione: HDA Sandbox Builder}{29}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Installazione nel computer client}{28}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Installazione nel computer client}{31}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Orchestrazione container}{31}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Orchestrazione container}{33}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Breve panoramica su Docker Compose}{31}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Breve panoramica su Docker Compose}{33}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Docker compose per la costruzione di una sandbox applicativa}{32}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Docker compose per la costruzione di una sandbox applicativa}{34}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Integrazione di HDA Sandbox Builder con Docker Compose}{32}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Integrazione di HDA Sandbox Builder con Docker Compose}{34}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Reverse Proxy tramite NGINX sulle sandbox di HDA}{35}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Reverse Proxy tramite NGINX sulle sandbox di HDA}{37}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Introduzione ad NGINX}{35}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Introduzione ad NGINX}{37}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Logica di reverse-proxy su sandbox di HDA}{35}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Logica di reverse-proxy su sandbox di HDA}{37}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Analisi del file di configurazione di NGINX interno alla sandbox applicativa}{37}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.1}Analisi del file di configurazione di NGINX interno alla sandbox applicativa}{39}{subsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Aggiornamento di HDA nella sandbox applicativa}{38}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.2}Aggiornamento di HDA nella sandbox applicativa}{40}{subsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Analisi NginxREScript.ps1}{38}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Analisi NginxREScript.ps1}{40}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{41}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{43}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Raggiungimento degli obiettivi}{41}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Raggiungimento degli obiettivi}{43}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Conoscenze acquisite}{42}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Conoscenze acquisite}{44}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Valutazione personale}{43}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Valutazione personale}{45}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{45}{appendix.Alph1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{49}{appendix*.35}%
+\contentsline {chapter}{Bibliografia}{49}{appendix*.36}%
