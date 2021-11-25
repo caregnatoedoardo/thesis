@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.8)  25 NOV 2021 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.8)  25 NOV 2021 17:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1544,36 +1544,24 @@ File: immagini/img/container_structure.png Graphic file (type png)
 Package pdftex.def Info: immagini/img/container_structure.png  used on input li
 ne 46.
 (pdftex.def)             Requested size: 186.0pt x 49.3602pt.
- [18] [19 <./immagini/img/container_structure.png>] [20] [21]
-
-./capitoli/capitolo-4.tex:107: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107 G
-       li applicativi "\textbf{Telegraf}", "\textbf{Promtail}" e "\textbf{Lo...
-
-? 
-[22]
+ [18] [19 <./immagini/img/container_structure.png>] [20] [21] [22]
 <immagini/flowchart/flowchart_hdaprepcontainer.png, id=475, 201.75375pt x 613.2
 9124pt>
 File: immagini/flowchart/flowchart_hdaprepcontainer.png Graphic file (type png)
 
 <use immagini/flowchart/flowchart_hdaprepcontainer.png>
 Package pdftex.def Info: immagini/flowchart/flowchart_hdaprepcontainer.png  use
-d on input line 118.
+d on input line 117.
 (pdftex.def)             Requested size: 111.60114pt x 339.24834pt.
 
-Overfull \hbox (47.54811pt too wide) in paragraph at lines 115--122
+Overfull \hbox (47.54811pt too wide) in paragraph at lines 114--121
 \T1/cmr/m/n/10 (-20) Il pre-sen-te doc-ker-fi-le co-strui-sce con suc-ces-so l'
 im-ma-gi-ne re-la-ti-va al con-tai-ner "\T1/cmr/bx/n/10 hdaprepcontainer\T1/cmr
 /m/n/10 (-20) ".
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--122
+Underfull \hbox (badness 10000) in paragraph at lines 114--121
 
  []
 
@@ -1583,10 +1571,10 @@ pt>
 File: immagini/flowchart/flowchart_hdadbinstall.png Graphic file (type png)
 <use immagini/flowchart/flowchart_hdadbinstall.png>
 Package pdftex.def Info: immagini/flowchart/flowchart_hdadbinstall.png  used on
- input line 128.
+ input line 127.
 (pdftex.def)             Requested size: 111.60114pt x 200.43968pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--132
+Underfull \hbox (badness 10000) in paragraph at lines 124--131
 
  []
 
@@ -1597,7 +1585,7 @@ File: immagini/flowchart/flowchart_hdabasecontainer.png Graphic file (type png)
 
 <use immagini/flowchart/flowchart_hdabasecontainer.png>
 Package pdftex.def Info: immagini/flowchart/flowchart_hdabasecontainer.png  use
-d on input line 138.
+d on input line 137.
 (pdftex.def)             Requested size: 260.39886pt x 262.2537pt.
  [25 <./immagini/flowchart/flowchart_hdabasecontainer.png>]
 <immagini/flowchart/flowchart_lokicontainer.png, id=495, 201.75375pt x 507.8975
@@ -1605,7 +1593,7 @@ pt>
 File: immagini/flowchart/flowchart_lokicontainer.png Graphic file (type png)
 <use immagini/flowchart/flowchart_lokicontainer.png>
 Package pdftex.def Info: immagini/flowchart/flowchart_lokicontainer.png  used o
-n input line 148.
+n input line 147.
 (pdftex.def)             Requested size: 111.60114pt x 280.94872pt.
  [26 <./immagini/flowchart/flowchart_lokicontainer.png>]
 <immagini/flowchart/flowchart_promtailcontainer.png, id=501, 201.75375pt x 507.
@@ -1614,7 +1602,7 @@ File: immagini/flowchart/flowchart_promtailcontainer.png Graphic file (type png
 )
 <use immagini/flowchart/flowchart_promtailcontainer.png>
 Package pdftex.def Info: immagini/flowchart/flowchart_promtailcontainer.png  us
-ed on input line 158.
+ed on input line 157.
 (pdftex.def)             Requested size: 111.60114pt x 280.94872pt.
  [27 <./immagini/flowchart/flowchart_promtailcontainer.png>]
 <immagini/flowchart/flowchart_nginxcontainer.png, id=507, 201.75375pt x 216.81p
@@ -1622,11 +1610,11 @@ t>
 File: immagini/flowchart/flowchart_nginxcontainer.png Graphic file (type png)
 <use immagini/flowchart/flowchart_nginxcontainer.png>
 Package pdftex.def Info: immagini/flowchart/flowchart_nginxcontainer.png  used 
-on input line 167.
+on input line 166.
 (pdftex.def)             Requested size: 111.60114pt x 119.93066pt.
 
 [28 <./immagini/flowchart/flowchart_nginxcontainer.png>]
-Overfull \hbox (5.89159pt too wide) in paragraph at lines 176--176
+Overfull \hbox (5.89159pt too wide) in paragraph at lines 175--175
 []\T1/cmr/bx/n/14.4 Costruzione con-tai-ner tra-mi-te au-to-ma-zio-ne: HDA
  []
 
@@ -1634,10 +1622,10 @@ Overfull \hbox (5.89159pt too wide) in paragraph at lines 176--176
 File: immagini/img/hda_sandbox_builder_fc.png Graphic file (type png)
 <use immagini/img/hda_sandbox_builder_fc.png>
 Package pdftex.def Info: immagini/img/hda_sandbox_builder_fc.png  used on input
- line 184.
+ line 183.
 (pdftex.def)             Requested size: 297.60114pt x 340.12117pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--187
+Underfull \hbox (badness 10000) in paragraph at lines 176--186
 
  []
 
@@ -1654,10 +1642,10 @@ File: immagini/flowchart/flow_chart_HDA_sandbox_builder.png Graphic file (type
 png)
 <use immagini/flowchart/flow_chart_HDA_sandbox_builder.png>
 Package pdftex.def Info: immagini/flowchart/flow_chart_HDA_sandbox_builder.png 
- used on input line 194.
+ used on input line 193.
 (pdftex.def)             Requested size: 223.20227pt x 360.757pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--198
+Underfull \hbox (badness 10000) in paragraph at lines 187--197
 
  []
 
@@ -1666,16 +1654,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--198
 File: immagini/img/switch_windows_container.png Graphic file (type png)
 <use immagini/img/switch_windows_container.png>
 Package pdftex.def Info: immagini/img/switch_windows_container.png  used on inp
-ut line 204.
+ut line 203.
 (pdftex.def)             Requested size: 74.39886pt x 93.34969pt.
 <immagini/img/docker_desktop_conf.png, id=528, 975.645pt x 554.07pt>
 File: immagini/img/docker_desktop_conf.png Graphic file (type png)
 <use immagini/img/docker_desktop_conf.png>
 Package pdftex.def Info: immagini/img/docker_desktop_conf.png  used on input li
-ne 213.
+ne 212.
 (pdftex.def)             Requested size: 241.79773pt x 137.31664pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--217
+Underfull \hbox (badness 10000) in paragraph at lines 199--216
 
  []
 
@@ -1826,10 +1814,10 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 37373 strings out of 480608
- 631932 string characters out of 5903630
- 1360961 words of memory out of 5000000
- 52183 multiletter control sequences out of 15000+600000
+ 37343 strings out of 480608
+ 631474 string characters out of 5903630
+ 1359851 words of memory out of 5000000
+ 52153 multiletter control sequences out of 15000+600000
  565365 words of font info for 166 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  62i,11n,124p,1328b,3044s stack positions out of 5000i,500n,10000p,200000b,80000s
