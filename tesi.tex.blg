@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'tesi.tex.blg'
+[69] biber-darwin:322> INFO - === Gio Nov 25, 2021, 21:33:54
+[201] Utils.pm:320> ERROR - Cannot find 'tesi.tex.bcf'!
+[201] Biber.pm:132> INFO - ERRORS: 1

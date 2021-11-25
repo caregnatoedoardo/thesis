@@ -1,0 +1,786 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{art:ecs}{book}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{title}{Amazon Elastic Container Service}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/ecs/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/ecs/
+      \endverb
+    \endentry
+    \entry{art:eks}{book}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{title}{Amazon Elastic Kubernetes Service}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/eks/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/eks/
+      \endverb
+    \endentry
+    \entry{art:production-environment}{book}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{title}{Ambiente di produzione}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://it.continuousdev.com/8989-production-environment-3565
+      \endverb
+      \verb{url}
+      \verb https://it.continuousdev.com/8989-production-environment-3565
+      \endverb
+    \endentry
+    \entry{art:argocd-overview}{book}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{title}{ArgoCD Overview}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://argo-cd.readthedocs.io/en/stable/
+      \endverb
+      \verb{url}
+      \verb https://argo-cd.readthedocs.io/en/stable/
+      \endverb
+    \endentry
+    \entry{art:affinity}{book}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{title}{Assign Pods to Nodes}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://Kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
+      \endverb
+      \verb{url}
+      \verb https://Kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
+      \endverb
+    \endentry
+    \entry{art:cdk}{book}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{title}{AWS Cloud Development Kit}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/cdk/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/cdk/
+      \endverb
+    \endentry
+    \entry{art:graviton}{book}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{title}{AWS Graviton Processor}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/ec2/graviton/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/ec2/graviton/
+      \endverb
+    \endentry
+    \entry{art:inspector-cis-compliance}{book}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeltitlesource}{title}
+      \field{title}{Center for Internet Security (CIS) Benchmarks}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://docs.aws.amazon.com/inspector/latest/userguide/inspector\_cis.html
+      \endverb
+      \verb{url}
+      \verb https://docs.aws.amazon.com/inspector/latest/userguide/inspector%5C_cis.html
+      \endverb
+    \endentry
+    \entry{art:helm-charts}{book}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeltitlesource}{title}
+      \field{title}{Charts}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://helm.sh/docs/topics/charts/
+      \endverb
+      \verb{url}
+      \verb https://helm.sh/docs/topics/charts/
+      \endverb
+    \endentry
+    \entry{art:cis-amazon}{book}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeltitlesource}{title}
+      \field{title}{CIS SecureSuite® Product Vendor Members • Amazon Web Services}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.cisecurity.org/partner/amazon-web-services/
+      \endverb
+      \verb{url}
+      \verb https://www.cisecurity.org/partner/amazon-web-services/
+      \endverb
+    \endentry
+    \entry{art:config-maps}{book}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeltitlesource}{title}
+      \field{title}{Config Maps}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://Kubernetes.io/docs/concepts/configuration/configmap/
+      \endverb
+      \verb{url}
+      \verb https://Kubernetes.io/docs/concepts/configuration/configmap/
+      \endverb
+    \endentry
+    \entry{art:configure-logging-drivers}{book}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeltitlesource}{title}
+      \field{title}{Configure logging drivers}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://docs.docker.com/config/containers/logging/configure/
+      \endverb
+      \verb{url}
+      \verb https://docs.docker.com/config/containers/logging/configure/
+      \endverb
+    \endentry
+    \entry{art:continuous-delivery}{book}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeltitlesource}{title}
+      \field{title}{Continuous Delivery}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://continuousdelivery.com/
+      \endverb
+      \verb{url}
+      \verb https://continuousdelivery.com/
+      \endverb
+    \endentry
+    \entry{art:kubernetes-controller}{book}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeltitlesource}{title}
+      \field{title}{Controllers}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://kubernetes.io/docs/concepts/architecture/controller/
+      \endverb
+      \verb{url}
+      \verb https://kubernetes.io/docs/concepts/architecture/controller/
+      \endverb
+    \endentry
+    \entry{art:deployments}{book}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labeltitlesource}{title}
+      \field{title}{Deployments}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://Kubernetes.io/docs/concepts/workloads/controllers/deployment/
+      \endverb
+      \verb{url}
+      \verb https://Kubernetes.io/docs/concepts/workloads/controllers/deployment/
+      \endverb
+    \endentry
+    \entry{evans:domain-driven-design}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a8034da9731f447121ee0dbad3354a82}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{a8034da9731f447121ee0dbad3354a82}
+      \strng{fullhash}{a8034da9731f447121ee0dbad3354a82}
+      \strng{bibnamehash}{a8034da9731f447121ee0dbad3354a82}
+      \strng{authorbibnamehash}{a8034da9731f447121ee0dbad3354a82}
+      \strng{authornamehash}{a8034da9731f447121ee0dbad3354a82}
+      \strng{authorfullhash}{a8034da9731f447121ee0dbad3354a82}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Domain-Driven Design: Tackling Complexity in the Heart of Software, First Edition}
+      \field{year}{2003}
+      \true{nocite}
+    \endentry
+    \entry{art:fluentd-pipeline}{book}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labeltitlesource}{title}
+      \field{title}{Fluentbit Data Pipeline}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://docs.fluentbit.io/manual/concepts/data-pipeline
+      \endverb
+      \verb{url}
+      \verb https://docs.fluentbit.io/manual/concepts/data-pipeline
+      \endverb
+    \endentry
+    \entry{art:fluentd-fluentbit-comparison}{book}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labeltitlesource}{title}
+      \field{title}{Fluentd \& Fluentbit}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://docs.fluentbit.io/manual/about/fluentd-and-fluent-bit
+      \endverb
+      \verb{url}
+      \verb https://docs.fluentbit.io/manual/about/fluentd-and-fluent-bit
+      \endverb
+    \endentry
+    \entry{art:hpa}{book}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labeltitlesource}{title}
+      \field{title}{Horizontal Pod Autoscaler}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://Kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/
+      \endverb
+      \verb{url}
+      \verb https://Kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/
+      \endverb
+    \endentry
+    \entry{art:iam-roles}{book}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labeltitlesource}{title}
+      \field{title}{IAM Roles}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles.html
+      \endverb
+      \verb{url}
+      \verb https://docs.aws.amazon.com/IAM/latest/UserGuide/id%5C_roles.html
+      \endverb
+    \endentry
+    \entry{art:ingress}{book}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labeltitlesource}{title}
+      \field{title}{Ingress}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://Kubernetes.io/docs/concepts/services-networking/ingress/
+      \endverb
+      \verb{url}
+      \verb https://Kubernetes.io/docs/concepts/services-networking/ingress/
+      \endverb
+    \endentry
+    \entry{art:irsa}{book}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labeltitlesource}{title}
+      \field{title}{Introducing fine-grained IAM roles for service accounts}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/blogs/opensource/introducing-fine-grained-iam-roles-service-accounts/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/blogs/opensource/introducing-fine-grained-iam-roles-service-accounts/
+      \endverb
+    \endentry
+    \entry{art:istio-faq}{book}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labeltitlesource}{title}
+      \field{title}{Istio FAQ}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://istio.io/latest/about/faq/
+      \endverb
+      \verb{url}
+      \verb https://istio.io/latest/about/faq/
+      \endverb
+    \endentry
+    \entry{art:presenting-kube-benchmark}{book}{}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labeltitlesource}{title}
+      \field{title}{Kube-Bench: An Open Source Tool for Running Kubernetes CIS Benchmark Tests}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://blog.aquasec.com/announcing-kube-bench-an-open-source-tool-for-running-Kubernetes-cis-benchmark-tests
+      \endverb
+      \verb{url}
+      \verb https://blog.aquasec.com/announcing-kube-bench-an-open-source-tool-for-running-Kubernetes-cis-benchmark-tests
+      \endverb
+    \endentry
+    \entry{art:kubernetes-doc}{online}{}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labeltitlesource}{title}
+      \field{title}{Kubernetes Documentation}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://kubernetes.io/docs/home/
+      \endverb
+      \verb{url}
+      \verb https://kubernetes.io/docs/home/
+      \endverb
+    \endentry
+    \entry{art:economic-impact-of-cybercrime}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ecb45c2a29a69ce531ae19a0e9f75fcc}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima Andrew},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ecb45c2a29a69ce531ae19a0e9f75fcc}
+      \strng{fullhash}{ecb45c2a29a69ce531ae19a0e9f75fcc}
+      \strng{bibnamehash}{ecb45c2a29a69ce531ae19a0e9f75fcc}
+      \strng{authorbibnamehash}{ecb45c2a29a69ce531ae19a0e9f75fcc}
+      \strng{authornamehash}{ecb45c2a29a69ce531ae19a0e9f75fcc}
+      \strng{authorfullhash}{ecb45c2a29a69ce531ae19a0e9f75fcc}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Economic Impact of Cybercrime}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.csis.org/analysis/economic-impact-cybercrime
+      \endverb
+      \verb{url}
+      \verb https://www.csis.org/analysis/economic-impact-cybercrime
+      \endverb
+    \endentry
+    \entry{art:kubernetes-logging}{book}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labeltitlesource}{title}
+      \field{title}{Logging architecture}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://kubernetes.io/docs/concepts/cluster-administration/logging/
+      \endverb
+      \verb{url}
+      \verb https://kubernetes.io/docs/concepts/cluster-administration/logging/
+      \endverb
+    \endentry
+    \entry{site:Microservicesio}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeltitlesource}{title}
+      \field{title}{Microservices}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://microservices.io/
+      \endverb
+      \verb{url}
+      \verb https://microservices.io/
+      \endverb
+    \endentry
+    \entry{art:cosa-e-ha}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8620886b7d6e17359ad4cf5be6329dff}{%
+           family={Morante},
+           familyi={M\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{8620886b7d6e17359ad4cf5be6329dff}
+      \strng{fullhash}{8620886b7d6e17359ad4cf5be6329dff}
+      \strng{bibnamehash}{8620886b7d6e17359ad4cf5be6329dff}
+      \strng{authorbibnamehash}{8620886b7d6e17359ad4cf5be6329dff}
+      \strng{authornamehash}{8620886b7d6e17359ad4cf5be6329dff}
+      \strng{authorfullhash}{8620886b7d6e17359ad4cf5be6329dff}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Che cos’è la High Availability}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://devdev.it/che-cose-la-high-availability-1089/
+      \endverb
+      \verb{url}
+      \verb https://devdev.it/che-cose-la-high-availability-1089/
+      \endverb
+    \endentry
+    \entry{art:service-mesh-manifesto}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b974793b67f3420c18414143037dbde0}{%
+           family={Morgan},
+           familyi={M\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b974793b67f3420c18414143037dbde0}
+      \strng{fullhash}{b974793b67f3420c18414143037dbde0}
+      \strng{bibnamehash}{b974793b67f3420c18414143037dbde0}
+      \strng{authorbibnamehash}{b974793b67f3420c18414143037dbde0}
+      \strng{authornamehash}{b974793b67f3420c18414143037dbde0}
+      \strng{authorfullhash}{b974793b67f3420c18414143037dbde0}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Service Mesh: What every software engineer needs to know about the world’s most over-hyped technology}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://buoyant.io/service-mesh-manifesto/
+      \endverb
+      \verb{url}
+      \verb https://buoyant.io/service-mesh-manifesto/
+      \endverb
+    \endentry
+    \entry{art:linkerd-no-envoy}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b974793b67f3420c18414143037dbde0}{%
+           family={Morgan},
+           familyi={M\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b974793b67f3420c18414143037dbde0}
+      \strng{fullhash}{b974793b67f3420c18414143037dbde0}
+      \strng{bibnamehash}{b974793b67f3420c18414143037dbde0}
+      \strng{authorbibnamehash}{b974793b67f3420c18414143037dbde0}
+      \strng{authornamehash}{b974793b67f3420c18414143037dbde0}
+      \strng{authorfullhash}{b974793b67f3420c18414143037dbde0}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Why Linkerd doesn't use Envoy}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://linkerd.io/2020/12/03/why-linkerd-doesnt-use-envoy/
+      \endverb
+      \verb{url}
+      \verb https://linkerd.io/2020/12/03/why-linkerd-doesnt-use-envoy/
+      \endverb
+    \endentry
+    \entry{art:linkerd-istio-benchmark}{book}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labeltitlesource}{title}
+      \field{title}{Performance Benchmark Analysis of Istio and Linkerd}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://kinvolk.io/blog/2019/05/performance-benchmark-analysis-of-istio-and-linkerd/
+      \endverb
+      \verb{url}
+      \verb https://kinvolk.io/blog/2019/05/performance-benchmark-analysis-of-istio-and-linkerd/
+      \endverb
+    \endentry
+    \entry{art:pod-networking}{book}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labeltitlesource}{title}
+      \field{title}{Pod Networking (CNI)}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://docs.aws.amazon.com/eks/latest/userguide/pod-networking.html
+      \endverb
+      \verb{url}
+      \verb https://docs.aws.amazon.com/eks/latest/userguide/pod-networking.html
+      \endverb
+    \endentry
+    \entry{art:pods}{book}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labeltitlesource}{title}
+      \field{title}{Pods}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://Kubernetes.io/docs/concepts/workloads/pods/
+      \endverb
+      \verb{url}
+      \verb https://Kubernetes.io/docs/concepts/workloads/pods/
+      \endverb
+    \endentry
+    \entry{art:prometheus-operator}{book}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labeltitlesource}{title}
+      \field{title}{Prometheus-operator, Kubernetes}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.servicemesher.com/blog/prometheus-operator-manual/
+      \endverb
+      \verb{url}
+      \verb https://www.servicemesher.com/blog/prometheus-operator-manual/
+      \endverb
+    \endentry
+    \entry{site:RedHat}{online}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labeltitlesource}{title}
+      \field{title}{RedHat}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://redhat.com/
+      \endverb
+      \verb{url}
+      \verb https://redhat.com/
+      \endverb
+    \endentry
+    \entry{art:what-microservices-are}{book}{}
+      \name{author}{1}{}{%
+        {{hash=11d88e8d96db9c3b155b82a88e881299}{%
+           family={RIchardson},
+           familyi={R\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{11d88e8d96db9c3b155b82a88e881299}
+      \strng{fullhash}{11d88e8d96db9c3b155b82a88e881299}
+      \strng{bibnamehash}{11d88e8d96db9c3b155b82a88e881299}
+      \strng{authorbibnamehash}{11d88e8d96db9c3b155b82a88e881299}
+      \strng{authornamehash}{11d88e8d96db9c3b155b82a88e881299}
+      \strng{authorfullhash}{11d88e8d96db9c3b155b82a88e881299}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What's a service - part 1?}
+      \true{nocite}
+      \verb{urlraw}
+      \verb http://chrisrichardson.net/post/microservices/general/2019/02/16/whats-a-service-part-1.html
+      \endverb
+      \verb{url}
+      \verb http://chrisrichardson.net/post/microservices/general/2019/02/16/whats-a-service-part-1.html
+      \endverb
+    \endentry
+    \entry{art:secrets}{book}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labeltitlesource}{title}
+      \field{title}{Secrets}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://kubernetes.io/docs/concepts/configuration/secret/
+      \endverb
+      \verb{url}
+      \verb https://kubernetes.io/docs/concepts/configuration/secret/
+      \endverb
+    \endentry
+    \entry{art:service-accounts}{book}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labeltitlesource}{title}
+      \field{title}{Service Accounts}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://Kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
+      \endverb
+      \verb{url}
+      \verb https://Kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
+      \endverb
+    \endentry
+    \entry{art:service}{book}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labeltitlesource}{title}
+      \field{title}{Services}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://kubernetes.io/docs/concepts/services-networking/service/
+      \endverb
+      \verb{url}
+      \verb https://kubernetes.io/docs/concepts/services-networking/service/
+      \endverb
+    \endentry
+    \entry{art:deployment-strategies}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8b1b39961290e19d562dd9e2d86dcc7b}{%
+           family={Skowronski},
+           familyi={S\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b1b39961290e19d562dd9e2d86dcc7b}
+      \strng{fullhash}{8b1b39961290e19d562dd9e2d86dcc7b}
+      \strng{bibnamehash}{8b1b39961290e19d562dd9e2d86dcc7b}
+      \strng{authorbibnamehash}{8b1b39961290e19d562dd9e2d86dcc7b}
+      \strng{authornamehash}{8b1b39961290e19d562dd9e2d86dcc7b}
+      \strng{authorfullhash}{8b1b39961290e19d562dd9e2d86dcc7b}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Intro to deployment strategies: blue-green, canary, and more}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://dev.to/mostlyjason/intro-to-deployment-strategies-blue-green-canary-and-more-3a3
+      \endverb
+      \verb{url}
+      \verb https://dev.to/mostlyjason/intro-to-deployment-strategies-blue-green-canary-and-more-3a3
+      \endverb
+    \endentry
+    \entry{art:tolerations}{book}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labeltitlesource}{title}
+      \field{title}{Taints and Tolerations}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://Kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/
+      \endverb
+      \verb{url}
+      \verb https://Kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/
+      \endverb
+    \endentry
+    \entry{art:importance-scaling}{book}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labeltitlesource}{title}
+      \field{title}{The Importance Of Scalability In Software Design}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.conceptatech.com/blog/importance-of-scalability-in-software-design
+      \endverb
+      \verb{url}
+      \verb https://www.conceptatech.com/blog/importance-of-scalability-in-software-design
+      \endverb
+    \endentry
+    \entry{art:traffic-shaping-barracuda}{book}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labeltitlesource}{title}
+      \field{title}{Traffic Shaping}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.barracuda.com/glossary/traffic-shaping
+      \endverb
+      \verb{url}
+      \verb https://www.barracuda.com/glossary/traffic-shaping
+      \endverb
+    \endentry
+    \entry{art:what-containers-are}{book}{}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{labeltitlesource}{title}
+      \field{title}{Use containers to Build, Share and Run your applications}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.docker.com/resources/what-container
+      \endverb
+      \verb{url}
+      \verb https://www.docker.com/resources/what-container
+      \endverb
+    \endentry
+    \entry{art:ngninx-service-mesh}{book}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labeltitlesource}{title}
+      \field{title}{What is a Service Mesh?}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.nginx.com/blog/what-is-a-service-mesh/
+      \endverb
+      \verb{url}
+      \verb https://www.nginx.com/blog/what-is-a-service-mesh/
+      \endverb
+    \endentry
+    \entry{art:what-is-container-orchestration}{book}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labeltitlesource}{title}
+      \field{title}{What is container orchestration}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.redhat.com/en/topics/containers/what-is-container-orchestration
+      \endverb
+      \verb{url}
+      \verb https://www.redhat.com/en/topics/containers/what-is-container-orchestration
+      \endverb
+    \endentry
+    \entry{art:distributed-tracing}{book}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labeltitlesource}{title}
+      \field{title}{What Is Distributed Tracing?}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.appdynamics.com/topics/distributed-tracing
+      \endverb
+      \verb{url}
+      \verb https://www.appdynamics.com/topics/distributed-tracing
+      \endverb
+    \endentry
+    \entry{art:what-is-kubernetes}{book}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labeltitlesource}{title}
+      \field{title}{What is Kubernetes}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://Kubernetes.io/docs/concepts/overview/what-is-Kubernetes/
+      \endverb
+      \verb{url}
+      \verb https://Kubernetes.io/docs/concepts/overview/what-is-Kubernetes/
+      \endverb
+    \endentry
+    \entry{art:mtls-cloudflare}{book}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labeltitlesource}{title}
+      \field{title}{What is mutual TLS (mTLS)?}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/
+      \endverb
+      \verb{url}
+      \verb https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/
+      \endverb
+    \endentry
+    \entry{art:wikipedia}{online}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labeltitlesource}{title}
+      \field{title}{Wikipedia}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://it.wikipedia.org/
+      \endverb
+      \verb{url}
+      \verb https://it.wikipedia.org/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

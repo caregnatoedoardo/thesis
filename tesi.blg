@@ -1,0 +1,17 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'tesi.blg'
+[74] biber-darwin:322> INFO - === Gio Nov 25, 2021, 21:34:56
+[87] Biber.pm:415> INFO - Reading 'tesi.bcf'
+[167] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[180] Biber.pm:4256> INFO - Processing section 0
+[181] Utils.pm:75> INFO - Globbing data source 'bibliografia.bib'
+[181] Utils.pm:91> INFO - Globbed data source 'bibliografia.bib' to bibliografia.bib
+[190] Biber.pm:4455> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
+[191] bibtex.pm:1653> INFO - LaTeX decoding ...
+[207] bibtex.pm:1471> INFO - Found BibTeX data source 'bibliografia.bib'
+[309] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[309] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[309] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
+[309] Biber.pm:4090> INFO - No sort tailoring available for locale 'it-IT'
+[338] bbl.pm:652> INFO - Writing 'tesi.bbl' with encoding 'UTF-8'
+[347] bbl.pm:755> INFO - Output to tesi.bbl
