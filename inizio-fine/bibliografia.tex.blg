@@ -1,0 +1,5 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'bibliografia.tex.blg'
+[55] biber:340> INFO - === ven nov 26, 2021, 20:57:36
+[144] Utils.pm:400> ERROR - Cannot find 'bibliografia.tex.bcf'!
+[144] Biber.pm:132> INFO - ERRORS: 1

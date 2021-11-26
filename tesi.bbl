@@ -163,10 +163,10 @@
       \endverb
     \endentry
     \entry{art:inno3-container-vs-virtual-machine}{book}{}
-      \field{sortinit}{i}
+      \field{sortinit}{I}
       \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
       \field{labeltitlesource}{title}
-      \field{title}{inno3: container vs virtual machine}
+      \field{title}{Inno3: container vs virtual machine}
       \true{nocite}
       \verb{urlraw}
       \verb https://inno3.it/2020/01/22/container-e-virtual-machine-differenze-e-vantaggi/
@@ -212,6 +212,45 @@
       \endverb
       \verb{url}
       \verb https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/containers-vs-vm
+      \endverb
+    \endentry
+    \entry{art:Microsoft-NGINX-reverse-proxy-windows}{book}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeltitlesource}{title}
+      \field{title}{Microsoft: install and configure NGINX as a reverse proxy}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://docs.microsoft.com/en-us/troubleshoot/aspnetcore/2-2-install-nginx-configure-it-reverse-proxy
+      \endverb
+      \verb{url}
+      \verb https://docs.microsoft.com/en-us/troubleshoot/aspnetcore/2-2-install-nginx-configure-it-reverse-proxy
+      \endverb
+    \endentry
+    \entry{art:NGINX-docs}{online}{}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labeltitlesource}{title}
+      \field{title}{NGINX Documentation}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://docs.nginx.com/
+      \endverb
+      \verb{url}
+      \verb https://docs.nginx.com/
+      \endverb
+    \endentry
+    \entry{art:NGINX-reverse-proxy-windows}{book}{}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labeltitlesource}{title}
+      \field{title}{NGINX: install and configure it as a reverse proxy}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/
+      \endverb
+      \verb{url}
+      \verb https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/
       \endverb
     \endentry
     \entry{art:Pat-Eu}{online}{}
@@ -306,10 +345,10 @@
       \endverb
     \endentry
     \entry{art:vmware-virtualization}{book}{}
-      \field{sortinit}{v}
+      \field{sortinit}{V}
       \field{sortinithash}{02432525618c08e2b03cac47c19764af}
       \field{labeltitlesource}{title}
-      \field{title}{vmware: Introduzione alla virtualizzazione}
+      \field{title}{VMWare: Introduzione alla virtualizzazione}
       \true{nocite}
       \verb{urlraw}
       \verb https://www.vmware.com/it/solutions/virtualization.html
